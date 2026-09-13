@@ -17,6 +17,10 @@ const FEATURE_FLAGS = {
 };
 
 function iconUrl(icon) { return `${ICON_ROOT}${String(icon).toLowerCase()}.jpg`; }
+function treeBackgroundUrl(tree) {
+  const id = String(tree.id).toLowerCase();
+  return `./assets/talent-backgrounds/${id}.png`;
+}
 function escapeHtml(value) { return String(value ?? "").replace(/[&<>"']/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[character]); }
 function currentClass() { return state.data.classes.find((entry) => entry.id === state.classId); }
 function currentRank(talent) { return state.points[talent.id] || 0; }
@@ -113,7 +117,7 @@ function renderTrees() {
     article.className = "tree";
     article.innerHTML = `<header class="tree-head"><h2>${tree.name}</h2><span class="tree-points"><strong>${pointsInTree(tree)}</strong> points</span></header><div class="tree-grid"></div>`;
     const grid = $(".tree-grid", article);
-    grid.style.setProperty("--tree-background", `url("./assets/talent-backgrounds/${tree.id}.png")`);
+    grid.style.setProperty("--tree-background", `url("${treeBackgroundUrl(tree)}")`);
     for (const talent of tree.talents) {
       const rank = currentRank(talent);
       const available = canAdd(tree, talent);
@@ -276,7 +280,7 @@ function renderEditorGrid() {
   const tree = editorTree();
   const grid = $("#editor-grid");
   grid.innerHTML = "";
-  grid.style.setProperty("--tree-background", `url("./assets/talent-backgrounds/${tree.id}.png")`);
+  grid.style.setProperty("--tree-background", `url("${treeBackgroundUrl(tree)}")`);
   for (let row = 1; row <= 7; row += 1) {
     for (let column = 1; column <= 4; column += 1) {
       const cell = document.createElement("div");
