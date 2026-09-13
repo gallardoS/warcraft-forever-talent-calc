@@ -31,3 +31,7 @@ The optional navigation sections are controlled at build time with environment v
 - `ABILITIES_ENABLED`
 
 After changing flags locally, run `npm run build`. On Vercel, add the variables to the desired environments and redeploy. Vercel runs the configured build and serves the `dist` directory automatically.
+
+## Interface artwork
+
+The classic talent-tree backgrounds in `dist/assets/talent-backgrounds/` are assembled from Blizzard's original interface textures. The matching reference gallery is available in [Wowpedia's talent interface backgrounds category](https://wowpedia.fandom.com/wiki/Category:Talents_interface_backgrounds), and the source texture mirror is [Gethe/wow-ui-textures](https://github.com/Gethe/wow-ui-textures/tree/live/TALENTFRAME).

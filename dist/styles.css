@@ -98,8 +98,12 @@ h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp
 .tree-grid {
   position: relative; display: grid; grid-template-columns: repeat(4, 66px); grid-template-rows: repeat(7, 66px);
   justify-content: center; gap: 8px; min-height: 558px; padding: 23px;
-  background-image: linear-gradient(rgba(255,255,255,.018) 1px, transparent 1px);
-  background-size: 100% 74px;
+  background-image:
+    linear-gradient(rgba(255,255,255,.018) 1px, transparent 1px),
+    linear-gradient(rgba(3,8,12,.34), rgba(3,8,12,.56)),
+    var(--tree-background);
+  background-position: top, center, center;
+  background-size: 100% 74px, 100% 100%, 100% 100%;
 }
 .talent {
   position: relative; z-index: 2; align-self: center; justify-self: center; width: 54px; height: 54px; border: 2px solid #46515a; border-radius: 8px;
@@ -193,7 +197,11 @@ h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp
 .editor-grid {
   position: relative; display: grid; grid-template-columns: repeat(4, 66px); grid-template-rows: repeat(7, 66px);
   justify-content: center; gap: 8px; min-height: 558px; padding: 23px;
-  background: linear-gradient(180deg, rgba(255,255,255,.015), transparent), repeating-linear-gradient(0deg, transparent 0 73px, rgba(255,255,255,.018) 73px 74px);
+  background-image:
+    linear-gradient(rgba(3,8,12,.30), rgba(3,8,12,.52)),
+    var(--tree-background);
+  background-position: center;
+  background-size: 100% 100%;
 }
 .editor-cell { z-index: 0; border: 1px dashed rgba(183,213,220,.12); border-radius: 8px; background: rgba(0,0,0,.08); }
 .editor-cell.is-drag-over { border-color: var(--gold); background: rgba(205,168,74,.12); }

@@ -113,6 +113,7 @@ function renderTrees() {
     article.className = "tree";
     article.innerHTML = `<header class="tree-head"><h2>${tree.name}</h2><span class="tree-points"><strong>${pointsInTree(tree)}</strong> points</span></header><div class="tree-grid"></div>`;
     const grid = $(".tree-grid", article);
+    grid.style.setProperty("--tree-background", `url("./assets/talent-backgrounds/${tree.id}.png")`);
     for (const talent of tree.talents) {
       const rank = currentRank(talent);
       const available = canAdd(tree, talent);
@@ -275,6 +276,7 @@ function renderEditorGrid() {
   const tree = editorTree();
   const grid = $("#editor-grid");
   grid.innerHTML = "";
+  grid.style.setProperty("--tree-background", `url("./assets/talent-backgrounds/${tree.id}.png")`);
   for (let row = 1; row <= 7; row += 1) {
     for (let column = 1; column <= 4; column += 1) {
       const cell = document.createElement("div");
