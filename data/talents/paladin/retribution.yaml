@@ -1,159 +1,204 @@
 id: "paladin-retribution"
 classId: "paladin"
 name: "Retribution"
-version: "classic-1.12"
-status: "baseline"
+version: "forever-demo-2026-09"
+status: "imported"
 talents:
-  - id: "improved-blessing-of-might"
-    name: "Improved Blessing of Might"
-    icon: "spell_holy_fistofjustice"
-    row: 1
-    column: 2
-    maxRanks: 5
-    descriptions:
-      - "Increases the melee attack power bonus of your Blessing of Might by 4%."
-      - "Increases the melee attack power bonus of your Blessing of Might by 8%."
-      - "Increases the melee attack power bonus of your Blessing of Might by 12%."
-      - "Increases the melee attack power bonus of your Blessing of Might by 16%."
-      - "Increases the melee attack power bonus of your Blessing of Might by 20%."
-  - id: "vengeance"
-    name: "Vengeance"
-    icon: "ability_racial_avatar"
-    row: 6
-    column: 2
-    maxRanks: 5
-    requires:
-      talentId: "conviction"
-      ranks: 5
-    descriptions:
-      - "Gives you a 3% bonus to Physical and Holy damage you deal for 8 sec after dealing a critical strike from a weapon swing, spell, or ability."
-      - "Gives you a 6% bonus to Physical and Holy damage you deal for 8 sec after dealing a critical strike from a weapon swing, spell, or ability."
-      - "Gives you a 9% bonus to Physical and Holy damage you deal for 8 sec after dealing a critical strike from a weapon swing, spell, or ability."
-      - "Gives you a 12% bonus to Physical and Holy damage you deal for 8 sec after dealing a critical strike from a weapon swing, spell, or ability."
-      - "Gives you a 15% bonus to Physical and Holy damage you deal for 8 sec after dealing a critical strike from a weapon swing, spell, or ability."
   - id: "deflection"
     name: "Deflection"
     icon: "ability_parry"
-    row: 2
-    column: 3
+    row: 1
+    column: 2
     maxRanks: 5
+    castTime: "Passive"
     descriptions:
       - "Increases your Parry chance by 1%."
       - "Increases your Parry chance by 2%."
       - "Increases your Parry chance by 3%."
       - "Increases your Parry chance by 4%."
       - "Increases your Parry chance by 5%."
-  - id: "improved-retribution-aura"
-    name: "Improved Retribution Aura"
-    icon: "spell_holy_auraoflight"
-    row: 4
-    column: 3
-    maxRanks: 2
-    descriptions:
-      - "Increases the damage done by your Retribution Aura by 25%."
-      - "Increases the damage done by your Retribution Aura by 50%."
   - id: "benediction"
     name: "Benediction"
     icon: "spell_frost_windwalkon"
     row: 1
     column: 3
     maxRanks: 5
+    castTime: "Passive"
     descriptions:
-      - "Reduces the Mana cost of your Judgement and Seal spells by 3%."
-      - "Reduces the Mana cost of your Judgement and Seal spells by 6%."
-      - "Reduces the Mana cost of your Judgement and Seal spells by 9%."
-      - "Reduces the Mana cost of your Judgement and Seal spells by 12%."
-      - "Reduces the Mana cost of your Judgement and Seal spells by 15%."
-  - id: "sanctity-aura"
-    name: "Sanctity Aura"
-    icon: "spell_holy_mindvision"
-    row: 5
-    column: 3
-    maxRanks: 1
-    descriptions:
-      - "Increases Holy damage done by party members within 30 yards by 10%.  Players may only have one Aura on them per Paladin at any one time."
-  - id: "two-handed-weapon-specialization"
-    name: "Two-Handed Weapon Specialization"
-    icon: "inv_hammer_04"
-    row: 5
-    column: 1
-    maxRanks: 3
-    descriptions:
-      - "Increases the damage you deal with two-handed melee weapons by 2%."
-      - "Increases the damage you deal with two-handed melee weapons by 4%."
-      - "Increases the damage you deal with two-handed melee weapons by 6%."
-  - id: "conviction"
-    name: "Conviction"
-    icon: "spell_holy_retributionaura"
-    row: 3
-    column: 2
-    maxRanks: 5
-    descriptions:
-      - "Increases your chance to get a critical strike with melee weapons by 1%."
-      - "Increases your chance to get a critical strike with melee weapons by 2%."
-      - "Increases your chance to get a critical strike with melee weapons by 3%."
-      - "Increases your chance to get a critical strike with melee weapons by 4%."
-      - "Increases your chance to get a critical strike with melee weapons by 5%."
-  - id: "repentance"
-    name: "Repentance"
-    icon: "spell_holy_prayerofhealing"
-    row: 7
-    column: 2
-    maxRanks: 1
-    descriptions:
-      - "Puts the enemy target in a state of meditation, incapacitating them for up to 6 sec.  Any damage caused will awaken the target.  Only works against Humanoids."
-  - id: "improved-seal-of-the-crusader"
-    name: "Improved Seal of the Crusader"
-    icon: "spell_holy_holysmite"
-    row: 2
-    column: 2
-    maxRanks: 3
-    descriptions:
-      - "Increases the melee attack power bonus of your Seal of the Crusader and the Holy damage increase of your Judgement of the Crusader by 5%."
-      - "Increases the melee attack power bonus of your Seal of the Crusader and the Holy damage increase of your Judgement of the Crusader by 10%."
-      - "Increases the melee attack power bonus of your Seal of the Crusader and the Holy damage increase of your Judgement of the Crusader by 15%."
-  - id: "seal-of-command"
-    name: "Seal of Command"
-    icon: "ability_warrior_innerrage"
-    row: 3
-    column: 3
-    maxRanks: 1
-    descriptions:
-      - "Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage.  Only one Seal can be active on the Paladin at any one time.  Lasts 30 sec.Unleashing this Seal's energy will judge an enemy, instantly causing 90 to 95 Holy damage, 137 to 146 if the target is stunned or incapacitated."
+      - "Reduces the Mana cost of all instant cast spells and abilities by 2%."
+      - "Reduces the Mana cost of all instant cast spells and abilities by 4%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Reduces the Mana cost of all instant cast spells and abilities by 6%.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Reduces the Mana cost of all instant cast spells and abilities by 8%.\n\nRank 4 value estimated from the rank shown in the video."
+      - "Reduces the Mana cost of all instant cast spells and abilities by 10%.\n\nRank 5 value estimated from the rank shown in the video."
   - id: "improved-judgement"
     name: "Improved Judgement"
     icon: "spell_holy_righteousfury"
     row: 2
     column: 1
     maxRanks: 2
+    castTime: "Passive"
     descriptions:
-      - "Decreases the cooldown of your Judgement spell by 1 sec."
-      - "Decreases the cooldown of your Judgement spell by 2 sec."
-  - id: "eye-for-an-eye"
-    name: "Eye for an Eye"
-    icon: "spell_holy_eyeforaneye"
-    row: 4
-    column: 1
+      - "Decreases the cooldown of your Judgement ability by 1 sec."
+      - "Decreases the cooldown of your Judgement ability by 2 sec.\n\nRank 2 value estimated from the rank shown in the video."
+  - id: "holy-conduit"
+    name: "Holy Conduit"
+    icon: "spell_holy_divineillumination"
+    row: 2
+    column: 2
     maxRanks: 2
+    castTime: "Passive"
     descriptions:
-      - "All spell criticals against you cause 15% of the damage taken to the caster as well.  The damage caused by Eye for an Eye will not exceed 50% of the Paladin's total health."
-      - "All spell criticals against you cause 30% of the damage taken to the caster as well.  The damage caused by Eye for an Eye will not exceed 50% of the Paladin's total health."
+      - "Reduces the mana cost of your Consecration, Holy Wrath, Exorcism, and Hammer of Wrath spells by 20%."
+      - "Reduces the mana cost of your Consecration, Holy Wrath, Exorcism, and Hammer of Wrath spells by 40%.\n\nRank 2 value estimated from the rank shown in the video."
+  - id: "conviction"
+    name: "Conviction"
+    icon: "spell_holy_retributionaura"
+    row: 2
+    column: 3
+    maxRanks: 5
+    castTime: "Passive"
+    descriptions:
+      - "Increases your chance to get a critical strike with melee attacks by 1%."
+      - "Increases your chance to get a critical strike with melee attacks by 2%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases your chance to get a critical strike with melee attacks by 3%.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Increases your chance to get a critical strike with melee attacks by 4%.\n\nRank 4 value estimated from the rank shown in the video."
+      - "Increases your chance to get a critical strike with melee attacks by 5%.\n\nRank 5 value estimated from the rank shown in the video."
   - id: "vindication"
     name: "Vindication"
     icon: "spell_holy_vindication"
     row: 3
     column: 1
     maxRanks: 3
+    castTime: "Passive"
     descriptions:
-      - "Gives the Paladin's damaging melee attacks a chance to reduce the target's Strength and Agility by 5% for 10 sec."
-      - "Gives the Paladin's damaging melee attacks a chance to reduce the target's Strength and Agility by 10% for 10 sec."
-      - "Gives the Paladin's damaging melee attacks a chance to reduce the target's Strength and Agility by 15% for 10 sec."
+      - "Gives your damaging melee attacks a chance to reduce the target's Attack Power by 42, and increase your Attack Power by 1% for 30 sec."
+      - "Gives your damaging melee attacks a chance to reduce the target's Attack Power by 84, and increase your Attack Power by 2% for 30 sec.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Gives your damaging melee attacks a chance to reduce the target's Attack Power by 126, and increase your Attack Power by 3% for 30 sec.\n\nRank 3 value estimated from the rank shown in the video."
+  - id: "sanctified-judgement"
+    name: "Sanctified Judgement"
+    icon: "spell_holy_righteousfury"
+    row: 3
+    column: 2
+    maxRanks: 3
+    castTime: "Passive"
+    descriptions:
+      - "Gives your Judgement ability a 33% chance to return 20% of the Mana cost of the judged seal."
+      - "Gives your Judgement ability a 66% chance to return 20% of the Mana cost of the judged seal.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Gives your Judgement ability a 100% chance to return 20% of the Mana cost of the judged seal.\n\nRank 3 value estimated from the rank shown in the video."
+  - id: "seal-of-command"
+    name: "Seal of Command"
+    icon: "ability_warrior_innerrage"
+    row: 3
+    column: 3
+    maxRanks: 1
+    cost: "65 Mana"
+    castTime: "Instant"
+    descriptions:
+      - "Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage. Only one Seal can be active on the Paladin at any one time. Lasts 30 sec.\n\nUnleashing this Seal's energy will judge an enemy, instantly causing 68 to 73 Holy damage, 137 to 146 if the target is stunned or incapacitated."
   - id: "pursuit-of-justice"
     name: "Pursuit of Justice"
     icon: "spell_holy_persuitofjustice"
     row: 3
     column: 4
     maxRanks: 2
+    castTime: "Passive"
     descriptions:
-      - "Increases movement and mounted movement speed by 4%.  This does not stack with other movement speed increasing effects."
-      - "Increases movement and mounted movement speed by 8%.  This does not stack with other movement speed increasing effects."
+      - "Increases movement speed and mounted movement speed by 8%. This does not stack with other movement speed increasing effects."
+      - "Increases movement speed and mounted movement speed by 16%. This does not stack with other movement speed increasing effects.\n\nRank 2 value estimated from the rank shown in the video."
+  - id: "eye-for-an-eye"
+    name: "Eye for an Eye"
+    icon: "spell_holy_eyeforaneye"
+    row: 4
+    column: 1
+    maxRanks: 2
+    castTime: "Passive"
+    descriptions:
+      - "All critical strikes against you cause 5% of the damage taken to the attacker as well. The damage caused by Eye for an Eye will not exceed 50% of the Paladin's total health."
+      - "All critical strikes against you cause 10% of the damage taken to the attacker as well. The damage caused by Eye for an Eye will not exceed 50% of the Paladin's total health.\n\nRank 2 value estimated from the rank shown in the video."
+  - id: "sacred-arbiter"
+    name: "Sacred Arbiter"
+    icon: "spell_holy_righteousfury"
+    row: 4
+    column: 3
+    maxRanks: 1
+    castTime: "Passive"
+    descriptions:
+      - "Increases the damage of your Holy Strike ability by 10% and causes it to refresh all Judgement effects on the target."
+  - id: "crusade"
+    name: "Crusade"
+    icon: "spell_holy_crusade"
+    row: 4
+    column: 4
+    maxRanks: 2
+    castTime: "Passive"
+    descriptions:
+      - "Increases all damage dealt by 1%. Increased by an additional 1% against Demon and Undead targets."
+      - "Increases all damage dealt by 2%. Increased by an additional 2% against Demon and Undead targets.\n\nRank 2 value estimated from the rank shown in the video."
+  - id: "two-handed-weapon-specialization"
+    name: "Two-Handed Weapon Specialization"
+    icon: "inv_hammer_04"
+    row: 5
+    column: 1
+    maxRanks: 3
+    castTime: "Passive"
+    descriptions:
+      - "Increases the damage you deal with two-handed melee weapons by 3%."
+      - "Increases the damage you deal with two-handed melee weapons by 6%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases the damage you deal with two-handed melee weapons by 9%.\n\nRank 3 value estimated from the rank shown in the video."
+  - id: "vengeance"
+    name: "Vengeance"
+    icon: "ability_racial_avatar"
+    row: 5
+    column: 2
+    maxRanks: 3
+    castTime: "Passive"
+    requires:
+      talentId: "sanctified-judgement"
+      ranks: 3
+    descriptions:
+      - "Increases your Physical and Holy damage dealt by 1% for 30 sec after landing a critical strike. Stacks up to 5 times."
+      - "Increases your Physical and Holy damage dealt by 2% for 30 sec after landing a critical strike. Stacks up to 5 times.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a critical strike. Stacks up to 5 times.\n\nRank 3 value estimated from the rank shown in the video."
+  - id: "repentance"
+    name: "Repentance"
+    icon: "spell_holy_prayerofhealing"
+    row: 5
+    column: 3
+    maxRanks: 1
+    cost: "60 Mana"
+    range: "20 yd range"
+    castTime: "Instant"
+    cooldown: "1 min cooldown"
+    descriptions:
+      - "Puts the enemy target in a state of meditation, incapacitating them for up to 6 sec.  Any damage caused will awaken the target.  Only works against Humanoids."
+  - id: "champion-of-the-light"
+    name: "Champion of the Light"
+    icon: "spell_holy_championsbond"
+    row: 6
+    column: 2
+    maxRanks: 3
+    castTime: "Passive"
+    descriptions:
+      - "Increases your spell damage and healing by up to 33% of your Intellect."
+      - "Increases your spell damage and healing by up to 66% of your Intellect.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases your spell damage and healing by up to 100% of your Intellect.\n\nRank 3 value estimated from the rank shown in the video."
+  - id: "instrument-of-law"
+    name: "Instrument of Law"
+    icon: "ability_paladin_hammeroftherighteous"
+    row: 6
+    column: 3
+    maxRanks: 2
+    castTime: "Passive"
+    descriptions:
+      - "Reduces the cast time of your Hammer of Wrath by 0.5 sec, and reduces all threat you generate by 10% while Righteous Fury is not active."
+      - "Reduces the cast time of your Hammer of Wrath by 1 sec, and reduces all threat you generate by 20% while Righteous Fury is not active.\n\nRank 2 value estimated from the rank shown in the video."
+  - id: "twist-of-light"
+    name: "Twist of Light"
+    icon: "spell_holy_divineintervention"
+    row: 7
+    column: 2
+    maxRanks: 1
+    castTime: "Passive"
+    required: "Requires Level 40"
+    descriptions:
+      - "When you replace your Seal of Command, Seal of Righteousness, Seal of Fury, or Seal of Justice with a different Seal, gain an Echo. Your next melee attack applies the replaced Seal's effects, consuming the Echo."

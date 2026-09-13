@@ -1,176 +1,214 @@
 id: "shaman-enhancement"
 classId: "shaman"
 name: "Enhancement"
-version: "classic-1.12"
-status: "baseline"
+version: "forever-demo-2026-09"
+status: "imported"
 talents:
-  - id: "anticipation"
-    name: "Anticipation"
-    icon: "spell_nature_mirrorimage"
-    row: 3
-    column: 4
-    maxRanks: 5
+  - id: "earth-s-grasp"
+    name: "Earth's Grasp"
+    icon: "spell_nature_stoneclawtotem"
+    row: 1
+    column: 1
+    maxRanks: 2
+    castTime: "Passive"
     descriptions:
-      - "Increases your chance to dodge by an additional 1%."
-      - "Increases your chance to dodge by an additional 2%."
-      - "Increases your chance to dodge by an additional 3%."
-      - "Increases your chance to dodge by an additional 4%."
-      - "Increases your chance to dodge by an additional 5%."
-  - id: "flurry"
-    name: "Flurry"
-    icon: "ability_ghoulfrenzy"
-    row: 4
+      - "Increases the health of your Stoneclaw Totem by 25% and the radius of your Earthbind Totem by 10%."
+      - "Increases the health of your Stoneclaw Totem by 50% and the radius of your Earthbind Totem by 20%."
+  - id: "thundering-strikes"
+    name: "Thundering Strikes"
+    icon: "ability_thunderbolt"
+    row: 1
     column: 2
     maxRanks: 5
-    requires:
-      talentId: "thundering-strikes"
-      ranks: 5
+    castTime: "Passive"
     descriptions:
-      - "Increases your attack speed by 10% for your next 3 swings after dealing a critical strike."
-      - "Increases your attack speed by 15% for your next 3 swings after dealing a critical strike."
-      - "Increases your attack speed by 20% for your next 3 swings after dealing a critical strike."
-      - "Increases your attack speed by 25% for your next 3 swings after dealing a critical strike."
-      - "Increases your attack speed by 30% for your next 3 swings after dealing a critical strike."
-  - id: "improved-ghost-wolf"
-    name: "Improved Ghost Wolf"
-    icon: "spell_nature_spiritwolf"
-    row: 2
+      - "Improves your chance to get a critical strike with all spells and attacks by 1%."
+      - "Improves your chance to get a critical strike with all spells and attacks by 2%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Improves your chance to get a critical strike with all spells and attacks by 3%.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Improves your chance to get a critical strike with all spells and attacks by 4%.\n\nRank 4 value estimated from the rank shown in the video."
+      - "Improves your chance to get a critical strike with all spells and attacks by 5%.\n\nRank 5 value estimated from the rank shown in the video."
+  - id: "ancestral-knowledge"
+    name: "Ancestral Knowledge"
+    icon: "spell_shadow_grimward"
+    row: 1
     column: 3
-    maxRanks: 2
+    maxRanks: 5
+    castTime: "Passive"
     descriptions:
-      - "Reduces the cast time of your Ghost Wolf spell by 1 sec."
-      - "Reduces the cast time of your Ghost Wolf spell by 2 sec."
-  - id: "improved-lightning-shield"
-    name: "Improved Lightning Shield"
-    icon: "spell_nature_lightningshield"
-    row: 2
-    column: 4
-    maxRanks: 3
-    descriptions:
-      - "Increases the damage done by your Lightning Shield orbs by 5%."
-      - "Increases the damage done by your Lightning Shield orbs by 10%."
-      - "Increases the damage done by your Lightning Shield orbs by 15%."
+      - "Increases your Intellect by 2%."
+      - "Increases your Intellect by 4%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases your Intellect by 6%.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Increases your Intellect by 8%.\n\nRank 4 value estimated from the rank shown in the video."
+      - "Increases your Intellect by 10%.\n\nRank 5 value estimated from the rank shown in the video."
   - id: "guardian-totems"
     name: "Guardian Totems"
     icon: "spell_nature_stoneskintotem"
     row: 2
     column: 1
     maxRanks: 2
+    castTime: "Passive"
     descriptions:
       - "Increases the amount of damage reduced by your Stoneskin Totem and Windwall Totem by 10% and reduces the cooldown of your Grounding Totem by 1 sec."
       - "Increases the amount of damage reduced by your Stoneskin Totem and Windwall Totem by 20% and reduces the cooldown of your Grounding Totem by 2 sec."
-  - id: "enhancing-totems"
-    name: "Enhancing Totems"
-    icon: "spell_nature_earthbindtotem"
-    row: 3
-    column: 1
-    maxRanks: 2
+  - id: "mental-dexterity"
+    name: "Mental Dexterity"
+    icon: "spell_nature_mentalquickness"
+    row: 2
+    column: 2
+    maxRanks: 3
+    castTime: "Passive"
     descriptions:
-      - "Increases the effect of your Strength of Earth and Grace of Air Totems by 8%."
-      - "Increases the effect of your Strength of Earth and Grace of Air Totems by 15%."
+      - "Increases your Attack Power by an amount equal to 33% of your Intellect."
+      - "Increases your Attack Power by an amount equal to 66% of your Intellect.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases your Attack Power by an amount equal to 100% of your Intellect.\n\nRank 3 value estimated from the rank shown in the video."
+  - id: "improved-ghost-wolf"
+    name: "Improved Ghost Wolf"
+    icon: "spell_nature_spiritwolf"
+    row: 2
+    column: 3
+    maxRanks: 2
+    castTime: "Passive"
+    descriptions:
+      - "Reduces the cast time of your Ghost Wolf spell by 1.0 sec. and Ghost Wolf may be used indoors."
+      - "Reduces the cast time of your Ghost Wolf spell by 2 sec. and Ghost Wolf may be used indoors.\n\nRank 2 value estimated from the rank shown in the video."
+  - id: "improved-lightning-shield"
+    name: "Improved Lightning Shield"
+    icon: "spell_nature_lightningshield"
+    row: 2
+    column: 4
+    maxRanks: 3
+    castTime: "Passive"
+    descriptions:
+      - "Increases the damage done by your Lightning Shield orbs by 5%."
+      - "Increases the damage done by your Lightning Shield orbs by 10%."
+      - "Increases the damage done by your Lightning Shield orbs by 15%."
   - id: "elemental-weapons"
     name: "Elemental Weapons"
     icon: "spell_fire_flametounge"
-    row: 5
-    column: 2
+    row: 3
+    column: 1
     maxRanks: 3
+    castTime: "Passive"
     descriptions:
       - "Increases the melee attack power bonus of your Rockbiter Weapon by 7%, your Windfury Weapon effect by 13% and increases the damage caused by your Flametongue Weapon and Frostbrand Weapon by 5%."
       - "Increases the melee attack power bonus of your Rockbiter Weapon by 14%, your Windfury Weapon effect by 27% and increases the damage caused by your Flametongue Weapon and Frostbrand Weapon by 10%."
       - "Increases the melee attack power bonus of your Rockbiter Weapon by 20%, your Windfury Weapon effect by 40% and increases the damage caused by your Flametongue Weapon and Frostbrand Weapon by 15%."
-  - id: "shield-specialization"
-    name: "Shield Specialization"
-    icon: "inv_shield_06"
-    row: 1
+  - id: "shamanistic-focus"
+    name: "Shamanistic Focus"
+    icon: "spell_nature_elementalabsorption"
+    row: 3
     column: 3
-    maxRanks: 5
+    maxRanks: 1
+    castTime: "Passive"
     descriptions:
-      - "Increases your chance to block attacks with a shield by 1% and increases the amount blocked by 5%."
-      - "Increases your chance to block attacks with a shield by 2% and increases the amount blocked by 10%."
-      - "Increases your chance to block attacks with a shield by 3% and increases the amount blocked by 15%."
-      - "Increases your chance to block attacks with a shield by 4% and increases the amount blocked by 20%."
-      - "Increases your chance to block attacks with a shield by 5% and increases the amount blocked by 25%."
-  - id: "thundering-strikes"
-    name: "Thundering Strikes"
-    icon: "ability_thunderbolt"
-    row: 2
-    column: 2
-    maxRanks: 5
+      - "Reduces the mana cost of your Shock and Lightning Shield spells by 45%."
+  - id: "anticipation"
+    name: "Anticipation"
+    icon: "spell_nature_mirrorimage"
+    row: 3
+    column: 4
+    maxRanks: 3
+    castTime: "Passive"
     descriptions:
-      - "Improves your chance to get a critical strike with your weapon attacks by 1%."
-      - "Improves your chance to get a critical strike with your weapon attacks by 2%."
-      - "Improves your chance to get a critical strike with your weapon attacks by 3%."
-      - "Improves your chance to get a critical strike with your weapon attacks by 4%."
-      - "Improves your chance to get a critical strike with your weapon attacks by 5%."
-  - id: "ancestral-knowledge"
-    name: "Ancestral Knowledge"
-    icon: "spell_shadow_grimward"
-    row: 1
-    column: 2
-    maxRanks: 5
-    descriptions:
-      - "Increases your maximum Mana by 1%."
-      - "Increases your maximum Mana by 2%."
-      - "Increases your maximum Mana by 3%."
-      - "Increases your maximum Mana by 4%."
-      - "Increases your maximum Mana by 5%."
+      - "Increases your chance to dodge by an additional 2%."
+      - "Increases your chance to dodge by an additional 4%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases your chance to dodge by an additional 6%.\n\nRank 3 value estimated from the rank shown in the video."
   - id: "toughness"
     name: "Toughness"
     icon: "spell_holy_devotion"
     row: 4
-    column: 3
+    column: 1
     maxRanks: 5
+    castTime: "Passive"
     descriptions:
-      - "Increases your armor value from items by 2%."
-      - "Increases your armor value from items by 4%."
-      - "Increases your armor value from items by 6%."
-      - "Increases your armor value from items by 8%."
-      - "Increases your armor value from items by 10%."
-  - id: "parry"
-    name: "Parry"
-    icon: "ability_parry"
-    row: 5
-    column: 3
-    maxRanks: 1
+      - "Increases your Stamina by 2%."
+      - "Increases your Stamina by 4%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases your Stamina by 6%.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Increases your Stamina by 8%.\n\nRank 4 value estimated from the rank shown in the video."
+      - "Increases your Stamina by 10%.\n\nRank 5 value estimated from the rank shown in the video."
+  - id: "flurry"
+    name: "Flurry"
+    icon: "ability_ghoulfrenzy"
+    row: 4
+    column: 2
+    maxRanks: 5
+    castTime: "Passive"
+    requires:
+      talentId: "mental-dexterity"
+      ranks: 3
     descriptions:
-      - "Gives a chance to parry enemy melee attacks."
-  - id: "two-handed-axes-and-maces"
-    name: "Two-Handed Axes and Maces"
-    icon: "inv_axe_10"
-    row: 3
-    column: 3
-    maxRanks: 1
-    descriptions:
-      - "Allows you to use Two-Handed Axes and Two-Handed Maces."
+      - "Increases your attack speed by 5% for your next 3 swings after dealing a melee critical strike."
+      - "Increases your attack speed by 10% for your next 3 swings after dealing a melee critical strike.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases your attack speed by 15% for your next 3 swings after dealing a melee critical strike.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Increases your attack speed by 20% for your next 3 swings after dealing a melee critical strike.\n\nRank 4 value estimated from the rank shown in the video."
+      - "Increases your attack speed by 25% for your next 3 swings after dealing a melee critical strike.\n\nRank 5 value estimated from the rank shown in the video."
   - id: "stormstrike"
     name: "Stormstrike"
     icon: "spell_holy_sealofmight"
-    row: 7
-    column: 2
+    row: 4
+    column: 3
     maxRanks: 1
-    requires:
-      talentId: "elemental-weapons"
-      ranks: 3
+    cost: "125 Mana"
+    range: "Melee Range"
+    castTime: "Instant"
+    cooldown: "8 sec cooldown"
     descriptions:
-      - "Gives you an extra attack.  In addition, the next 2 sources of Nature damage dealt to the target are increased by 20%.  Lasts 12 sec."
-  - id: "weapon-mastery"
-    name: "Weapon Mastery"
-    icon: "ability_hunter_swiftstrike"
+      - "Instantly strike for normal weapon damage and increase Nature damage you deal to the target by 20% for 12 sec."
+  - id: "parry"
+    name: "Spirit Weapons"
+    icon: "ability_parry"
+    row: 5
+    column: 1
+    maxRanks: 1
+    castTime: "Passive"
+    descriptions:
+      - "Gives a chance to parry enemy melee attacks, reduces all threat generated by your attacks by 30% while Rockbiter Weapon is not active, and increases all threat generated by 30% while Rockbiter Weapon is active."
+  - id: "mental-quickness"
+    name: "Mental Quickness"
+    icon: "spell_nature_mentalquickness"
+    row: 5
+    column: 2
+    maxRanks: 2
+    castTime: "Passive"
+    descriptions:
+      - "Increases your spell damage and healing by up to 15% of your Intellect."
+      - "Increases your spell damage and healing by up to 30% of your Intellect.\n\nRank 2 value estimated from the rank shown in the video."
+  - id: "improved-stormstrike"
+    name: "Improved Stormstrike"
+    icon: "ability_shaman_stormstrike"
+    row: 5
+    column: 3
+    maxRanks: 2
+    castTime: "Passive"
+    requires:
+      talentId: "stormstrike"
+      ranks: 1
+    descriptions:
+      - "When you Stormstrike, you have a 50% chance to gain 50% mana regeneration while casting spells for 15 sec, and Stormstrike's cooldown has a 50% chance to reset each time you Dodge or Parry."
+      - "When you Stormstrike, you have a 100% chance to gain 50% mana regeneration while casting spells for 15 sec, and Stormstrike's cooldown has a 100% chance to reset each time you Dodge or Parry.\n\nRank 2 value estimated from the rank shown in the video."
+  - id: "maelstrom-weapon"
+    name: "Maelstrom Weapon"
+    icon: "spell_shaman_maelstromweapon"
     row: 6
     column: 3
     maxRanks: 5
+    castTime: "Passive"
     descriptions:
-      - "Increases the damage you deal with all weapons by 2%."
-      - "Increases the damage you deal with all weapons by 4%."
-      - "Increases the damage you deal with all weapons by 6%."
-      - "Increases the damage you deal with all weapons by 8%."
-      - "Increases the damage you deal with all weapons by 10%."
-  - id: "improved-weapon-totems"
-    name: "Improved Weapon Totems"
-    icon: "spell_fire_enchantweapon"
-    row: 5
-    column: 1
-    maxRanks: 2
+      - "When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 4%. Stacks up to 5 times. Lasts 30 sec."
+      - "When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 8%. Stacks up to 5 times. Lasts 30 sec.\n\nRank 2 value estimated from the rank shown in the video."
+      - "When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 12%. Stacks up to 5 times. Lasts 30 sec.\n\nRank 3 value estimated from the rank shown in the video."
+      - "When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 16%. Stacks up to 5 times. Lasts 30 sec.\n\nRank 4 value estimated from the rank shown in the video."
+      - "When you deal damage with a melee attack, you have a chance to reduce the cast time and Mana cost of your next Lightning Bolt spell by 20%. Stacks up to 5 times. Lasts 30 sec.\n\nRank 5 value estimated from the rank shown in the video."
+  - id: "rage-of-the-farseer"
+    name: "Rage of the Farseer"
+    icon: "spell_nature_bloodlust"
+    row: 7
+    column: 2
+    maxRanks: 1
+    castTime: "Instant"
+    cooldown: "3 min cooldown"
+    requires:
+      talentId: "mental-quickness"
+      ranks: 2
     descriptions:
-      - "Increases the melee attack power bonus of your Windfury Totem by 15% and increases the damage caused by your Flametongue Totem by 6%."
-      - "Increases the melee attack power bonus of your Windfury Totem by 30% and increases the damage caused by your Flametongue Totem by 12%."
+      - "Increases your melee attack speed and spell casting speed by 30% for 25 sec."

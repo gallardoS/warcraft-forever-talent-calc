@@ -1,148 +1,175 @@
 id: "hunter-beast-mastery"
 classId: "hunter"
 name: "Beast Mastery"
-version: "classic-1.12"
-status: "baseline"
+version: "forever-demo-2026-09"
+status: "imported"
 talents:
-  - id: "improved-aspect-of-the-monkey"
-    name: "Improved Aspect of the Monkey"
-    icon: "ability_hunter_aspectofthemonkey"
-    row: 2
-    column: 2
-    maxRanks: 5
-    descriptions:
-      - "Increases the Dodge bonus of your Aspect of the Monkey by 1%."
-      - "Increases the Dodge bonus of your Aspect of the Monkey by 2%."
-      - "Increases the Dodge bonus of your Aspect of the Monkey by 3%."
-      - "Increases the Dodge bonus of your Aspect of the Monkey by 4%."
-      - "Increases the Dodge bonus of your Aspect of the Monkey by 5%."
   - id: "improved-aspect-of-the-hawk"
-    name: "Improved Aspect of the Hawk"
-    icon: "spell_nature_ravenform"
+    name: "Deadly Aspects"
+    icon: "ability_hunter_aspectofthemonkey"
     row: 1
     column: 2
     maxRanks: 5
+    castTime: "Passive"
     descriptions:
-      - "While Aspect of the Hawk is active, all normal ranged attacks have a 1% chance of increasing ranged attack speed by 30% for 12 sec."
-      - "While Aspect of the Hawk is active, all normal ranged attacks have a 2% chance of increasing ranged attack speed by 30% for 12 sec."
-      - "While Aspect of the Hawk is active, all normal ranged attacks have a 3% chance of increasing ranged attack speed by 30% for 12 sec."
-      - "While Aspect of the Hawk is active, all normal ranged attacks have a 4% chance of increasing ranged attack speed by 30% for 12 sec."
-      - "While Aspect of the Hawk is active, all normal ranged attacks have a 5% chance of increasing ranged attack speed by 30% for 12 sec."
-  - id: "pathfinding"
-    name: "Pathfinding"
-    icon: "ability_mount_jungletiger"
-    row: 3
-    column: 1
-    maxRanks: 2
-    descriptions:
-      - "Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 3%."
-      - "Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 6%."
-  - id: "improved-mend-pet"
-    name: "Improved Mend Pet"
-    icon: "ability_hunter_mendpet"
-    row: 4
-    column: 2
-    maxRanks: 2
-    descriptions:
-      - "Gives the Mend Pet spell a 15% chance of cleansing 1 Curse, Disease, Magic or Poison effect from the pet each tick."
-      - "Gives the Mend Pet spell a 50% chance of cleansing 1 Curse, Disease, Magic or Poison effect from the pet each tick."
-  - id: "bestial-wrath"
-    name: "Bestial Wrath"
-    icon: "ability_druid_ferociousbite"
-    row: 7
-    column: 2
-    maxRanks: 1
-    requires:
-      talentId: "intimidation"
-      ranks: 1
-    descriptions:
-      - "Send your pet into a rage causing 50% additional damage for 18 sec.  While enraged, the beast does not feel pity or remorse or fear and it cannot be stopped unless killed."
-  - id: "intimidation"
-    name: "Intimidation"
-    icon: "ability_devour"
-    row: 5
-    column: 2
-    maxRanks: 1
-    descriptions:
-      - "Command your pet to intimidate the target on the next successful melee attack, causing a high amount of threat and stunning the target for 3 sec."
-  - id: "spirit-bond"
-    name: "Spirit Bond"
-    icon: "ability_druid_demoralizingroar"
-    row: 5
-    column: 1
-    maxRanks: 2
-    descriptions:
-      - "While your pet is active, you and your pet will regenerate 1% of total health every 10 sec."
-      - "While your pet is active, you and your pet will regenerate 2% of total health every 10 sec."
+      - "While Aspect of the Hawk is active, all normal ranged attacks have a 2% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 2% chance of increasing melee attack speed by 30% for 12 sec."
+      - "While Aspect of the Hawk is active, all normal ranged attacks have a 4% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 4% chance of increasing melee attack speed by 30% for 12 sec.\n\nRank 2 value estimated from the rank shown in the video."
+      - "While Aspect of the Hawk is active, all normal ranged attacks have a 6% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 6% chance of increasing melee attack speed by 30% for 12 sec.\n\nRank 3 value estimated from the rank shown in the video."
+      - "While Aspect of the Hawk is active, all normal ranged attacks have a 8% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 8% chance of increasing melee attack speed by 30% for 12 sec.\n\nRank 4 value estimated from the rank shown in the video."
+      - "While Aspect of the Hawk is active, all normal ranged attacks have a 10% chance of increasing ranged attack speed by 30% for 12 sec. While Aspect of the Beast is active, all melee auto attacks have a 10% chance of increasing melee attack speed by 30% for 12 sec.\n\nRank 5 value estimated from the rank shown in the video."
   - id: "endurance-training"
     name: "Endurance Training"
     icon: "spell_nature_reincarnation"
     row: 1
     column: 3
     maxRanks: 5
+    castTime: "Passive"
     descriptions:
-      - "Increases the Health of your pets by 3%."
-      - "Increases the Health of your pets by 6%."
-      - "Increases the Health of your pets by 9%."
-      - "Increases the Health of your pets by 12%."
-      - "Increases the Health of your pets by 15%."
-  - id: "bestial-discipline"
-    name: "Bestial Discipline"
-    icon: "spell_nature_abolishmagic"
-    row: 5
+      - "Increases the Health and Armor of your pets by 3%."
+      - "Increases the Health and Armor of your pets by 6%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases the Health and Armor of your pets by 9%.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Increases the Health and Armor of your pets by 12%.\n\nRank 4 value estimated from the rank shown in the video."
+      - "Increases the Health and Armor of your pets by 15%.\n\nRank 5 value estimated from the rank shown in the video."
+  - id: "focused-fire"
+    name: "Focused Fire"
+    icon: "ability_hunter_focusfire"
+    row: 2
+    column: 1
+    maxRanks: 2
+    castTime: "Passive"
+    descriptions:
+      - "Increases all damage you deal by 1% while your pet is active."
+      - "Increases all damage you deal by 2% while your pet is active.\n\nRank 2 value estimated from the rank shown in the video."
+  - id: "improved-aspect-of-the-monkey"
+    name: "Improved Aspect of the Monkey"
+    icon: "ability_hunter_aspectofthemonkey"
+    row: 2
+    column: 2
+    maxRanks: 3
+    castTime: "Passive"
+    descriptions:
+      - "Increases the Dodge bonus of your Aspect of the Monkey by 2%. Additionally, your pet gains 50% of the effect of your Aspect of the Monkey ability."
+      - "Increases the Dodge bonus of your Aspect of the Monkey by 4%. Additionally, your pet gains 100% of the effect of your Aspect of the Monkey ability.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases the Dodge bonus of your Aspect of the Monkey by 6%. Additionally, your pet gains 100% of the effect of your Aspect of the Monkey ability.\n\nRank 3 value estimated from the rank shown in the video."
+  - id: "pathfinding"
+    name: "Pathfinding"
+    icon: "ability_mount_jungletiger"
+    row: 2
+    column: 3
+    maxRanks: 2
+    castTime: "Passive"
+    descriptions:
+      - "Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 3%."
+      - "Increases the speed bonus of your Aspect of the Cheetah and Aspect of the Pack by 6%."
+  - id: "improved-revive-pet"
+    name: "Improved Revive Pet"
+    icon: "ability_hunter_beastsoothe"
+    row: 2
     column: 4
     maxRanks: 2
+    castTime: "Passive"
     descriptions:
-      - "Increases the Focus regeneration of your pets by 10%."
-      - "Increases the Focus regeneration of your pets by 20%."
+      - "Revive Pet's casting time is reduced by 3 sec, mana cost is reduced by 20%, and increases the health your pet returns with by an additional 15%."
+      - "Revive Pet's casting time is reduced by 6 sec, mana cost is reduced by 40%, and increases the health your pet returns with by an additional 30%."
   - id: "bestial-swiftness"
     name: "Bestial Swiftness"
     icon: "ability_druid_dash"
     row: 3
     column: 2
     maxRanks: 1
+    castTime: "Passive"
     descriptions:
-      - "Increases the outdoor movement speed of your pets by 30%."
-  - id: "ferocity"
-    name: "Ferocity"
-    icon: "inv_misc_monsterclaw_04"
-    row: 4
-    column: 3
-    maxRanks: 5
-    descriptions:
-      - "Increases the critical strike chance of your pets by 3%."
-      - "Increases the critical strike chance of your pets by 6%."
-      - "Increases the critical strike chance of your pets by 9%."
-      - "Increases the critical strike chance of your pets by 12%."
-      - "Increases the critical strike chance of your pets by 15%."
-  - id: "thick-hide"
-    name: "Thick Hide"
-    icon: "inv_misc_pelt_bear_03"
-    row: 2
-    column: 3
-    maxRanks: 3
-    descriptions:
-      - "Increases the Armor rating of your pets by 10%."
-      - "Increases the Armor rating of your pets by 20%."
-      - "Increases the Armor rating of your pets by 30%."
+      - "Increases the movement speed of your pets by 30%."
   - id: "unleashed-fury"
     name: "Unleashed Fury"
     icon: "ability_bullrush"
     row: 3
     column: 3
     maxRanks: 5
+    castTime: "Passive"
     descriptions:
-      - "Increases the damage done by your pets by 4%."
-      - "Increases the damage done by your pets by 8%."
-      - "Increases the damage done by your pets by 12%."
-      - "Increases the damage done by your pets by 16%."
-      - "Increases the damage done by your pets by 20%."
+      - "Increases the damage done by your pets and hawks by 3%."
+      - "Increases the damage done by your pets and hawks by 6%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases the damage done by your pets and hawks by 9%.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Increases the damage done by your pets and hawks by 12%.\n\nRank 4 value estimated from the rank shown in the video."
+      - "Increases the damage done by your pets and hawks by 15%.\n\nRank 5 value estimated from the rank shown in the video."
+  - id: "improved-mend-pet"
+    name: "Improved Mend Pet"
+    icon: "ability_hunter_mendpet"
+    row: 4
+    column: 1
+    maxRanks: 2
+    castTime: "Passive"
+    descriptions:
+      - "Gives your Mend Pet spell a 15% chance of cleansing 1 Curse, Disease, Magic, or Poison effect from your pet each time it heals and reduces the Mana cost by 10%."
+      - "Gives your Mend Pet spell a 30% chance of cleansing 1 Curse, Disease, Magic, or Poison effect from your pet each time it heals and reduces the Mana cost by 10%.\n\nRank 2 value estimated from the rank shown in the video."
+  - id: "ferocity"
+    name: "Ferocity"
+    icon: "inv_misc_monsterclaw_04"
+    row: 4
+    column: 3
+    maxRanks: 5
+    castTime: "Passive"
+    descriptions:
+      - "Increases the critical strike chance of your pets and hawks by 2%."
+      - "Increases the critical strike chance of your pets and hawks by 4%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases the critical strike chance of your pets and hawks by 6%.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Increases the critical strike chance of your pets and hawks by 8%.\n\nRank 4 value estimated from the rank shown in the video."
+      - "Increases the critical strike chance of your pets and hawks by 10%.\n\nRank 5 value estimated from the rank shown in the video."
+  - id: "summon-hawk"
+    name: "Summon Hawk"
+    icon: "ability_eyeoftheowl"
+    row: 4
+    column: 4
+    maxRanks: 1
+    cost: "80 Mana"
+    range: "35 yd range"
+    castTime: "Instant"
+    cooldown: "6 sec cooldown"
+    descriptions:
+      - "Command a hawk to dive-bomb your targeted enemy, dealing 53 Physical damage and continuing its assault for 18 sec. Only 2 hawks can be active at once. Summon Hawk shares its cooldown with Arcane Shot."
+  - id: "spirit-bond"
+    name: "Spirit Bond"
+    icon: "classic_ability_druid_demoralizingroar"
+    row: 5
+    column: 1
+    maxRanks: 2
+    castTime: "Passive"
+    descriptions:
+      - "While your pet is active, you and your pet will regenerate 1% of total health every 10 sec."
+      - "While your pet is active, you and your pet will regenerate 2% of total health every 10 sec."
+  - id: "intimidation"
+    name: "Intimidation"
+    icon: "ability_devour"
+    row: 5
+    column: 2
+    maxRanks: 1
+    cost: "84 Mana"
+    range: "100 yd range"
+    castTime: "Instant"
+    cooldown: "1 min cooldown"
+    requires:
+      talentId: "bestial-swiftness"
+      ranks: 1
+    descriptions:
+      - "Command your pet to Stun the target for 3 sec on its next successful attack, which also gains 100% increased critical strike chance. Generates high threat."
+  - id: "bestial-discipline"
+    name: "Bestial Discipline"
+    icon: "spell_nature_abolishmagic"
+    row: 5
+    column: 4
+    maxRanks: 2
+    castTime: "Passive"
+    descriptions:
+      - "Increases the Focus regeneration of your pets by 10% and allows 25% of your Mana regeneration to continue while casting."
+      - "Increases the Focus regeneration of your pets by 20% and allows 50% of your Mana regeneration to continue while casting.\n\nRank 2 value estimated from the rank shown in the video."
   - id: "frenzy"
     name: "Frenzy"
     icon: "inv_misc_monsterclaw_03"
     row: 6
     column: 3
     maxRanks: 5
+    castTime: "Passive"
     requires:
       talentId: "ferocity"
       ranks: 5
@@ -152,21 +179,18 @@ talents:
       - "Gives your pet a 60% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike."
       - "Gives your pet a 80% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike."
       - "Gives your pet a 100% chance to gain a 30% attack speed increase for 8 sec after dealing a critical strike."
-  - id: "improved-eyes-of-the-beast"
-    name: "Improved Eyes of the Beast"
-    icon: "ability_eyeoftheowl"
-    row: 2
-    column: 1
-    maxRanks: 2
+  - id: "bestial-wrath"
+    name: "Bestial Wrath"
+    icon: "ability_druid_ferociousbite"
+    row: 7
+    column: 2
+    maxRanks: 1
+    cost: "125 Mana"
+    range: "100 yd range"
+    castTime: "Instant"
+    cooldown: "2 min cooldown"
+    requires:
+      talentId: "intimidation"
+      ranks: 1
     descriptions:
-      - "Increases the duration of your Eyes of the Beast by 30 sec."
-      - "Increases the duration of your Eyes of the Beast by 60 sec."
-  - id: "improved-revive-pet"
-    name: "Improved Revive Pet"
-    icon: "ability_hunter_beastsoothe"
-    row: 2
-    column: 4
-    maxRanks: 2
-    descriptions:
-      - "Revive Pet's casting time is reduced by 3 sec, mana cost is reduced by 20%, and increases the health your pet returns with by an additional 15%."
-      - "Revive Pet's casting time is reduced by 6 sec, mana cost is reduced by 40%, and increases the health your pet returns with by an additional 30%."
+      - "Send your pet into a rage causing 50% additional damage for 18 sec.  While enraged, the beast does not feel pity or remorse or fear and it cannot be stopped unless killed."

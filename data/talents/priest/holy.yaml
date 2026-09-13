@@ -1,172 +1,202 @@
 id: "priest-holy"
 classId: "priest"
 name: "Holy"
-version: "classic-1.12"
-status: "baseline"
+version: "forever-demo-2026-09"
+status: "imported"
 talents:
-  - id: "inspiration"
-    name: "Inspiration"
+  - id: "healing-focus"
+    name: "Twilight Focus"
     icon: "spell_holy_layonhands"
-    row: 3
-    column: 4
-    maxRanks: 3
-    descriptions:
-      - "Increases your target's armor by 8% for 15 sec after getting a critical effect from your Flash Heal, Heal, Greater Heal, or Prayer of Healing spell."
-      - "Increases your target's armor by 16% for 15 sec after getting a critical effect from your Flash Heal, Heal, Greater Heal, or Prayer of Healing spell."
-      - "Increases your target's armor by 25% for 15 sec after getting a critical effect from your Flash Heal, Heal, Greater Heal, or Prayer of Healing spell."
-  - id: "holy-specialization"
-    name: "Holy Specialization"
-    icon: "spell_holy_sealofsalvation"
     row: 1
-    column: 3
-    maxRanks: 5
+    column: 1
+    maxRanks: 3
+    castTime: "Passive"
     descriptions:
-      - "Increases the critical effect chance of your Holy spells by 1%."
-      - "Increases the critical effect chance of your Holy spells by 2%."
-      - "Increases the critical effect chance of your Holy spells by 3%."
-      - "Increases the critical effect chance of your Holy spells by 4%."
-      - "Increases the critical effect chance of your Holy spells by 5%."
-  - id: "spiritual-guidance"
-    name: "Spiritual Guidance"
-    icon: "spell_holy_spiritualguidence"
-    row: 5
-    column: 3
-    maxRanks: 5
-    descriptions:
-      - "Increases spell damage and healing by up to 5% of your total Spirit."
-      - "Increases spell damage and healing by up to 10% of your total Spirit."
-      - "Increases spell damage and healing by up to 15% of your total Spirit."
-      - "Increases spell damage and healing by up to 20% of your total Spirit."
-      - "Increases spell damage and healing by up to 25% of your total Spirit."
-  - id: "searing-light"
-    name: "Searing Light"
-    icon: "spell_holy_searinglightpriest"
-    row: 4
-    column: 3
-    maxRanks: 2
-    requires:
-      talentId: "divine-fury"
-      ranks: 5
-    descriptions:
-      - "Increases the damage of your Smite and Holy Fire spells by 5%."
-      - "Increases the damage of your Smite and Holy Fire spells by 10%."
-  - id: "spiritual-healing"
-    name: "Spiritual Healing"
-    icon: "spell_nature_moonglow"
-    row: 6
-    column: 3
-    maxRanks: 5
-    descriptions:
-      - "Increases the amount healed by your healing spells by 2%."
-      - "Increases the amount healed by your healing spells by 4%."
-      - "Increases the amount healed by your healing spells by 6%."
-      - "Increases the amount healed by your healing spells by 8%."
-      - "Increases the amount healed by your healing spells by 10%."
+      - "Gives you a 23% chance to avoid interruption caused by damage while casting any spell."
+      - "Gives you a 46% chance to avoid interruption caused by damage while casting any spell.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Gives you a 69% chance to avoid interruption caused by damage while casting any spell.\n\nRank 3 value estimated from the rank shown in the video."
   - id: "improved-renew"
     name: "Improved Renew"
     icon: "spell_holy_renew"
     row: 1
     column: 2
     maxRanks: 3
+    castTime: "Passive"
     descriptions:
       - "Increases the amount healed by your Renew spell by 5%."
       - "Increases the amount healed by your Renew spell by 10%."
       - "Increases the amount healed by your Renew spell by 15%."
-  - id: "improved-healing"
-    name: "Improved Healing"
-    icon: "spell_holy_heal02"
-    row: 4
-    column: 2
-    maxRanks: 3
-    descriptions:
-      - "Reduces the Mana cost of your Lesser Heal, Heal, and Greater Heal spells by 5%."
-      - "Reduces the Mana cost of your Lesser Heal, Heal, and Greater Heal spells by 10%."
-      - "Reduces the Mana cost of your Lesser Heal, Heal, and Greater Heal spells by 15%."
-  - id: "healing-focus"
-    name: "Healing Focus"
-    icon: "spell_holy_healingfocus"
+  - id: "holy-specialization"
+    name: "Holy Specialization"
+    icon: "spell_holy_sealofsalvation"
     row: 1
-    column: 1
-    maxRanks: 2
+    column: 3
+    maxRanks: 5
+    castTime: "Passive"
     descriptions:
-      - "Gives you a 35% chance to avoid interruption caused by damage while casting any healing spell."
-      - "Gives you a 70% chance to avoid interruption caused by damage while casting any healing spell."
+      - "Increases the critical effect chance of your Holy spells by 1%.\n\nTooltip edge was cut off in the video; \"chance of\" is inferred."
+      - "Increases the critical effect chance of your Holy spells by 2%.\n\nTooltip edge was cut off in the video; \"chance of\" is inferred."
+      - "Increases the critical effect chance of your Holy spells by 3%.\n\nTooltip edge was cut off in the video; \"chance of\" is inferred."
+      - "Increases the critical effect chance of your Holy spells by 4%.\n\nTooltip edge was cut off in the video; \"chance of\" is inferred."
+      - "Increases the critical effect chance of your Holy spells by 5%.\n\nTooltip edge was cut off in the video; \"chance of\" is inferred."
   - id: "spell-warding"
     name: "Spell Warding"
     icon: "spell_holy_spellwarding"
     row: 2
     column: 2
     maxRanks: 5
+    castTime: "Passive"
     descriptions:
       - "Reduces all spell damage taken by 2%."
       - "Reduces all spell damage taken by 4%."
       - "Reduces all spell damage taken by 6%."
       - "Reduces all spell damage taken by 8%."
       - "Reduces all spell damage taken by 10%."
-  - id: "improved-prayer-of-healing"
-    name: "Improved Prayer of Healing"
-    icon: "spell_holy_prayerofhealing02"
-    row: 5
-    column: 1
-    maxRanks: 2
-    descriptions:
-      - "Reduces the Mana cost of your Prayer of Healing spell by 10%."
-      - "Reduces the Mana cost of your Prayer of Healing spell by 20%."
-  - id: "holy-nova"
-    name: "Holy Nova"
-    icon: "spell_holy_holynova"
-    row: 3
-    column: 1
-    maxRanks: 1
-    descriptions:
-      - "Causes an explosion of holy light around the caster, causing 29 to 34 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 54 to 63.  These effects cause no threat."
   - id: "divine-fury"
     name: "Divine Fury"
     icon: "spell_holy_sealofwrath"
     row: 2
     column: 3
     maxRanks: 5
+    castTime: "Passive"
     descriptions:
       - "Reduces the casting time of your Smite, Holy Fire, Heal and Greater Heal spells by 0.1 sec."
       - "Reduces the casting time of your Smite, Holy Fire, Heal and Greater Heal spells by 0.2 sec."
       - "Reduces the casting time of your Smite, Holy Fire, Heal and Greater Heal spells by 0.3 sec."
       - "Reduces the casting time of your Smite, Holy Fire, Heal and Greater Heal spells by 0.4 sec."
       - "Reduces the casting time of your Smite, Holy Fire, Heal and Greater Heal spells by 0.5 sec."
-  - id: "spirit-of-redemption"
-    name: "Spirit of Redemption"
-    icon: "inv_enchant_essenceeternallarge"
-    row: 5
-    column: 2
-    maxRanks: 1
-    descriptions:
-      - "Upon death, the priest becomes the Spirit of Redemption for 10 sec.  The Spirit of Redemption cannot move, attack, be attacked or targeted by any spells or effects.  While in this form the priest can cast any healing spell free of cost.  When the effect ends, the priest dies."
-  - id: "holy-reach"
-    name: "Holy Reach"
-    icon: "spell_holy_purify"
-    row: 4
+  - id: "holy-nova"
+    name: "Holy Nova"
+    icon: "spell_holy_holynova"
+    row: 3
     column: 1
-    maxRanks: 2
+    maxRanks: 1
+    cost: "185 Mana"
+    castTime: "Instant"
     descriptions:
-      - "Increases the range of your Smite and Holy Fire spells and the radius of your Prayer of Healing and Holy Nova spells by 10%."
-      - "Increases the range of your Smite and Holy Fire spells and the radius of your Prayer of Healing and Holy Nova spells by 20%."
+      - "Causes an explosion of holy light around the caster, causing 31 to 36 Holy damage to all enemy targets within 10 yards and healing all party members within 10 yards for 68 to 77. These effects cause no threat."
   - id: "blessed-recovery"
     name: "Blessed Recovery"
     icon: "spell_holy_blessedrecovery"
     row: 3
     column: 2
     maxRanks: 3
+    castTime: "Passive"
     descriptions:
-      - "After being struck by a melee or ranged critical hit, heal 8% of the damage taken over 6 sec."
-      - "After being struck by a melee or ranged critical hit, heal 16% of the damage taken over 6 sec."
-      - "After being struck by a melee or ranged critical hit, heal 25% of the damage taken over 6 sec."
-  - id: "lightwell"
-    name: "Lightwell"
-    icon: "spell_holy_summonlightwell"
+      - "After being struck by a melee or ranged critical hit, or suffering more than 30% of your maximum Health from a single attack, heal 8% of the damage taken over 6 sec. Refreshing this effect carries over any remaining healing."
+      - "After being struck by a melee or ranged critical hit, or suffering more than 30% of your maximum Health from a single attack, heal 16% of the damage taken over 6 sec. Refreshing this effect carries over any remaining healing.\n\nRank 2 value estimated from the rank shown in the video."
+      - "After being struck by a melee or ranged critical hit, or suffering more than 30% of your maximum Health from a single attack, heal 24% of the damage taken over 6 sec. Refreshing this effect carries over any remaining healing.\n\nRank 3 value estimated from the rank shown in the video."
+  - id: "inspiration"
+    name: "Inspiration"
+    icon: "spell_holy_layonhands"
+    row: 3
+    column: 4
+    maxRanks: 3
+    castTime: "Passive"
+    descriptions:
+      - "Your non-periodic critical heals increase your target's Armor by 8% for 15 sec."
+      - "Your non-periodic critical heals increase your target's Armor by 16% for 15 sec.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Your non-periodic critical heals increase your target's Armor by 24% for 15 sec.\n\nRank 3 value estimated from the rank shown in the video."
+  - id: "holy-reach"
+    name: "Holy Reach"
+    icon: "spell_holy_purify"
+    row: 4
+    column: 1
+    maxRanks: 2
+    castTime: "Passive"
+    descriptions:
+      - "Increases the range of your Smite and Holy Fire spells and the radius of your Prayer of Healing and Holy Nova spells by 10%."
+      - "Increases the range of your Smite and Holy Fire spells and the radius of your Prayer of Healing and Holy Nova spells by 20%."
+  - id: "improved-healing"
+    name: "Improved Healing"
+    icon: "spell_holy_heal02"
+    row: 4
+    column: 2
+    maxRanks: 3
+    castTime: "Passive"
+    descriptions:
+      - "Reduces the Mana cost of your Lesser Heal, Heal, Greater Heal, Penance, and Prayer of Mending spells by 5%."
+      - "Reduces the Mana cost of your Lesser Heal, Heal, Greater Heal, Penance, and Prayer of Mending spells by 10%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Reduces the Mana cost of your Lesser Heal, Heal, Greater Heal, Penance, and Prayer of Mending spells by 15%.\n\nRank 3 value estimated from the rank shown in the video."
+  - id: "searing-light"
+    name: "Searing Light"
+    icon: "spell_holy_searinglightpriest"
+    row: 4
+    column: 3
+    maxRanks: 2
+    castTime: "Passive"
+    requires:
+      talentId: "divine-fury"
+      ranks: 5
+    descriptions:
+      - "Increases your Holy damage done by 2%, and gives a 5% chance each time your Holy Fire spell deals periodic damage for your next Holy Nova to cost no Mana."
+      - "Increases your Holy damage done by 2%, and gives a 10% chance each time your Holy Fire spell deals periodic damage for your next Holy Nova to cost no Mana.\n\nRank 2 value estimated from the rank shown in the video."
+  - id: "binding-heal"
+    name: "Binding Heal"
+    icon: "spell_holy_blindingheal"
+    row: 4
+    column: 4
+    maxRanks: 1
+    cost: "155 Mana"
+    range: "40 yd range"
+    castTime: "1.5 sec cast"
+    descriptions:
+      - "Heals a friendly target and the caster for 346 to 403. Low threat."
+  - id: "litany-of-light"
+    name: "Litany of Light"
+    icon: "spell_holy_holyguidance"
+    row: 5
+    column: 1
+    maxRanks: 2
+    castTime: "Passive"
+    descriptions:
+      - "When you cast a healing spell, gain Mana equal to 5% of the base cost of the spell if your previous heal was a different spell."
+      - "When you cast a healing spell, gain Mana equal to 10% of the base cost of the spell if your previous heal was a different spell.\n\nRank 2 value estimated from the rank shown in the video."
+  - id: "spirit-of-redemption"
+    name: "Spirit of Redemption"
+    icon: "inv_enchant_essenceeternallarge"
+    row: 5
+    column: 2
+    maxRanks: 1
+    castTime: "Passive"
+    descriptions:
+      - "Upon death, the priest becomes the Spirit of Redemption for 15 sec. The Spirit of Redemption cannot move, attack, be attacked or targeted by any spells or effects. While in this form the priest can cast any healing spell free of cost. When the effect ends, the priest dies."
+  - id: "spiritual-guidance"
+    name: "Spiritual Guidance"
+    icon: "spell_holy_spiritualguidence"
+    row: 5
+    column: 3
+    maxRanks: 5
+    castTime: "Passive"
+    descriptions:
+      - "Increases your spell healing by up to 5% of your total Spirit and your spell damage by up to 1% of your total Spirit."
+      - "Increases your spell healing by up to 10% of your total Spirit and your spell damage by up to 2% of your total Spirit.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases your spell healing by up to 15% of your total Spirit and your spell damage by up to 3% of your total Spirit.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Increases your spell healing by up to 20% of your total Spirit and your spell damage by up to 4% of your total Spirit.\n\nRank 4 value estimated from the rank shown in the video."
+      - "Increases your spell healing by up to 25% of your total Spirit and your spell damage by up to 5% of your total Spirit.\n\nRank 5 value estimated from the rank shown in the video."
+  - id: "spiritual-healing"
+    name: "Spiritual Healing"
+    icon: "spell_nature_moonglow"
+    row: 6
+    column: 3
+    maxRanks: 3
+    castTime: "Passive"
+    descriptions:
+      - "Increases the amount healed by your spells by 3%."
+      - "Increases the amount healed by your spells by 6%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases the amount healed by your spells by 9%.\n\nRank 3 value estimated from the rank shown in the video."
+  - id: "prayer-of-mending"
+    name: "Prayer of Mending"
+    icon: "spell_holy_prayerofmendingtga"
     row: 7
     column: 2
     maxRanks: 1
+    cost: "210 Mana"
+    range: "40 yd range"
+    castTime: "Instant"
+    cooldown: "10 sec cooldown"
     requires:
       talentId: "spirit-of-redemption"
       ranks: 1
     descriptions:
-      - "Creates a holy Lightwell near the priest.  Members of your raid or party can click the Lightwell to restore 800 health over 10 sec.  Being attacked cancels the effect.  Lightwell lasts for 3 min or 5 charges."
+      - "Places a spell on the target that heals them for 247 the next time they take damage or receive non-periodic healing. When the heal occurs, Prayer of Mending jumps to a party or raid member within 20 yards. Jumps up to 5 times and lasts 30 sec after each jump. This spell can only be placed on one target at a time per caster."

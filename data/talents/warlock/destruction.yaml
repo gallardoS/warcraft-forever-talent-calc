@@ -1,180 +1,207 @@
 id: "warlock-destruction"
 classId: "warlock"
 name: "Destruction"
-version: "classic-1.12"
-status: "baseline"
+version: "forever-demo-2026-09"
+status: "imported"
 talents:
-  - id: "cataclysm"
-    name: "Cataclysm"
-    icon: "spell_fire_windsofwoe"
+  - id: "destructive-reach"
+    name: "Destructive Reach"
+    icon: "spell_shadow_corpseexplode"
     row: 1
-    column: 3
-    maxRanks: 5
+    column: 1
+    maxRanks: 2
+    castTime: "Passive"
     descriptions:
-      - "Reduces the Mana cost of your Destruction spells by 1%."
-      - "Reduces the Mana cost of your Destruction spells by 2%."
-      - "Reduces the Mana cost of your Destruction spells by 3%."
-      - "Reduces the Mana cost of your Destruction spells by 4%."
-      - "Reduces the Mana cost of your Destruction spells by 5%."
-  - id: "bane"
-    name: "Bane"
-    icon: "spell_shadow_deathpact"
-    row: 2
-    column: 2
-    maxRanks: 5
-    descriptions:
-      - "Reduces the casting time of your Shadow Bolt and Immolate spells by 0.1 sec and your Soul Fire spell by 0.4 sec."
-      - "Reduces the casting time of your Shadow Bolt and Immolate spells by 0.2 sec and your Soul Fire spell by 0.8 sec."
-      - "Reduces the casting time of your Shadow Bolt and Immolate spells by 0.3 sec and your Soul Fire spell by 1.2 sec."
-      - "Reduces the casting time of your Shadow Bolt and Immolate spells by 0.4 sec and your Soul Fire spell by 1.6 sec."
-      - "Reduces the casting time of your Shadow Bolt and Immolate spells by 0.5 sec and your Soul Fire spell by 2 sec."
+      - "Increases the range of your damaging spells by 10%."
+      - "Increases the range of your damaging spells by 20%.\n\nRank 2 value estimated from the rank shown in the video."
   - id: "improved-shadow-bolt"
     name: "Improved Shadow Bolt"
     icon: "spell_shadow_shadowbolt"
     row: 1
     column: 2
     maxRanks: 5
+    castTime: "Passive"
     descriptions:
-      - "Your Shadow Bolt critical strikes increase Shadow damage dealt to the target by 4% until 4 non-periodic damage sources are applied.  Effect lasts a maximum of 12 sec."
-      - "Your Shadow Bolt critical strikes increase Shadow damage dealt to the target by 8% until 4 non-periodic damage sources are applied.  Effect lasts a maximum of 12 sec."
-      - "Your Shadow Bolt critical strikes increase Shadow damage dealt to the target by 12% until 4 non-periodic damage sources are applied.  Effect lasts a maximum of 12 sec."
-      - "Your Shadow Bolt critical strikes increase Shadow damage dealt to the target by 16% until 4 non-periodic damage sources are applied.  Effect lasts a maximum of 12 sec."
-      - "Your Shadow Bolt critical strikes increase Shadow damage dealt to the target by 20% until 4 non-periodic damage sources are applied.  Effect lasts a maximum of 12 sec."
-  - id: "improved-immolate"
-    name: "Improved Immolate"
-    icon: "spell_fire_immolation"
-    row: 5
-    column: 2
-    maxRanks: 5
-    descriptions:
-      - "Increases the initial damage of your Immolate spell by 5%."
-      - "Increases the initial damage of your Immolate spell by 10%."
-      - "Increases the initial damage of your Immolate spell by 15%."
-      - "Increases the initial damage of your Immolate spell by 20%."
-      - "Increases the initial damage of your Immolate spell by 25%."
-  - id: "shadowburn"
-    name: "Shadowburn"
-    icon: "spell_shadow_scourgebuild"
-    row: 3
-    column: 4
-    maxRanks: 1
-    descriptions:
-      - "Instantly blasts the target for 91 to 104 Shadow damage.  If the target dies within 5 sec of Shadowburn, and yields experience or honor, the caster gains a Soul Shard."
-  - id: "destructive-reach"
-    name: "Destructive Reach"
-    icon: "spell_shadow_corpseexplode"
-    row: 4
-    column: 2
-    maxRanks: 2
-    descriptions:
-      - "Increases the range of your Destruction spells by 10%."
-      - "Increases the range of your Destruction spells by 20%."
-  - id: "improved-searing-pain"
-    name: "Improved Searing Pain"
-    icon: "spell_fire_soulburn"
-    row: 4
-    column: 4
-    maxRanks: 5
-    descriptions:
-      - "Increases the critical strike chance of your Searing Pain spell by 2%."
-      - "Increases the critical strike chance of your Searing Pain spell by 4%."
-      - "Increases the critical strike chance of your Searing Pain spell by 6%."
-      - "Increases the critical strike chance of your Searing Pain spell by 8%."
-      - "Increases the critical strike chance of your Searing Pain spell by 10%."
-  - id: "emberstorm"
-    name: "Emberstorm"
-    icon: "spell_fire_selfdestruct"
-    row: 6
+      - "Your Shadow Bolt critical strikes increase Shadow damage taken by the target from your attacks by 4% for 12 sec."
+      - "Your Shadow Bolt critical strikes increase Shadow damage taken by the target from your attacks by 8% for 12 sec.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Your Shadow Bolt critical strikes increase Shadow damage taken by the target from your attacks by 12% for 12 sec.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Your Shadow Bolt critical strikes increase Shadow damage taken by the target from your attacks by 16% for 12 sec.\n\nRank 4 value estimated from the rank shown in the video."
+      - "Your Shadow Bolt critical strikes increase Shadow damage taken by the target from your attacks by 20% for 12 sec.\n\nRank 5 value estimated from the rank shown in the video."
+  - id: "bane"
+    name: "Bane"
+    icon: "spell_shadow_deathpact"
+    row: 1
     column: 3
     maxRanks: 5
+    castTime: "Passive"
     descriptions:
-      - "Increases the damage done by your Fire spells by 2%."
-      - "Increases the damage done by your Fire spells by 4%."
-      - "Increases the damage done by your Fire spells by 6%."
-      - "Increases the damage done by your Fire spells by 8%."
-      - "Increases the damage done by your Fire spells by 10%."
-  - id: "ruin"
-    name: "Ruin"
-    icon: "spell_shadow_shadowwordpain"
-    row: 5
-    column: 3
-    maxRanks: 1
-    requires:
-      talentId: "devastation"
-      ranks: 5
-    descriptions:
-      - "Increases the critical strike damage bonus of your Destruction spells by 100%."
-  - id: "conflagrate"
-    name: "Conflagrate"
-    icon: "spell_fire_fireball"
-    row: 7
-    column: 2
-    maxRanks: 1
-    requires:
-      talentId: "improved-immolate"
-      ranks: 5
-    descriptions:
-      - "Ignites a target that is already afflicted by Immolate, dealing 249 to 316 Fire damage and consuming the Immolate spell."
-  - id: "devastation"
-    name: "Devastation"
-    icon: "spell_fire_flameshock"
-    row: 3
-    column: 3
+      - "Reduces the casting time of your Shadow Bolt, Immolate, and Incinerate spells by 0.1 sec and your Soul Fire spell by 0.4 sec."
+      - "Reduces the casting time of your Shadow Bolt, Immolate, and Incinerate spells by 0.2 sec and your Soul Fire spell by 0.8 sec.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Reduces the casting time of your Shadow Bolt, Immolate, and Incinerate spells by 0.3 sec and your Soul Fire spell by 1.2 sec.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Reduces the casting time of your Shadow Bolt, Immolate, and Incinerate spells by 0.4 sec and your Soul Fire spell by 1.6 sec.\n\nRank 4 value estimated from the rank shown in the video."
+      - "Reduces the casting time of your Shadow Bolt, Immolate, and Incinerate spells by 0.5 sec and your Soul Fire spell by 2 sec.\n\nRank 5 value estimated from the rank shown in the video."
+  - id: "molten-skin"
+    name: "Molten Skin"
+    icon: "ability_mage_moltenarmor"
+    row: 2
+    column: 1
     maxRanks: 5
+    castTime: "Passive"
     descriptions:
-      - "Increases the critical strike chance of your Destruction spells by 1%."
-      - "Increases the critical strike chance of your Destruction spells by 2%."
-      - "Increases the critical strike chance of your Destruction spells by 3%."
-      - "Increases the critical strike chance of your Destruction spells by 4%."
-      - "Increases the critical strike chance of your Destruction spells by 5%."
+      - "Reduces all damage taken by 2%."
+      - "Reduces all damage taken by 4%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Reduces all damage taken by 6%.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Reduces all damage taken by 8%.\n\nRank 4 value estimated from the rank shown in the video."
+      - "Reduces all damage taken by 10%.\n\nRank 5 value estimated from the rank shown in the video."
+  - id: "cataclysm"
+    name: "Cataclysm"
+    icon: "spell_fire_windsofwoe"
+    row: 2
+    column: 2
+    maxRanks: 3
+    castTime: "Passive"
+    descriptions:
+      - "Reduces the Mana cost of your Destruction spells by 3%."
+      - "Reduces the Mana cost of your Destruction spells by 6%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Reduces the Mana cost of your Destruction spells by 9%.\n\nRank 3 value estimated from the rank shown in the video."
   - id: "aftermath"
     name: "Aftermath"
     icon: "spell_fire_fire"
     row: 2
     column: 3
     maxRanks: 5
+    castTime: "Passive"
     descriptions:
-      - "Gives your Destruction spells a 2% chance to daze the target for 5 sec."
-      - "Gives your Destruction spells a 4% chance to daze the target for 5 sec."
-      - "Gives your Destruction spells a 6% chance to daze the target for 5 sec."
-      - "Gives your Destruction spells a 8% chance to daze the target for 5 sec."
-      - "Gives your Destruction spells a 10% chance to daze the target for 5 sec."
-  - id: "improved-firebolt"
-    name: "Improved Firebolt"
-    icon: "spell_fire_firebolt"
-    row: 3
-    column: 1
-    maxRanks: 2
-    descriptions:
-      - "Reduces the casting time of your Imp's Firebolt spell by 0.5 sec."
-      - "Reduces the casting time of your Imp's Firebolt spell by 1 sec."
-  - id: "improved-lash-of-pain"
-    name: "Improved Lash of Pain"
-    icon: "spell_shadow_curse"
+      - "Increases the initial damage of your Immolate spell by 10% and your Conflagrate spell has a 20% chance to Daze the target, reducing the target's movement speed by 50% for 5 sec."
+      - "Increases the initial damage of your Immolate spell by 10% and your Conflagrate spell has a 40% chance to Daze the target, reducing the target's movement speed by 50% for 5 sec.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases the initial damage of your Immolate spell by 10% and your Conflagrate spell has a 60% chance to Daze the target, reducing the target's movement speed by 50% for 5 sec.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Increases the initial damage of your Immolate spell by 10% and your Conflagrate spell has a 80% chance to Daze the target, reducing the target's movement speed by 50% for 5 sec.\n\nRank 4 value estimated from the rank shown in the video."
+      - "Increases the initial damage of your Immolate spell by 10% and your Conflagrate spell has a 100% chance to Daze the target, reducing the target's movement speed by 50% for 5 sec.\n\nRank 5 value estimated from the rank shown in the video."
+  - id: "ruin"
+    name: "Ruin"
+    icon: "spell_shadow_shadowwordpain"
     row: 3
     column: 2
-    maxRanks: 2
+    maxRanks: 5
+    castTime: "Passive"
     descriptions:
-      - "Reduces the cooldown of your Succubus' Lash of Pain spell by 3 sec."
-      - "Reduces the cooldown of your Succubus' Lash of Pain spell by 6 sec."
+      - "Increases the critical strike damage bonus of your Destruction spells by 20%."
+      - "Increases the critical strike damage bonus of your Destruction spells by 40%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases the critical strike damage bonus of your Destruction spells by 60%.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Increases the critical strike damage bonus of your Destruction spells by 80%.\n\nRank 4 value estimated from the rank shown in the video."
+      - "Increases the critical strike damage bonus of your Destruction spells by 100%.\n\nRank 5 value estimated from the rank shown in the video."
+  - id: "shadowburn"
+    name: "Shadowburn"
+    icon: "spell_shadow_scourgebuild"
+    row: 3
+    column: 3
+    maxRanks: 1
+    cost: "105 Mana"
+    range: "30 yd range"
+    castTime: "Instant"
+    cooldown: "15 sec cooldown"
+    required: "Reagents: Soul Shard"
+    descriptions:
+      - "Instantly blasts the target for 102 to 111 Shadow damage. If a non-trivial target dies within 8 sec of being hit with Shadowburn, the caster gains a Soul Shard."
   - id: "intensity"
     name: "Intensity"
     icon: "spell_fire_lavaspawn"
     row: 4
     column: 1
-    maxRanks: 2
+    maxRanks: 3
+    castTime: "Passive"
     descriptions:
-      - "Gives you a 35% chance to resist interruption caused by damage while channeling the Rain of Fire, Hellfire or Soul Fire spell."
-      - "Gives you a 70% chance to resist interruption caused by damage while channeling the Rain of Fire, Hellfire or Soul Fire spell."
+      - "Gives you a 23% chance to resist interruption caused by damage while casting or channeling any Destruction spell."
+      - "Gives you a 46% chance to resist interruption caused by damage while casting or channeling any Destruction spell.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Gives you a 69% chance to resist interruption caused by damage while casting or channeling any Destruction spell.\n\nRank 3 value estimated from the rank shown in the video."
+  - id: "improved-searing-pain"
+    name: "Agonizing Flames"
+    icon: "spell_fire_immolation"
+    row: 4
+    column: 2
+    maxRanks: 3
+    castTime: "Passive"
+    descriptions:
+      - "Increases the critical strike chance of your Searing Pain spell by 3% and the damage done by all your Destruction spells by 3%."
+      - "Increases the critical strike chance of your Searing Pain spell by 6% and the damage done by all your Destruction spells by 6%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases the critical strike chance of your Searing Pain spell by 9% and the damage done by all your Destruction spells by 9%.\n\nRank 3 value estimated from the rank shown in the video."
+  - id: "conflagrate"
+    name: "Conflagrate"
+    icon: "spell_fire_fireball"
+    row: 4
+    column: 3
+    maxRanks: 1
+    cost: "100 Mana"
+    range: "30 yd range"
+    castTime: "Instant"
+    cooldown: "10 sec cooldown"
+    requires:
+      talentId: "shadowburn"
+      ranks: 1
+    descriptions:
+      - "Ignites a target that is already afflicted by your Immolate spell, dealing 109 to 132 Fire damage and consuming your Immolate effect."
   - id: "pyroclasm"
     name: "Pyroclasm"
     icon: "spell_fire_volcano"
     row: 5
     column: 1
     maxRanks: 2
+    castTime: "Passive"
     requires:
       talentId: "intensity"
-      ranks: 2
+      ranks: 3
     descriptions:
-      - "Gives your Rain of Fire, Hellfire, and Soul Fire spells a 13% chance to stun the target for 3 sec."
-      - "Gives your Rain of Fire, Hellfire, and Soul Fire spells a 26% chance to stun the target for 3 sec."
+      - "Gives your Soul Fire spell a 13% chance to Stun the target for 3 sec, and your Rain of Fire and Hellfire spells a 13% chance over their duration to Stun targets they damage for 3 sec."
+      - "Gives your Soul Fire spell a 26% chance to Stun the target for 3 sec, and your Rain of Fire and Hellfire spells a 26% chance over their duration to Stun targets they damage for 3 sec.\n\nRank 2 value estimated from the rank shown in the video."
+  - id: "bane-of-havoc"
+    name: "Bane of Havoc"
+    icon: "ability_warlock_baneofhavoc"
+    row: 5
+    column: 2
+    maxRanks: 1
+    cost: "43 Mana"
+    range: "30 yd range"
+    castTime: "Instant"
+    descriptions:
+      - "Afflicts the target for 5 min, causing 15% of all damage done by the Warlock to other targets to also be dealt to the cursed target. Bane of Havoc is limited to 1 target, and only one Bane per Warlock can be active on any one target."
+  - id: "fire-and-brimstone"
+    name: "Fire and Brimstone"
+    icon: "ability_warlock_fireandbrimstone"
+    row: 5
+    column: 3
+    maxRanks: 3
+    castTime: "Passive"
+    requires:
+      talentId: "conflagrate"
+      ranks: 1
+    descriptions:
+      - "Increases the critical strike chance of your Conflagrate spell by 8%."
+      - "Increases the critical strike chance of your Conflagrate spell by 16%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases the critical strike chance of your Conflagrate spell by 24%.\n\nRank 3 value estimated from the rank shown in the video."
+  - id: "shadow-and-flame"
+    name: "Shadow and Flame"
+    icon: "spell_shadow_shadowandflame"
+    row: 6
+    column: 3
+    maxRanks: 5
+    castTime: "Passive"
+    descriptions:
+      - "Hitting an enemy with Conflagrate increases all Shadow damage you deal by 2% for 20 sec, and hitting an enemy with Shadowburn increases all Fire damage you deal by 2% for 20 sec. In addition, Conflagrate has a 20% chance not to consume Immolate, and Shadowburn has a 20% chance to instantly refund a Soul Shard."
+      - "Hitting an enemy with Conflagrate increases all Shadow damage you deal by 2% for 20 sec, and hitting an enemy with Shadowburn increases all Fire damage you deal by 2% for 20 sec. In addition, Conflagrate has a 40% chance not to consume Immolate, and Shadowburn has a 40% chance to instantly refund a Soul Shard.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Hitting an enemy with Conflagrate increases all Shadow damage you deal by 2% for 20 sec, and hitting an enemy with Shadowburn increases all Fire damage you deal by 2% for 20 sec. In addition, Conflagrate has a 60% chance not to consume Immolate, and Shadowburn has a 60% chance to instantly refund a Soul Shard.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Hitting an enemy with Conflagrate increases all Shadow damage you deal by 2% for 20 sec, and hitting an enemy with Shadowburn increases all Fire damage you deal by 2% for 20 sec. In addition, Conflagrate has a 80% chance not to consume Immolate, and Shadowburn has a 80% chance to instantly refund a Soul Shard.\n\nRank 4 value estimated from the rank shown in the video."
+      - "Hitting an enemy with Conflagrate increases all Shadow damage you deal by 2% for 20 sec, and hitting an enemy with Shadowburn increases all Fire damage you deal by 2% for 20 sec. In addition, Conflagrate has a 100% chance not to consume Immolate, and Shadowburn has a 100% chance to instantly refund a Soul Shard.\n\nRank 5 value estimated from the rank shown in the video."
+  - id: "incinerate"
+    name: "Incinerate"
+    icon: "spell_fire_burnout"
+    row: 7
+    column: 2
+    maxRanks: 1
+    cost: "205 Mana"
+    range: "30 yd range"
+    castTime: "2.5 sec cast"
+    requires:
+      talentId: "bane-of-havoc"
+      ranks: 1
+    descriptions:
+      - "Deals 125 to 140 Fire damage to your target and an additional 25% damage if the target is afflicted by Immolate."

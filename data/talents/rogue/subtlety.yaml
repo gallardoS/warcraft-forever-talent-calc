@@ -1,178 +1,219 @@
 id: "rogue-subtlety"
 classId: "rogue"
 name: "Subtlety"
-version: "classic-1.12"
-status: "baseline"
+version: "forever-demo-2026-09"
+status: "imported"
 talents:
+  - id: "camouflage"
+    name: "Camouflage"
+    icon: "ability_stealth"
+    row: 1
+    column: 1
+    maxRanks: 5
+    castTime: "Passive"
+    descriptions:
+      - "Reduces your speed penalty from your Stealth ability by 3% and reduces its cooldown by 2 sec."
+      - "Reduces your speed penalty from your Stealth ability by 6% and reduces its cooldown by 4 sec.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Reduces your speed penalty from your Stealth ability by 9% and reduces its cooldown by 6 sec.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Reduces your speed penalty from your Stealth ability by 12% and reduces its cooldown by 8 sec.\n\nRank 4 value estimated from the rank shown in the video."
+      - "Reduces your speed penalty from your Stealth ability by 15% and reduces its cooldown by 10 sec.\n\nRank 5 value estimated from the rank shown in the video."
   - id: "master-of-deception"
     name: "Master of Deception"
     icon: "spell_shadow_charm"
     row: 1
     column: 2
-    maxRanks: 5
-    descriptions:
-      - "Reduces the chance enemies have to detect you while in Stealth mode."
-      - "Reduces the chance enemies have to detect you while in Stealth mode.  More effective than Master of Deception (Rank 1)."
-      - "Reduces the chance enemies have to detect you while in Stealth mode.  More effective than Master of Deception (Rank 2)."
-      - "Reduces the chance enemies have to detect you while in Stealth mode.  More effective than Master of Deception (Rank 3)."
-      - "Reduces the chance enemies have to detect you while in Stealth mode.  More effective than Master of Deception (Rank 4)."
-  - id: "camouflage"
-    name: "Camouflage"
-    icon: "ability_stealth"
-    row: 2
-    column: 3
-    maxRanks: 5
-    descriptions:
-      - "Increases your speed while stealthed by 3% and reduces the cooldown of your Stealth ability by 1 sec."
-      - "Increases your speed while stealthed by 6% and reduces the cooldown of your Stealth ability by 2 sec."
-      - "Increases your speed while stealthed by 9% and reduces the cooldown of your Stealth ability by 3 sec."
-      - "Increases your speed while stealthed by 12% and reduces the cooldown of your Stealth ability by 4 sec."
-      - "Increases your speed while stealthed by 15% and reduces the cooldown of your Stealth ability by 5 sec."
-  - id: "initiative"
-    name: "Initiative"
-    icon: "spell_shadow_fumble"
-    row: 3
-    column: 1
     maxRanks: 3
+    castTime: "Passive"
     descriptions:
-      - "Gives you a 25% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability."
-      - "Gives you a 50% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability."
-      - "Gives you a 75% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability."
+      - "Reduces the chance enemies have to detect you while in Stealth mode as if you were 1 level higher."
+      - "Reduces the chance enemies have to detect you while in Stealth mode as if you were 2 level higher.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Reduces the chance enemies have to detect you while in Stealth mode as if you were 3 level higher.\n\nRank 3 value estimated from the rank shown in the video."
+  - id: "opportunity"
+    name: "Opportunity"
+    icon: "ability_warrior_warcry"
+    row: 1
+    column: 3
+    maxRanks: 2
+    castTime: "Passive"
+    descriptions:
+      - "Increases the damage dealt by your Backstab, Garrote, Ambush, and Mutilate abilities by 5%."
+      - "Increases the damage dealt by your Backstab, Garrote, Ambush, and Mutilate abilities by 10%.\n\nRank 2 value estimated from the rank shown in the video."
   - id: "setup"
     name: "Setup"
     icon: "spell_nature_mirrorimage"
-    row: 4
+    row: 2
     column: 1
     maxRanks: 3
+    castTime: "Passive"
     descriptions:
-      - "Gives you a 15% chance to add a combo point to your target after dodging their attack or fully resisting one of their spells."
-      - "Gives you a 30% chance to add a combo point to your target after dodging their attack or fully resisting one of their spells."
-      - "Gives you a 45% chance to add a combo point to your target after dodging their attack or fully resisting one of their spells."
+      - "Gives you a 33% chance to add a Combo Point to your target after Dodging an attack or fully resisting a spell."
+      - "Gives you a 66% chance to add a Combo Point to your target after Dodging an attack or fully resisting a spell.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Gives you a 100% chance to add a Combo Point to your target after Dodging an attack or fully resisting a spell.\n\nRank 3 value estimated from the rank shown in the video."
   - id: "elusiveness"
     name: "Elusiveness"
     icon: "spell_magic_lesserinvisibilty"
     row: 2
     column: 2
     maxRanks: 2
+    castTime: "Passive"
     descriptions:
       - "Reduces the cooldown of your Vanish and Blind abilities by 45 sec."
       - "Reduces the cooldown of your Vanish and Blind abilities by 1.5 min."
-  - id: "opportunity"
-    name: "Opportunity"
-    icon: "ability_warrior_warcry"
-    row: 1
+  - id: "dirty-tricks"
+    name: "Dirty Tricks"
+    icon: "ability_rogue_dirtydeeds"
+    row: 2
     column: 3
-    maxRanks: 5
+    maxRanks: 2
+    castTime: "Passive"
     descriptions:
-      - "Increases the damage dealt when striking from behind with your Backstab, Garrote, or Ambush abilities by 4%."
-      - "Increases the damage dealt when striking from behind with your Backstab, Garrote, or Ambush abilities by 8%."
-      - "Increases the damage dealt when striking from behind with your Backstab, Garrote, or Ambush abilities by 12%."
-      - "Increases the damage dealt when striking from behind with your Backstab, Garrote, or Ambush abilities by 16%."
-      - "Increases the damage dealt when striking from behind with your Backstab, Garrote, or Ambush abilities by 20%."
-  - id: "improved-sap"
-    name: "Improved Sap"
-    icon: "ability_sap"
-    row: 4
-    column: 2
-    maxRanks: 3
-    descriptions:
-      - "Gives you a 30% chance to return to stealth mode after using your Sap ability."
-      - "Gives you a 60% chance to return to stealth mode after using your Sap ability."
-      - "Gives you a 90% chance to return to stealth mode after using your Sap ability."
+      - "Reduces the Energy cost of your Sap and Blind abilities by 25%."
+      - "Reduces the Energy cost of your Sap and Blind abilities by 50%.\n\nRank 2 value estimated from the rank shown in the video."
   - id: "improved-ambush"
     name: "Improved Ambush"
     icon: "ability_rogue_ambush"
-    row: 3
-    column: 3
+    row: 2
+    column: 4
     maxRanks: 3
+    castTime: "Passive"
     descriptions:
       - "Increases the critical strike chance of your Ambush ability by 15%."
       - "Increases the critical strike chance of your Ambush ability by 30%."
       - "Increases the critical strike chance of your Ambush ability by 45%."
-  - id: "dirty-deeds"
-    name: "Dirty Deeds"
-    icon: "spell_shadow_summonsuccubus"
-    row: 5
-    column: 3
-    maxRanks: 2
+  - id: "initiative"
+    name: "Initiative"
+    icon: "spell_shadow_fumble"
+    row: 3
+    column: 1
+    maxRanks: 3
+    castTime: "Passive"
     descriptions:
-      - "Reduces the Energy cost of your Cheap Shot and Garrote abilities by 10."
-      - "Reduces the Energy cost of your Cheap Shot and Garrote abilities by 20."
-  - id: "preparation"
-    name: "Preparation"
-    icon: "spell_shadow_antishadow"
-    row: 5
-    column: 2
-    maxRanks: 1
-    descriptions:
-      - "When activated, this ability immediately finishes the cooldown on your other Rogue abilities."
+      - "Gives you a 33% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability."
+      - "Gives you a 66% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Gives you a 100% chance to add an additional combo point to your target when using your Ambush, Garrote, or Cheap Shot ability.\n\nRank 3 value estimated from the rank shown in the video."
   - id: "ghostly-strike"
     name: "Ghostly Strike"
     icon: "spell_shadow_curse"
     row: 3
     column: 2
     maxRanks: 1
+    cost: "40 Energy"
+    range: "Melee Range"
+    castTime: "Instant"
+    cooldown: "20 sec cooldown"
     descriptions:
-      - "A strike that deals 125% weapon damage and increases your chance to dodge by 15% for 7 sec.  Awards 1 combo point."
+      - "A strike that deals 125% (180% if a Dagger is equipped in your Main Hand) weapon damage and increases your chance to dodge by 15% for 7 sec. Awards 1 combo point."
+  - id: "improved-distract"
+    name: "Improved Distract"
+    icon: "ability_rogue_distract"
+    row: 3
+    column: 3
+    maxRanks: 2
+    castTime: "Passive"
+    descriptions:
+      - "Increases the radius of your Distract ability by 3 yds, and further reduces the Stealth detection of distracted enemies as though they were an additional 1 level lower."
+      - "Increases the radius of your Distract ability by 6 yds, and further reduces the Stealth detection of distracted enemies as though they were an additional 1 level lower.\n\nRank 2 value estimated from the rank shown in the video."
+  - id: "heightened-senses"
+    name: "Heightened Senses"
+    icon: "ability_ambush"
+    row: 4
+    column: 1
+    maxRanks: 2
+    castTime: "Passive"
+    descriptions:
+      - "Increases your Stealth detection as if you were 1 level higher and reduces your chance to be hit by spells and ranged attacks by 2%."
+      - "Increases your Stealth detection as if you were 1 level higher and reduces your chance to be hit by spells and ranged attacks by 4%.\n\nRank 2 value estimated from the rank shown in the video."
   - id: "premeditation"
     name: "Premeditation"
     icon: "spell_shadow_possession"
-    row: 7
+    row: 4
     column: 2
     maxRanks: 1
-    requires:
-      talentId: "preparation"
-      ranks: 1
+    range: "20 yd range"
+    castTime: "Instant"
+    cooldown: "2 min cooldown"
     descriptions:
-      - "When used, adds 2 combo points to your target.  You must add to or use those combo points within 10 sec or the combo points are lost."
-  - id: "hemorrhage"
-    name: "Hemorrhage"
-    icon: "spell_shadow_lifedrain"
-    row: 5
-    column: 4
-    maxRanks: 1
-    requires:
-      talentId: "serrated-blades"
-      ranks: 3
-    descriptions:
-      - "An instant strike that damages the opponent and causes the target to hemorrhage, increasing any Physical damage dealt to the target by up to 3.  Lasts 30 charges or 15 sec.  Awards 1 combo points."
+      - "Adds 2 Combo Points to your target. You must add to or use those combo points within 20 sec or the combo points are lost."
   - id: "serrated-blades"
     name: "Serrated Blades"
     icon: "inv_sword_17"
     row: 4
     column: 3
     maxRanks: 3
+    castTime: "Passive"
     descriptions:
-      - "Causes your attacks to ignore 0 of your target's Armor and increases the damage dealt by your Rupture ability by 10%.  The amount of Armor reduced increases with your level."
-      - "Causes your attacks to ignore 0 of your target's Armor and increases the damage dealt by your Rupture ability by 20%.  The amount of Armor reduced increases with your level."
-      - "Causes your attacks to ignore 0 of your target's Armor and increases the damage dealt by your Rupture ability by 30%.  The amount of Armor reduced increases with your level."
-  - id: "sleight-of-hand"
-    name: "Sleight of Hand"
-    icon: "ability_rogue_feint"
-    row: 2
-    column: 1
-    maxRanks: 2
-    descriptions:
-      - "Reduces the chance you are critically hit by melee and ranged attacks by 1% and increases the threat reduction of your Feint ability by 10%."
-      - "Reduces the chance you are critically hit by melee and ranged attacks by 2% and increases the threat reduction of your Feint ability by 20%."
-  - id: "heightened-senses"
-    name: "Heightened Senses"
-    icon: "ability_ambush"
+      - "Causes your attacks to ignore 3% of your target's Armor and increases the damage dealt by your Rupture ability by 10%."
+      - "Causes your attacks to ignore 3% of your target's Armor and increases the damage dealt by your Rupture ability by 20%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Causes your attacks to ignore 3% of your target's Armor and increases the damage dealt by your Rupture ability by 30%.\n\nRank 3 value estimated from the rank shown in the video."
+  - id: "dirty-deeds"
+    name: "Dirty Deeds"
+    icon: "spell_shadow_summonsuccubus"
     row: 5
     column: 1
     maxRanks: 2
+    castTime: "Passive"
     descriptions:
-      - "Increases your Stealth detection and reduces the chance you are hit by spells and ranged attacks by 2%."
-      - "Increases your Stealth detection and reduces the chance you are hit by spells and ranged attacks by 4%.  More effective than Heightened Senses (Rank 1)."
-  - id: "deadliness"
-    name: "Deadliness"
-    icon: "inv_weapon_crossbow_11"
+      - "Reduces the Energy cost of your Cheap Shot and Garrote abilities by 10, and your Garrote ability no longer requires you to be behind your target."
+      - "Reduces the Energy cost of your Cheap Shot and Garrote abilities by 20, and your Garrote ability no longer requires you to be behind your target.\n\nRank 2 value estimated from the rank shown in the video."
+  - id: "preparation"
+    name: "Preparation"
+    icon: "spell_shadow_antishadow"
+    row: 5
+    column: 2
+    maxRanks: 1
+    castTime: "Instant"
+    cooldown: "10 min cooldown"
+    descriptions:
+      - "When activated, this ability immediately finishes the cooldown on your other Rogue abilities."
+  - id: "hemorrhage"
+    name: "Hemorrhage"
+    icon: "spell_shadow_lifedrain"
+    row: 5
+    column: 3
+    maxRanks: 1
+    cost: "35 Energy"
+    range: "Melee Range"
+    castTime: "Instant"
+    requires:
+      talentId: "serrated-blades"
+      ranks: 3
+    descriptions:
+      - "An instant strike that deals 100% weapon damage (145% if a Dagger is equipped) and causes the target to take 15% increased Rupture damage from the Rogue. Lasts 15 sec. Awards 1 Combo Point."
+  - id: "quietus"
+    name: "Quietus"
+    icon: "ability_rogue_quickrecovery"
+    row: 6
+    column: 1
+    maxRanks: 5
+    castTime: "Passive"
+    descriptions:
+      - "Your Sinister Strike, Ghostly Strike, and Hemorrhage abilities cause 2% more damage against targets below 35% health."
+      - "Your Sinister Strike, Ghostly Strike, and Hemorrhage abilities cause 4% more damage against targets below 35% health.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Your Sinister Strike, Ghostly Strike, and Hemorrhage abilities cause 6% more damage against targets below 35% health.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Your Sinister Strike, Ghostly Strike, and Hemorrhage abilities cause 8% more damage against targets below 35% health.\n\nRank 4 value estimated from the rank shown in the video."
+      - "Your Sinister Strike, Ghostly Strike, and Hemorrhage abilities cause 10% more damage against targets below 35% health.\n\nRank 5 value estimated from the rank shown in the video."
+  - id: "cutthroat"
+    name: "Cutthroat"
+    icon: "ability_rogue_cuttothechase"
     row: 6
     column: 3
     maxRanks: 5
+    castTime: "Passive"
     descriptions:
-      - "Increases your Attack Power by 2%."
-      - "Increases your Attack Power by 4%."
-      - "Increases your Attack Power by 6%."
-      - "Increases your Attack Power by 8%."
-      - "Increases your Attack Power by 10%."
+      - "Your Backstab has a 3% chance to cause your next Ambush within 10 sec to not require Stealth."
+      - "Your Backstab has a 6% chance to cause your next Ambush within 10 sec to not require Stealth.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Your Backstab has a 9% chance to cause your next Ambush within 10 sec to not require Stealth.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Your Backstab has a 12% chance to cause your next Ambush within 10 sec to not require Stealth.\n\nRank 4 value estimated from the rank shown in the video."
+      - "Your Backstab has a 15% chance to cause your next Ambush within 10 sec to not require Stealth.\n\nRank 5 value estimated from the rank shown in the video."
+  - id: "thousand-cuts"
+    name: "Thousand Cuts"
+    icon: "ability_rogue_shadowstrikes"
+    row: 7
+    column: 2
+    maxRanks: 1
+    castTime: "Passive"
+    requires:
+      talentId: "preparation"
+      ranks: 1
+    descriptions:
+      - "When your Rupture ability deals periodic damage, the Energy cost of your next Hemorrhage or Backstab ability within 10 sec is reduced by 3, stacking up to 5 times."

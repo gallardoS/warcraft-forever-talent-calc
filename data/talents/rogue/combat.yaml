@@ -1,210 +1,195 @@
 id: "rogue-combat"
 classId: "rogue"
 name: "Combat"
-version: "classic-1.12"
-status: "baseline"
+version: "forever-demo-2026-09"
+status: "imported"
 talents:
-  - id: "precision"
-    name: "Precision"
-    icon: "ability_marksmanship"
-    row: 2
-    column: 3
-    maxRanks: 5
-    descriptions:
-      - "Increases your chance to hit with melee weapons by 1%."
-      - "Increases your chance to hit with melee weapons by 2%."
-      - "Increases your chance to hit with melee weapons by 3%."
-      - "Increases your chance to hit with melee weapons by 4%."
-      - "Increases your chance to hit with melee weapons by 5%."
-  - id: "dagger-specialization"
-    name: "Dagger Specialization"
-    icon: "inv_weapon_shortblade_05"
-    row: 4
-    column: 2
-    maxRanks: 5
-    descriptions:
-      - "Increases your chance to get a critical strike with Daggers by 1%."
-      - "Increases your chance to get a critical strike with Daggers by 2%."
-      - "Increases your chance to get a critical strike with Daggers by 3%."
-      - "Increases your chance to get a critical strike with Daggers by 4%."
-      - "Increases your chance to get a critical strike with Daggers by 5%."
-  - id: "fist-weapon-specialization"
-    name: "Fist Weapon Specialization"
-    icon: "inv_gauntlets_04"
-    row: 5
-    column: 4
-    maxRanks: 5
-    descriptions:
-      - "Increases your chance to get a critical strike with Fist Weapons by 1%."
-      - "Increases your chance to get a critical strike with Fist Weapons by 2%."
-      - "Increases your chance to get a critical strike with Fist Weapons by 3%."
-      - "Increases your chance to get a critical strike with Fist Weapons by 4%."
-      - "Increases your chance to get a critical strike with Fist Weapons by 5%."
-  - id: "mace-specialization"
-    name: "Mace Specialization"
-    icon: "inv_mace_01"
-    row: 5
-    column: 1
-    maxRanks: 5
-    descriptions:
-      - "Increases your skill with Maces by 1, and gives you a 1% chance to stun your target for 3 sec with a mace."
-      - "Increases your skill with Maces by 2, and gives you a 2% chance to stun your target for 3 sec with a mace."
-      - "Increases your skill with Maces by 3, and gives you a 3% chance to stun your target for 3 sec with a mace."
-      - "Increases your skill with Maces by 4, and gives you a 4% chance to stun your target for 3 sec with a mace."
-      - "Increases your skill with Maces by 5, and gives you a 6% chance to stun your target for 3 sec with a mace."
-  - id: "lightning-reflexes"
-    name: "Lightning Reflexes"
-    icon: "spell_nature_invisibilty"
+  - id: "improved-eviscerate"
+    name: "Improved Eviscerate"
+    icon: "ability_rogue_eviscerate"
     row: 1
-    column: 3
-    maxRanks: 5
+    column: 1
+    maxRanks: 3
+    castTime: "Passive"
     descriptions:
-      - "Increases your Dodge chance by 1%."
-      - "Increases your Dodge chance by 2%."
-      - "Increases your Dodge chance by 3%."
-      - "Increases your Dodge chance by 4%."
-      - "Increases your Dodge chance by 5%."
-  - id: "deflection"
-    name: "Deflection"
-    icon: "ability_parry"
-    row: 2
-    column: 2
-    maxRanks: 5
-    descriptions:
-      - "Increases your Parry chance by 1%."
-      - "Increases your Parry chance by 2%."
-      - "Increases your Parry chance by 3%."
-      - "Increases your Parry chance by 4%."
-      - "Increases your Parry chance by 5%."
+      - "Increases the damage done by your Eviscerate ability by 7%."
+      - "Increases the damage done by your Eviscerate ability by 14%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases the damage done by your Eviscerate ability by 21%.\n\nRank 3 value estimated from the rank shown in the video."
   - id: "improved-sinister-strike"
     name: "Improved Sinister Strike"
     icon: "spell_shadow_ritualofsacrifice"
     row: 1
     column: 2
     maxRanks: 2
+    castTime: "Passive"
     descriptions:
       - "Reduces the Energy cost of your Sinister Strike ability by 3."
       - "Reduces the Energy cost of your Sinister Strike ability by 5."
+  - id: "lightning-reflexes"
+    name: "Lightning Reflexes"
+    icon: "spell_nature_invisibilty"
+    row: 1
+    column: 3
+    maxRanks: 5
+    castTime: "Passive"
+    descriptions:
+      - "Increases your Dodge chance by 1%."
+      - "Increases your Dodge chance by 2%."
+      - "Increases your Dodge chance by 3%."
+      - "Increases your Dodge chance by 4%."
+      - "Increases your Dodge chance by 5%."
   - id: "improved-backstab"
-    name: "Improved Backstab"
+    name: "Puncturing Wounds"
     icon: "ability_backstab"
     row: 2
     column: 1
     maxRanks: 3
+    castTime: "Passive"
     descriptions:
-      - "Increases the critical strike chance of your Backstab ability by 10%."
-      - "Increases the critical strike chance of your Backstab ability by 20%."
-      - "Increases the critical strike chance of your Backstab ability by 30%."
-  - id: "improved-gouge"
-    name: "Improved Gouge"
-    icon: "ability_gouge"
-    row: 1
-    column: 1
+      - "Increases the critical strike chance of your Backstab by 10% and your Mutilate by 5%, and gives Backstab a 15% chance to add an additional Combo Point."
+      - "Increases the critical strike chance of your Backstab by 10% and your Mutilate by 5%, and gives Backstab a 30% chance to add an additional Combo Point.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases the critical strike chance of your Backstab by 10% and your Mutilate by 5%, and gives Backstab a 45% chance to add an additional Combo Point.\n\nRank 3 value estimated from the rank shown in the video."
+  - id: "deflection"
+    name: "Deflection"
+    icon: "ability_parry"
+    row: 2
+    column: 2
     maxRanks: 3
+    castTime: "Passive"
     descriptions:
-      - "Increases the effect duration of your Gouge ability by 0.5 sec."
-      - "Increases the effect duration of your Gouge ability by 1 sec."
-      - "Increases the effect duration of your Gouge ability by 1.5 sec."
+      - "Increases your Parry chance by 2%."
+      - "Increases your Parry chance by 4%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases your Parry chance by 6%.\n\nRank 3 value estimated from the rank shown in the video."
+  - id: "precision"
+    name: "Precision"
+    icon: "ability_marksmanship"
+    row: 2
+    column: 3
+    maxRanks: 3
+    castTime: "Passive"
+    descriptions:
+      - "Increases your chance to hit with all attacks and Poisons by 1%."
+      - "Increases your chance to hit with all attacks and Poisons by 2%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases your chance to hit with all attacks and Poisons by 3%.\n\nRank 3 value estimated from the rank shown in the video."
   - id: "endurance"
     name: "Endurance"
     icon: "spell_shadow_shadowward"
     row: 3
     column: 1
     maxRanks: 2
+    castTime: "Passive"
     descriptions:
-      - "Reduces the cooldown of your Sprint and Evasion abilities by 45 sec."
-      - "Reduces the cooldown of your Sprint and Evasion abilities by 1.5 min."
-  - id: "adrenaline-rush"
-    name: "Adrenaline Rush"
-    icon: "spell_shadow_shadowworddominate"
-    row: 7
-    column: 2
-    maxRanks: 1
-    descriptions:
-      - "Increases your Energy regeneration rate by 100% for 15 sec."
-  - id: "improved-kick"
-    name: "Improved Kick"
-    icon: "ability_kick"
-    row: 4
-    column: 1
-    maxRanks: 2
-    descriptions:
-      - "Gives your Kick ability a 50% chance to silence the target for 2 sec."
-      - "Gives your Kick ability a 100% chance to silence the target for 2 sec."
-  - id: "dual-wield-specialization"
-    name: "Dual Wield Specialization"
-    icon: "ability_dualwield"
-    row: 4
-    column: 3
-    maxRanks: 5
-    requires:
-      talentId: "precision"
-      ranks: 5
-    descriptions:
-      - "Increases the damage done by your offhand weapon by 10%."
-      - "Increases the damage done by your offhand weapon by 20%."
-      - "Increases the damage done by your offhand weapon by 30%."
-      - "Increases the damage done by your offhand weapon by 40%."
-      - "Increases the damage done by your offhand weapon by 50%."
-  - id: "improved-sprint"
-    name: "Improved Sprint"
-    icon: "ability_rogue_sprint"
-    row: 3
-    column: 4
-    maxRanks: 2
-    descriptions:
-      - "Gives a 50% chance to remove all movement impairing effects when you activate your Sprint ability."
-      - "Gives a 100% chance to remove all movement impairing effects when you activate your Sprint ability."
-  - id: "blade-flurry"
-    name: "Blade Flurry"
-    icon: "ability_warrior_punishingblow"
-    row: 5
-    column: 2
-    maxRanks: 1
-    descriptions:
-      - "Increases your attack speed by 20%.  In addition, attacks strike an additional nearby opponent.  Lasts 15 sec."
-  - id: "sword-specialization"
-    name: "Sword Specialization"
-    icon: "inv_sword_27"
-    row: 5
-    column: 3
-    maxRanks: 5
-    descriptions:
-      - "Gives you a 1% chance to get an extra attack on the same target after dealing damage with your Sword."
-      - "Gives you a 2% chance to get an extra attack on the same target after dealing damage with your Sword."
-      - "Gives you a 3% chance to get an extra attack on the same target after dealing damage with your Sword."
-      - "Gives you a 4% chance to get an extra attack on the same target after dealing damage with your Sword."
-      - "Gives you a 5% chance to get an extra attack on the same target after dealing damage with your Sword."
+      - "Reduces the cooldown of your Sprint and Evasion abilities by 30%."
+      - "Reduces the cooldown of your Sprint and Evasion abilities by 60%.\n\nRank 2 value estimated from the rank shown in the video."
   - id: "riposte"
     name: "Riposte"
     icon: "ability_warrior_challange"
     row: 3
     column: 2
     maxRanks: 1
-    requires:
-      talentId: "deflection"
-      ranks: 5
+    cost: "10 Energy"
+    range: "Melee Range"
+    castTime: "Instant"
+    cooldown: "6 sec cooldown"
     descriptions:
-      - "A strike that becomes active after parrying an opponent's attack.  This attack deals 150% weapon damage and disarms the target for 6 sec."
-  - id: "aggression"
-    name: "Aggression"
-    icon: "ability_racial_avatar"
-    row: 6
+      - "A strike that becomes active after parrying an opponent's attack.  This attack deals 150% weapon damage and disarms the target for 6 sec."
+  - id: "improved-sprint"
+    name: "Improved Sprint"
+    icon: "ability_rogue_sprint"
+    row: 3
+    column: 4
+    maxRanks: 2
+    castTime: "Passive"
+    descriptions:
+      - "Gives a 50% chance to remove all movement impairing effects when you activate your Sprint ability."
+      - "Gives a 100% chance to remove all movement impairing effects when you activate your Sprint ability."
+  - id: "improved-kick"
+    name: "Improved Kick"
+    icon: "ability_kick"
+    row: 4
+    column: 1
+    maxRanks: 2
+    castTime: "Passive"
+    descriptions:
+      - "Gives your Kick ability a 50% chance to silence the target for 2 sec."
+      - "Gives your Kick ability a 100% chance to silence the target for 2 sec."
+  - id: "restless-blades"
+    name: "Restless Blades"
+    icon: "ability_rogue_restlessblades"
+    row: 4
+    column: 2
+    maxRanks: 1
+    castTime: "Passive"
+    descriptions:
+      - "Your damaging finishing moves reduce the remaining cooldown of your Adrenaline Rush, Blade Flurry, Evasion, Sprint, and Vanish abilities by 2 sec per combo point."
+  - id: "dual-wield-specialization"
+    name: "Dual Wield Specialization"
+    icon: "ability_dualwield"
+    row: 4
     column: 3
-    maxRanks: 3
+    maxRanks: 5
+    castTime: "Passive"
     descriptions:
-      - "Increases the damage of your Sinister Strike and Eviscerate abilities by 2%."
-      - "Increases the damage of your Sinister Strike and Eviscerate abilities by 4%."
-      - "Increases the damage of your Sinister Strike and Eviscerate abilities by 6%."
+      - "Increases the damage done by your off-hand weapon by 5%."
+      - "Increases the damage done by your off-hand weapon by 10%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases the damage done by your off-hand weapon by 15%.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Increases the damage done by your off-hand weapon by 20%.\n\nRank 4 value estimated from the rank shown in the video."
+      - "Increases the damage done by your off-hand weapon by 25%.\n\nRank 5 value estimated from the rank shown in the video."
+  - id: "blade-flurry"
+    name: "Blade Flurry"
+    icon: "ability_warrior_punishingblow"
+    row: 5
+    column: 2
+    maxRanks: 1
+    cost: "25 Energy"
+    castTime: "Instant"
+    cooldown: "2 min cooldown"
+    descriptions:
+      - "Increases your melee attack speed by 20% and your melee attacks strike an additional nearby opponent. Lasts 15 sec."
+  - id: "hack-and-slash"
+    name: "Hack and Slash"
+    icon: "inv_sword_27"
+    row: 5
+    column: 3
+    maxRanks: 5
+    castTime: "Passive"
+    descriptions:
+      - "Gives your melee weapon attacks a benefit depending on the weapon:\n\n   Axe/Sword: Your successful melee attacks have a 1% chance to trigger an extra attack on the target.\n\n   Dagger/Fist: Increases your critical strike chance by 1%.\n\n   Mace: Your attacks ignore 3% of your target's armor."
+      - "Gives your melee weapon attacks a benefit depending on the weapon:\n\n   Axe/Sword: Your successful melee attacks have a 2% chance to trigger an extra attack on the target.\n\n   Dagger/Fist: Increases your critical strike chance by 1%.\n\n   Mace: Your attacks ignore 3% of your target's armor.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Gives your melee weapon attacks a benefit depending on the weapon:\n\n   Axe/Sword: Your successful melee attacks have a 3% chance to trigger an extra attack on the target.\n\n   Dagger/Fist: Increases your critical strike chance by 1%.\n\n   Mace: Your attacks ignore 3% of your target's armor.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Gives your melee weapon attacks a benefit depending on the weapon:\n\n   Axe/Sword: Your successful melee attacks have a 4% chance to trigger an extra attack on the target.\n\n   Dagger/Fist: Increases your critical strike chance by 1%.\n\n   Mace: Your attacks ignore 3% of your target's armor.\n\nRank 4 value estimated from the rank shown in the video."
+      - "Gives your melee weapon attacks a benefit depending on the weapon:\n\n   Axe/Sword: Your successful melee attacks have a 5% chance to trigger an extra attack on the target.\n\n   Dagger/Fist: Increases your critical strike chance by 1%.\n\n   Mace: Your attacks ignore 3% of your target's armor.\n\nRank 5 value estimated from the rank shown in the video."
   - id: "weapon-expertise"
     name: "Weapon Expertise"
     icon: "spell_holy_blessingofstrength"
     row: 6
     column: 2
     maxRanks: 2
-    requires:
-      talentId: "blade-flurry"
-      ranks: 1
+    castTime: "Passive"
     descriptions:
-      - "Increases your skill with Sword, Fist and Dagger weapons by 3."
-      - "Increases your skill with Sword, Fist and Dagger weapons by 5."
+      - "Reduces the chance for your attacks to be Dodged or Parried by 1%."
+      - "Reduces the chance for your attacks to be Dodged or Parried by 2%.\n\nRank 2 value estimated from the rank shown in the video."
+  - id: "aggression"
+    name: "Aggression"
+    icon: "ability_racial_avatar"
+    row: 6
+    column: 3
+    maxRanks: 3
+    castTime: "Passive"
+    requires:
+      talentId: "hack-and-slash"
+      ranks: 5
+    descriptions:
+      - "Increases the damage of your Sinister Strike, Backstab, and Eviscerate abilities by 2%."
+      - "Increases the damage of your Sinister Strike, Backstab, and Eviscerate abilities by 4%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases the damage of your Sinister Strike, Backstab, and Eviscerate abilities by 6%.\n\nRank 3 value estimated from the rank shown in the video."
+  - id: "adrenaline-rush"
+    name: "Adrenaline Rush"
+    icon: "spell_shadow_shadowworddominate"
+    row: 7
+    column: 2
+    maxRanks: 1
+    castTime: "Instant"
+    cooldown: "5 min cooldown"
+    descriptions:
+      - "Increases your Energy regeneration rate by 100% for 15 sec."

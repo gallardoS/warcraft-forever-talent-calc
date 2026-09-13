@@ -1,173 +1,233 @@
 id: "druid-feral-combat"
 classId: "druid"
 name: "Feral Combat"
-version: "classic-1.12"
-status: "baseline"
+version: "forever-demo-2026-09"
+status: "imported"
 talents:
-  - id: "thick-hide"
-    name: "Thick Hide"
-    icon: "inv_misc_pelt_bear_03"
-    row: 2
-    column: 3
-    maxRanks: 5
-    descriptions:
-      - "Increases your Armor contribution from items by 2%."
-      - "Increases your Armor contribution from items by 4%."
-      - "Increases your Armor contribution from items by 6%."
-      - "Increases your Armor contribution from items by 8%."
-      - "Increases your Armor contribution from items by 10%."
-  - id: "feral-aggression"
-    name: "Feral Aggression"
-    icon: "ability_druid_demoralizingroar"
-    row: 1
-    column: 3
-    maxRanks: 5
-    descriptions:
-      - "Increases the Attack Power reduction of your Demoralizing Roar by 8% and the damage caused by your Ferocious Bite by 3%."
-      - "Increases the Attack Power reduction of your Demoralizing Roar by 16% and the damage caused by your Ferocious Bite by 6%."
-      - "Increases the Attack Power reduction of your Demoralizing Roar by 24% and the damage caused by your Ferocious Bite by 9%."
-      - "Increases the Attack Power reduction of your Demoralizing Roar by 32% and the damage caused by your Ferocious Bite by 12%."
-      - "Increases the Attack Power reduction of your Demoralizing Roar by 40% and the damage caused by your Ferocious Bite by 15%."
   - id: "ferocity"
     name: "Ferocity"
     icon: "ability_hunter_pet_hyena"
     row: 1
     column: 2
     maxRanks: 5
+    castTime: "Passive"
     descriptions:
-      - "Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by 1 Rage or Energy."
-      - "Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by 2 Rage or Energy."
-      - "Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by 3 Rage or Energy."
-      - "Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by 4 Rage or Energy."
-      - "Reduces the cost of your Maul, Swipe, Claw, and Rake abilities by 5 Rage or Energy."
-  - id: "brutal-impact"
-    name: "Brutal Impact"
-    icon: "ability_druid_bash"
-    row: 2
-    column: 2
-    maxRanks: 2
-    descriptions:
-      - "Increases the stun duration of your Bash and Pounce abilities by 0.5 sec."
-      - "Increases the stun duration of your Bash and Pounce abilities by 1 sec."
-  - id: "sharpened-claws"
-    name: "Sharpened Claws"
-    icon: "inv_misc_monsterclaw_04"
-    row: 3
+      - "Reduces the cost of your Maul, Mangle, Swipe, Claw, and Rake abilities by 1 Rage or Energy."
+      - "Reduces the cost of your Maul, Mangle, Swipe, Claw, and Rake abilities by 2 Rage or Energy.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Reduces the cost of your Maul, Mangle, Swipe, Claw, and Rake abilities by 3 Rage or Energy.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Reduces the cost of your Maul, Mangle, Swipe, Claw, and Rake abilities by 4 Rage or Energy.\n\nRank 4 value estimated from the rank shown in the video."
+      - "Reduces the cost of your Maul, Mangle, Swipe, Claw, and Rake abilities by 5 Rage or Energy.\n\nRank 5 value estimated from the rank shown in the video."
+  - id: "heart-of-the-wild"
+    name: "Heart of the Wild"
+    icon: "spell_holy_blessingofagility"
+    row: 1
     column: 3
-    maxRanks: 3
+    maxRanks: 5
+    castTime: "Passive"
     descriptions:
-      - "Increases your critical strike chance while in Bear, Dire Bear or Cat Form by 2%."
-      - "Increases your critical strike chance while in Bear, Dire Bear or Cat Form by 4%."
-      - "Increases your critical strike chance while in Bear, Dire Bear or Cat Form by 6%."
+      - "Increases your Intellect by 2%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 4% and while in Cat Form your Strength is increased by 2%."
+      - "Increases your Intellect by 4%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 8% and while in Cat Form your Strength is increased by 4%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases your Intellect by 6%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 12% and while in Cat Form your Strength is increased by 6%.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Increases your Intellect by 8%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 16% and while in Cat Form your Strength is increased by 8%.\n\nRank 4 value estimated from the rank shown in the video."
+      - "Increases your Intellect by 10%. In addition, while in Bear Form or Dire Bear Form your Stamina is increased by 20% and while in Cat Form your Strength is increased by 10%.\n\nRank 5 value estimated from the rank shown in the video."
+  - id: "feline-swiftness"
+    name: "Feral Swiftness"
+    icon: "ability_druid_dash"
+    row: 2
+    column: 1
+    maxRanks: 2
+    castTime: "Passive"
+    descriptions:
+      - "Increases your movement speed while in Cat Form by 15%, and increases your chance to Dodge by 2%."
+      - "Increases your movement speed while in Cat Form by 30%, and increases your chance to Dodge by 4%.\n\nRank 2 value estimated from the rank shown in the video."
   - id: "feral-instinct"
     name: "Feral Instinct"
     icon: "ability_ambush"
     row: 2
-    column: 1
-    maxRanks: 5
+    column: 2
+    maxRanks: 3
+    castTime: "Passive"
     descriptions:
-      - "Increases threat caused in Bear and Dire Bear Form by 3% and reduces the chance enemies have to detect you while Prowling."
-      - "Increases threat caused in Bear and Dire Bear Form by 6% and reduces the chance enemies have to detect you while Prowling."
-      - "Increases threat caused in Bear and Dire Bear Form by 9% and reduces the chance enemies have to detect you while Prowling."
-      - "Increases threat caused in Bear and Dire Bear Form by 12% and reduces the chance enemies have to detect you while Prowling."
-      - "Increases threat caused in Bear and Dire Bear Form by 15% and reduces the chance enemies have to detect you while Prowling."
-  - id: "blood-frenzy"
-    name: "Blood Frenzy"
-    icon: "ability_ghoulfrenzy"
-    row: 4
+      - "Increases damage done by your Swipe ability by 10% and reduces the chance enemies have to detect you while Prowling as if you were 1 level higher."
+      - "Increases damage done by your Swipe ability by 20% and reduces the chance enemies have to detect you while Prowling as if you were 1 level higher.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases damage done by your Swipe ability by 30% and reduces the chance enemies have to detect you while Prowling as if you were 1 level higher.\n\nRank 3 value estimated from the rank shown in the video."
+  - id: "brutal-impact"
+    name: "Brutal Impact"
+    icon: "ability_druid_bash"
+    row: 2
     column: 3
     maxRanks: 2
-    requires:
-      talentId: "sharpened-claws"
-      ranks: 3
+    castTime: "Passive"
     descriptions:
-      - "Your critical strikes from Cat Form abilities that add combo points  have a 50% chance to add an additional combo point."
-      - "Your critical strikes from Cat Form abilities that add combo points  have a 100% chance to add an additional combo point."
+      - "Increases the stun duration of your Bash and Pounce abilities by 0.5 sec and reduces the cooldown of Bash by 15 sec."
+      - "Increases the stun duration of your Bash and Pounce abilities by 1 sec and reduces the cooldown of Bash by 30 sec.\n\nRank 2 value estimated from the rank shown in the video."
+  - id: "thick-hide"
+    name: "Thick Hide"
+    icon: "inv_misc_pelt_bear_03"
+    row: 2
+    column: 4
+    maxRanks: 3
+    castTime: "Passive"
+    descriptions:
+      - "While in Bear Form, Cat Form, Dire Bear Form, or Moonkin Form, you gain 1 additional base Armor per level and another 0.67 base Armor for each point of defense skill beyond five times your level. This amount can be further increased by multipliers from those forms."
+      - "While in Bear Form, Cat Form, Dire Bear Form, or Moonkin Form, you gain 1 additional base Armor per level and another 1.3 base Armor for each point of defense skill beyond five times your level. This amount can be further increased by multipliers from those forms.\n\nRank 2 value estimated from the rank shown in the video."
+      - "While in Bear Form, Cat Form, Dire Bear Form, or Moonkin Form, you gain 1 additional base Armor per level and another 2.0 base Armor for each point of defense skill beyond five times your level. This amount can be further increased by multipliers from those forms.\n\nRank 3 value estimated from the rank shown in the video."
+  - id: "savage-fury"
+    name: "Savage Fury"
+    icon: "ability_druid_ravage"
+    row: 3
+    column: 2
+    maxRanks: 2
+    castTime: "Passive"
+    descriptions:
+      - "Increases the damage caused by your Claw, Rake, Shred, Maul, and Swipe abilities by 5%."
+      - "Increases the damage caused by your Claw, Rake, Shred, Maul, and Swipe abilities by 10%.\n\nRank 2 value estimated from the rank shown in the video."
+  - id: "feral-charge"
+    name: "Feral Charge"
+    icon: "ability_hunter_pet_bear"
+    row: 3
+    column: 3
+    maxRanks: 1
+    cost: "5 Rage"
+    range: "8-25 yd range"
+    castTime: "Instant"
+    cooldown: "15 sec cooldown"
+    required: "Feral Charge (Cat): 8-25 yd range | Instant | 30 sec cooldown | Requires Bear Form, Dire Bear Form (bear part); Requires Cat Form (cat part)"
+    descriptions:
+      - "Charge an enemy, immobilizing them and interrupting any spell they are casting for 4 sec.\n\nFeral Charge (Cat)\nLeap behind an enemy, Dazing them for 3 sec."
+  - id: "sharpened-claws"
+    name: "Sharpened Claws"
+    icon: "inv_misc_monsterclaw_04"
+    row: 3
+    column: 4
+    maxRanks: 2
+    castTime: "Passive"
+    descriptions:
+      - "Increases your critical strike chance while in Bear Form, Dire Bear Form, or Cat Form by 3%."
+      - "Increases your critical strike chance while in Bear Form, Dire Bear Form, or Cat Form by 6%.\n\nRank 2 value estimated from the rank shown in the video."
+  - id: "improved-shred"
+    name: "Shredding Attacks"
+    icon: "spell_shadow_vampiricaura"
+    row: 4
+    column: 1
+    maxRanks: 3
+    castTime: "Passive"
+    descriptions:
+      - "Reduces the Energy cost of your Shred ability by 6 and reduces the Rage cost of your Lacerate ability by 1."
+      - "Reduces the Energy cost of your Shred ability by 12 and reduces the Rage cost of your Lacerate ability by 2.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Reduces the Energy cost of your Shred ability by 18 and reduces the Rage cost of your Lacerate ability by 3.\n\nRank 3 value estimated from the rank shown in the video."
+  - id: "mangle"
+    name: "Mangle"
+    icon: "ability_druid_mangle2"
+    row: 4
+    column: 2
+    maxRanks: 1
+    cost: "20 Rage"
+    range: "Melee Range"
+    castTime: "Instant"
+    cooldown: "6 sec cooldown"
+    required: "Requires Bear Form, Dire Bear Form"
+    requires:
+      talentId: "savage-fury"
+      ranks: 2
+    descriptions:
+      - "Mangle the target for 100% normal damage plus 26."
+  - id: "predatory-strikes"
+    name: "Predatory Strikes"
+    icon: "ability_hunter_pet_cat"
+    row: 4
+    column: 3
+    maxRanks: 3
+    castTime: "Passive"
+    required: "Requires Cat Form, Bear Form, Dire Bear Form"
+    descriptions:
+      - "Increases your melee Attack Power by 50% of your level."
+      - "Increases your melee Attack Power by 100% of your level.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases your melee Attack Power by 100% of your level.\n\nRank 3 value estimated from the rank shown in the video."
   - id: "primal-fury"
     name: "Primal Fury"
     icon: "ability_racial_cannibalize"
     row: 4
     column: 4
     maxRanks: 2
+    castTime: "Passive"
     requires:
       talentId: "sharpened-claws"
-      ranks: 3
+      ranks: 2
     descriptions:
-      - "Gives you a 50% chance to gain an additional 5 Rage anytime you get a critical strike while in Bear and Dire Bear Form."
-      - "Gives you a 100% chance to gain an additional 5 Rage anytime you get a critical strike while in Bear and Dire Bear Form."
-  - id: "improved-shred"
-    name: "Improved Shred"
-    icon: "spell_shadow_vampiricaura"
-    row: 4
-    column: 1
-    maxRanks: 2
-    descriptions:
-      - "Reduces the Energy cost of your Shred ability by 6."
-      - "Reduces the Energy cost of your Shred ability by 12."
-  - id: "predatory-strikes"
-    name: "Predatory Strikes"
-    icon: "ability_hunter_pet_cat"
-    row: 4
-    column: 2
-    maxRanks: 3
-    descriptions:
-      - "Increases your melee attack power in Cat, Bear and Dire Bear Forms by 50% of your level."
-      - "Increases your melee attack power in Cat, Bear and Dire Bear Forms by 100% of your level."
-      - "Increases your melee attack power in Cat, Bear and Dire Bear Forms by 150% of your level."
-  - id: "feral-charge"
-    name: "Feral Charge"
-    icon: "ability_hunter_pet_bear"
-    row: 3
-    column: 2
-    maxRanks: 1
-    descriptions:
-      - "Causes you to charge an enemy, immobilizing and interrupting any spell being cast for 4 sec."
-  - id: "savage-fury"
-    name: "Savage Fury"
-    icon: "ability_druid_ravage"
+      - "Gives you a 50% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 50% chance to add an additional Combo Point."
+      - "Gives you a 100% chance to gain an additional 5 Rage any time you get a critical strike while in Bear Form or Dire Bear Form. In addition, your non-periodic critical strikes from Cat Form abilities that generate Combo Points have a 100% chance to add an additional Combo Point.\n\nRank 2 value estimated from the rank shown in the video."
+  - id: "predatory-instincts"
+    name: "Predatory Instincts"
+    icon: "ability_druid_predatoryinstincts"
     row: 5
     column: 1
     maxRanks: 2
+    castTime: "Passive"
     descriptions:
-      - "Increases the damage caused by your Claw, Rake, Maul and Swipe abilities by 10%."
-      - "Increases the damage caused by your Claw, Rake, Maul and Swipe abilities by 20%."
-  - id: "feline-swiftness"
-    name: "Feline Swiftness"
-    icon: "spell_nature_spiritwolf"
-    row: 3
-    column: 1
-    maxRanks: 2
-    descriptions:
-      - "Increases your movement speed by 15% while outdoors in Cat Form and increases your chance to dodge while in Cat Form by 2%."
-      - "Increases your movement speed by 30% while outdoors in Cat Form and increases your chance to dodge while in Cat Form by 4%."
-  - id: "heart-of-the-wild"
-    name: "Heart of the Wild"
-    icon: "spell_holy_blessingofagility"
-    row: 6
+      - "Increases the critical strike damage bonus of your melee abilities by 10%."
+      - "Increases the critical strike damage bonus of your melee abilities by 20%.\n\nRank 2 value estimated from the rank shown in the video."
+  - id: "leader-of-the-pack"
+    name: "Leader of the Pack"
+    icon: "spell_nature_unyeildingstamina"
+    row: 5
     column: 2
+    maxRanks: 1
+    castTime: "Passive"
+    descriptions:
+      - "While in Cat Form, Bear Form, or Dire Bear Form, the Leader of the Pack increases the critical strike chance of all party members within 45 yards by 3%, exclusive with Moonkin Aura."
+  - id: "king-of-the-jungle"
+    name: "King of the Jungle"
+    icon: "ability_druid_kingofthejungle"
+    row: 5
+    column: 4
+    maxRanks: 3
+    castTime: "Passive"
+    descriptions:
+      - "Tiger's Fury now instantly grants you 20 Energy."
+      - "Tiger's Fury now instantly grants you 40 Energy.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Tiger's Fury now instantly grants you 60 Energy.\n\nRank 3 value estimated from the rank shown in the video."
+  - id: "natural-reaction"
+    name: "Natural Reaction"
+    icon: "ability_bullrush"
+    row: 6
+    column: 1
     maxRanks: 5
+    castTime: "Passive"
+    required: "Requires Bear Form, Dire Bear Form"
+    descriptions:
+      - "Increases your dodge chance by 1%, and gives you a 20% chance to gain 5 Rage each time you dodge."
+      - "Increases your dodge chance by 1%, and gives you a 40% chance to gain 5 Rage each time you dodge.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases your dodge chance by 1%, and gives you a 60% chance to gain 5 Rage each time you dodge.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Increases your dodge chance by 1%, and gives you a 80% chance to gain 5 Rage each time you dodge.\n\nRank 4 value estimated from the rank shown in the video."
+      - "Increases your dodge chance by 1%, and gives you a 100% chance to gain 5 Rage each time you dodge.\n\nRank 5 value estimated from the rank shown in the video."
+  - id: "rend-and-tear"
+    name: "Rend and Tear"
+    icon: "ability_druid_swipe"
+    row: 6
+    column: 3
+    maxRanks: 5
+    castTime: "Passive"
     requires:
       talentId: "predatory-strikes"
       ranks: 3
     descriptions:
-      - "Increases your Intellect by 4%.  In addition, while in Bear or Dire Bear Form your Stamina is increased by 4% and while in Cat Form your Strength is increased by 4%."
-      - "Increases your Intellect by 8%.  In addition, while in Bear or Dire Bear Form your Stamina is increased by 8% and while in Cat Form your Strength is increased by 8%."
-      - "Increases your Intellect by 12%.  In addition, while in Bear or Dire Bear Form your Stamina is increased by 12% and while in Cat Form your Strength is increased by 12%."
-      - "Increases your Intellect by 16%.  In addition, while in Bear or Dire Bear Form your Stamina is increased by 16% and while in Cat Form your Strength is increased by 16%."
-      - "Increases your Intellect by 20%.  In addition, while in Bear or Dire Bear Form your Stamina is increased by 20% and while in Cat Form your Strength is increased by 20%."
-  - id: "leader-of-the-pack"
-    name: "Leader of the Pack"
-    icon: "spell_nature_unyeildingstamina"
+      - "Increases damage done by your melee abilities on Bleeding targets by 2%."
+      - "Increases damage done by your melee abilities on Bleeding targets by 4%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases damage done by your melee abilities on Bleeding targets by 6%.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Increases damage done by your melee abilities on Bleeding targets by 8%.\n\nRank 4 value estimated from the rank shown in the video."
+      - "Increases damage done by your melee abilities on Bleeding targets by 10%.\n\nRank 5 value estimated from the rank shown in the video."
+  - id: "berserk"
+    name: "Berserk"
+    icon: "ability_druid_berserk"
     row: 7
     column: 2
     maxRanks: 1
+    castTime: "Instant"
+    cooldown: "3 min cooldown"
+    required: "Requires Cat Form, Bear Form, Dire Bear Form"
+    requires:
+      talentId: "leader-of-the-pack"
+      ranks: 1
     descriptions:
-      - "While in Cat, Bear or Dire Bear Form, the Leader of the Pack increases ranged and melee critical chance of all party members within 45 yards by 3%."
-  - id: "faerie-fire-feral"
-    name: "Faerie Fire (Feral)"
-    icon: "spell_nature_faeriefire"
-    row: 5
-    column: 3
-    maxRanks: 1
-    descriptions:
-      - "Decrease the armor of the target by 175 for 40 sec.  While affected, the target cannot stealth or turn invisible."
+      - "Causes your Mangle ability to strike up to 3 targets, removes its cooldown, and increases the critical strike chance of your Combo Point-generating abilities by 100%. Clears and grants immunity to Fear effects for the duration. Lasts 15 sec."

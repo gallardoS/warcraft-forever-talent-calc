@@ -1,51 +1,29 @@
 id: "priest-shadow"
 classId: "priest"
-name: "Shadow"
-version: "classic-1.12"
-status: "baseline"
+name: "Shadow Magic"
+version: "forever-demo-2026-09"
+status: "imported"
 talents:
-  - id: "shadow-weaving"
-    name: "Shadow Weaving"
-    icon: "spell_shadow_blackplague"
-    row: 4
-    column: 4
-    maxRanks: 5
-    descriptions:
-      - "Your Shadow damage spells have a 20% chance to cause your target to be vulnerable to Shadow damage.  This vulnerability increases the Shadow damage dealt to your target by 3% and lasts 15 sec.  Stacks up to 5 times."
-      - "Your Shadow damage spells have a 40% chance to cause your target to be vulnerable to Shadow damage.  This vulnerability increases the Shadow damage dealt to your target by 3% and lasts 15 sec.  Stacks up to 5 times."
-      - "Your Shadow damage spells have a 60% chance to cause your target to be vulnerable to Shadow damage.  This vulnerability increases the Shadow damage dealt to your target by 3% and lasts 15 sec.  Stacks up to 5 times."
-      - "Your Shadow damage spells have a 80% chance to cause your target to be vulnerable to Shadow damage.  This vulnerability increases the Shadow damage dealt to your target by 3% and lasts 15 sec.  Stacks up to 5 times."
-      - "Your Shadow damage spells have a 100% chance to cause your target to be vulnerable to Shadow damage.  This vulnerability increases the Shadow damage dealt to your target by 3% and lasts 15 sec.  Stacks up to 5 times."
-  - id: "darkness"
-    name: "Darkness"
-    icon: "spell_shadow_twilight"
-    row: 6
-    column: 3
-    maxRanks: 5
-    descriptions:
-      - "Increases your Shadow spell damage by 2%."
-      - "Increases your Shadow spell damage by 4%."
-      - "Increases your Shadow spell damage by 6%."
-      - "Increases your Shadow spell damage by 8%."
-      - "Increases your Shadow spell damage by 10%."
   - id: "shadow-focus"
     name: "Shadow Focus"
     icon: "spell_shadow_burningspirit"
-    row: 2
-    column: 3
+    row: 1
+    column: 1
     maxRanks: 5
+    castTime: "Passive"
     descriptions:
-      - "Reduces your target's chance to resist your Shadow spells by 2%."
-      - "Reduces your target's chance to resist your Shadow spells by 4%."
-      - "Reduces your target's chance to resist your Shadow spells by 6%."
-      - "Reduces your target's chance to resist your Shadow spells by 8%."
-      - "Reduces your target's chance to resist your Shadow spells by 10%."
+      - "Increases your chance to hit with your Shadow spells by 1%."
+      - "Increases your chance to hit with your Shadow spells by 2%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases your chance to hit with your Shadow spells by 3%.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Increases your chance to hit with your Shadow spells by 4%.\n\nRank 4 value estimated from the rank shown in the video."
+      - "Increases your chance to hit with your Shadow spells by 5%.\n\nRank 5 value estimated from the rank shown in the video."
   - id: "blackout"
     name: "Blackout"
     icon: "spell_shadow_gathershadows"
     row: 1
-    column: 3
+    column: 2
     maxRanks: 5
+    castTime: "Passive"
     descriptions:
       - "Gives your Shadow damage spells a 2% chance to stun the target for 3 sec."
       - "Gives your Shadow damage spells a 4% chance to stun the target for 3 sec."
@@ -56,120 +34,185 @@ talents:
     name: "Spirit Tap"
     icon: "spell_shadow_requiem"
     row: 1
-    column: 2
+    column: 3
     maxRanks: 5
+    castTime: "Passive"
     descriptions:
-      - "Gives you a 20% chance to gain a 100% bonus to your Spirit after killing a target that yields experience.  For the duration, your Mana will regenerate at a 50% rate while casting.  Lasts 15 sec."
-      - "Gives you a 40% chance to gain a 100% bonus to your Spirit after killing a target that yields experience.  For the duration, your Mana will regenerate at a 50% rate while casting.  Lasts 15 sec."
-      - "Gives you a 60% chance to gain a 100% bonus to your Spirit after killing a target that yields experience.  For the duration, your Mana will regenerate at a 50% rate while casting.  Lasts 15 sec."
-      - "Gives you a 80% chance to gain a 100% bonus to your Spirit after killing a target that yields experience.  For the duration, your Mana will regenerate at a 50% rate while casting.  Lasts 15 sec."
-      - "Gives you a 100% chance to gain a 100% bonus to your Spirit after killing a target that yields experience.  For the duration, your Mana will regenerate at a 50% rate while casting.  Lasts 15 sec."
+      - "Gives you a 20% chance to gain a 100% bonus to your Spirit for 15 sec after killing a non-trivial target. For the duration, your Mana will regenerate at a 50% of normal rate while casting."
+      - "Gives you a 40% chance to gain a 100% bonus to your Spirit for 15 sec after killing a non-trivial target. For the duration, your Mana will regenerate at a 50% of normal rate while casting.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Gives you a 60% chance to gain a 100% bonus to your Spirit for 15 sec after killing a non-trivial target. For the duration, your Mana will regenerate at a 50% of normal rate while casting.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Gives you a 80% chance to gain a 100% bonus to your Spirit for 15 sec after killing a non-trivial target. For the duration, your Mana will regenerate at a 50% of normal rate while casting.\n\nRank 4 value estimated from the rank shown in the video."
+      - "Gives you a 100% chance to gain a 100% bonus to your Spirit for 15 sec after killing a non-trivial target. For the duration, your Mana will regenerate at a 50% of normal rate while casting.\n\nRank 5 value estimated from the rank shown in the video."
   - id: "shadow-affinity"
     name: "Shadow Affinity"
     icon: "spell_shadow_shadowward"
     row: 2
     column: 1
     maxRanks: 3
+    castTime: "Passive"
     descriptions:
-      - "Reduces the threat generated by your Shadow spells by 8%."
-      - "Reduces the threat generated by your Shadow spells by 16%."
-      - "Reduces the threat generated by your Shadow spells by 25%."
+      - "Reduces the threat generated by your Shadow spells by 10%."
+      - "Reduces the threat generated by your Shadow spells by 20%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Reduces the threat generated by your Shadow spells by 30%.\n\nRank 3 value estimated from the rank shown in the video."
+  - id: "improved-shadow-word-pain"
+    name: "Improved Shadow Word: Pain"
+    icon: "spell_shadow_shadowwordpain"
+    row: 2
+    column: 3
+    maxRanks: 2
+    castTime: "Passive"
+    descriptions:
+      - "Increases the duration of your Shadow Word: Pain spell by 3 sec."
+      - "Increases the duration of your Shadow Word: Pain spell by 6 sec."
+  - id: "shadow-reach"
+    name: "Shadow Reach"
+    icon: "spell_shadow_chilltouch"
+    row: 2
+    column: 4
+    maxRanks: 2
+    castTime: "Passive"
+    descriptions:
+      - "Increases the range of your offensive Shadow spells by 10%."
+      - "Increases the range of your offensive Shadow spells by 20%.\n\nRank 2 value estimated from the rank shown in the video."
   - id: "improved-mind-blast"
     name: "Improved Mind Blast"
     icon: "spell_shadow_unholyfrenzy"
     row: 3
-    column: 2
+    column: 1
     maxRanks: 5
+    castTime: "Passive"
     descriptions:
       - "Reduces the cooldown of your Mind Blast spell by 0.5 sec."
       - "Reduces the cooldown of your Mind Blast spell by 1 sec."
       - "Reduces the cooldown of your Mind Blast spell by 1.5 sec."
       - "Reduces the cooldown of your Mind Blast spell by 2 sec."
       - "Reduces the cooldown of your Mind Blast spell by 2.5 sec."
-  - id: "improved-shadow-word-pain"
-    name: "Improved Shadow Word: Pain"
-    icon: "spell_shadow_shadowwordpain"
-    row: 2
+  - id: "improved-psychic-scream"
+    name: "Improved Psychic Scream"
+    icon: "spell_shadow_psychicscream"
+    row: 3
     column: 2
     maxRanks: 2
+    castTime: "Passive"
+    requires:
+      talentId: "blackout"
+      ranks: 5
     descriptions:
-      - "Increases the duration of your Shadow Word: Pain spell by 3 sec."
-      - "Increases the duration of your Shadow Word: Pain spell by 6 sec."
-  - id: "improved-fade"
-    name: "Improved Fade"
-    icon: "spell_magic_lesserinvisibilty"
-    row: 4
-    column: 2
-    maxRanks: 2
-    descriptions:
-      - "Decreases the cooldown of your Fade ability by 3 sec."
-      - "Decreases the cooldown of your Fade ability by 6 sec."
-  - id: "vampiric-embrace"
-    name: "Vampiric Embrace"
-    icon: "spell_shadow_unsummonbuilding"
-    row: 5
-    column: 2
-    maxRanks: 1
-    descriptions:
-      - "Afflicts your target with Shadow energy that causes all party members to be healed for 20% of any Shadow spell damage you deal for 1 min."
+      - "Reduces the cooldown of your Psychic Scream spell by 2 sec."
+      - "Reduces the cooldown of your Psychic Scream spell by 4 sec."
   - id: "mind-flay"
     name: "Mind Flay"
     icon: "spell_shadow_siphonmana"
     row: 3
     column: 3
     maxRanks: 1
+    cost: "45 Mana"
+    range: "20 yd range"
+    castTime: "Channeled"
     descriptions:
-      - "Assault the target's mind with Shadow energy, causing 75 Shadow damage over 3 sec and slowing their movement speed by 50%."
-  - id: "shadowform"
-    name: "Shadowform"
-    icon: "spell_shadow_shadowform"
-    row: 7
-    column: 2
-    maxRanks: 1
+      - "Assault the target's mind with Shadow energy, causing 104 Shadow damage over 3 sec and slowing their movement speed by 50%."
+  - id: "improved-mind-flay"
+    name: "Improved Mind Flay"
+    icon: "spell_shadow_siphonmana"
+    row: 3
+    column: 4
+    maxRanks: 2
+    castTime: "Passive"
     requires:
-      talentId: "vampiric-embrace"
+      talentId: "mind-flay"
       ranks: 1
     descriptions:
-      - "Assume a Shadowform, increasing your Shadow damage by 15% and reducing Physical damage done to you by 15%.  However, you may not cast Holy spells while in this form."
+      - "Your Mind Flay now deals 10% more damage, gains 5 yards increased range, but slows the target's movement speed by 35%."
+      - "Your Mind Flay now deals 20% more damage, gains 5 yards increased range, but slows the target's movement speed by 70%.\n\nRank 2 value estimated from the rank shown in the video."
+  - id: "improved-fade"
+    name: "Improved Fade"
+    icon: "spell_magic_lesserinvisibilty"
+    row: 4
+    column: 1
+    maxRanks: 2
+    castTime: "Passive"
+    descriptions:
+      - "Decreases the cooldown of your Fade ability by 3 sec."
+      - "Decreases the cooldown of your Fade ability by 6 sec."
+  - id: "vampiric-embrace"
+    name: "Vampiric Embrace"
+    icon: "spell_shadow_unsummonbuilding"
+    row: 4
+    column: 2
+    maxRanks: 1
+    cost: "40 Mana"
+    range: "30 yd range"
+    castTime: "Instant"
+    cooldown: "1 min cooldown"
+    descriptions:
+      - "Afflicts your target with Shadow energy that causes all party members to be healed for 20% of any Shadow spell damage you deal for 30 sec. Vampiric Embrace also grants a chance for your Spirit Tap talent to trigger when enemies afflicted by it die."
+  - id: "shadow-weaving"
+    name: "Shadow Weaving"
+    icon: "spell_shadow_blackplague"
+    row: 4
+    column: 3
+    maxRanks: 3
+    castTime: "Passive"
+    descriptions:
+      - "Your Shadow damage spells have a 33% chance to increase the Shadow damage you deal by 2% for 15 sec, stacking up to 5 times."
+      - "Your Shadow damage spells have a 66% chance to increase the Shadow damage you deal by 2% for 15 sec, stacking up to 5 times.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Your Shadow damage spells have a 100% chance to increase the Shadow damage you deal by 2% for 15 sec, stacking up to 5 times.\n\nRank 3 value estimated from the rank shown in the video."
   - id: "silence"
     name: "Silence"
     icon: "spell_shadow_impphaseshift"
     row: 5
     column: 1
     maxRanks: 1
-    requires:
-      talentId: "improved-psychic-scream"
-      ranks: 2
+    cost: "225 Mana"
+    range: "20 yd range"
+    castTime: "Instant"
+    cooldown: "45 sec cooldown"
     descriptions:
-      - "Silences the target, preventing them from casting spells for 5 sec."
-  - id: "improved-psychic-scream"
-    name: "Improved Psychic Scream"
-    icon: "spell_shadow_psychicscream"
-    row: 3
-    column: 1
-    maxRanks: 2
-    descriptions:
-      - "Reduces the cooldown of your Psychic Scream spell by 2 sec."
-      - "Reduces the cooldown of your Psychic Scream spell by 4 sec."
-  - id: "shadow-reach"
-    name: "Shadow Reach"
-    icon: "spell_shadow_chilltouch"
-    row: 4
-    column: 3
-    maxRanks: 3
-    descriptions:
-      - "Increases the range of your Shadow damage spells by 6%."
-      - "Increases the range of your Shadow damage spells by 13%."
-      - "Increases the range of your Shadow damage spells by 20%."
-  - id: "improved-vampiric-embrace"
-    name: "Improved Vampiric Embrace"
-    icon: "spell_shadow_improvedvampiricembrace"
+      - "Silences the target, preventing them from casting spells for 5 sec and interrupting their spellcasts for 3 sec."
+  - id: "devouring-contagion"
+    name: "Devouring Contagion"
+    icon: "spell_shadow_devouringplague"
     row: 5
     column: 3
     maxRanks: 2
+    castTime: "Passive"
+    descriptions:
+      - "Reduces the mana cost of your Devouring Plague by 25%.\n\nTargets that die while Devouring Plague is active spreads it, jumping to a nearby enemy within 5 yards for the remaining duration."
+      - "Reduces the mana cost of your Devouring Plague by 50%.\n\nTargets that die while Devouring Plague is active spreads it, jumping to a nearby enemy within 5 yards for the remaining duration.\n\nRank 2 value estimated from the rank shown in the video."
+  - id: "early-demise"
+    name: "Early Demise"
+    icon: "spell_shadow_demonicfortitude"
+    row: 6
+    column: 1
+    maxRanks: 2
+    castTime: "Passive"
+    descriptions:
+      - "Increases Shadow Word: Death's critical strike chance on targets at or below 20% health by 15%."
+      - "Increases Shadow Word: Death's critical strike chance on targets at or below 20% health by 30%.\n\nRank 2 value estimated from the rank shown in the video."
+  - id: "darkness"
+    name: "Darkness"
+    icon: "spell_shadow_twilight"
+    row: 6
+    column: 3
+    maxRanks: 5
+    castTime: "Passive"
+    descriptions:
+      - "Increases your Shadow damage done by 2%."
+      - "Increases your Shadow damage done by 4%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases your Shadow damage done by 6%.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Increases your Shadow damage done by 8%.\n\nRank 4 value estimated from the rank shown in the video."
+      - "Increases your Shadow damage done by 10%.\n\nRank 5 value estimated from the rank shown in the video."
+  - id: "shadowform"
+    name: "Shadowform"
+    icon: "spell_shadow_shadowform"
+    row: 7
+    column: 2
+    maxRanks: 1
+    cost: "345 Mana"
+    castTime: "Instant"
+    cooldown: "1.5 sec cooldown"
     requires:
       talentId: "vampiric-embrace"
       ranks: 1
     descriptions:
-      - "Increases the percentage healed by Vampiric Embrace by an additional 5%."
-      - "Increases the percentage healed by Vampiric Embrace by an additional 10%."
+      - "Assume Shadowform, increasing your Shadow damage by 10%, reducing the Mana cost of all Shadow spells by 50%, increasing the critical strike damage bonus of your Shadow spells by 100%, and reducing Physical damage taken by you by 15%. However, you may not cast healing spells while in this form."
