@@ -4,18 +4,17 @@ name: "Fury"
 version: "classic-1.12"
 status: "baseline"
 talents:
-  - id: "improved-battle-shout"
-    name: "Improved Battle Shout"
-    icon: "ability_warrior_battleshout"
+  - id: "boundless-rage"
+    name: "Boundless Rage"
+    icon: "Ability_warrior_intensifyrage"
     row: 3
     column: 4
-    maxRanks: 5
+    maxRanks: 3
+    castTime: "Passive"
     descriptions:
-      - "Increases the melee attack power bonus of your Battle Shout by 5%."
-      - "Increases the melee attack power bonus of your Battle Shout by 10%."
-      - "Increases the melee attack power bonus of your Battle Shout by 15%."
-      - "Increases the melee attack power bonus of your Battle Shout by 20%."
-      - "Increases the melee attack power bonus of your Battle Shout by 25%."
+      - "Increases your maximum Rage by 10."
+      - "Increases your maximum Rage by 20."
+      - "Increases your maximum Rage by30."
   - id: "enrage"
     name: "Enrage"
     icon: "spell_shadow_unholyfrenzy"
@@ -23,26 +22,27 @@ talents:
     column: 3
     maxRanks: 5
     descriptions:
-      - "Gives you a 5% melee damage bonus for 12 sec up to a maximum of 12 swings after being the victim of a critical strike."
-      - "Gives you a 10% melee damage bonus for 12 sec up to a maximum of 12 swings after being the victim of a critical strike."
-      - "Gives you a 15% melee damage bonus for 12 sec up to a maximum of 12 swings after being the victim of a critical strike."
-      - "Gives you a 20% melee damage bonus for 12 sec up to a maximum of 12 swings after being the victim of a critical strike."
-      - "Gives you a 25% melee damage bonus for 12 sec up to a maximum of 12 swings after being the victim of a critical strike."
+      - "Gives you a 30% chance to deal 2% increased Physical damage for 12 sec after being the victim of any damaging attack."
+      - "Gives you a 30% chance to deal 4% increased Physical damage for 12 sec after being the victim of any damaging attack."
+      - "Gives you a 30% chance to deal 6% increased Physical damage for 12 sec after being the victim of any damaging attack."
+      - "Gives you a 30% chance to deal 8% increased Physical damage for 12 sec after being the victim of any damaging attack."
+      - "Gives you a 30% chance to deal 10% increased Physical damage for 12 sec after being the victim of any damaging attack."
   - id: "flurry"
     name: "Flurry"
     icon: "ability_ghoulfrenzy"
     row: 6
     column: 3
     maxRanks: 5
+    castTime: "Passive"
     requires:
       talentId: "enrage"
       ranks: 5
     descriptions:
-      - "Increases your attack speed by 10% for your next 3 swings after dealing a melee critical strike."
-      - "Increases your attack speed by 15% for your next 3 swings after dealing a melee critical strike."
-      - "Increases your attack speed by 20% for your next 3 swings after dealing a melee critical strike."
-      - "Increases your attack speed by 25% for your next 3 swings after dealing a melee critical strike."
-      - "Increases your attack speed by 30% for your next 3 swings after dealing a melee critical strike."
+      - "Increases your melee attack speed by 5% for your next 3 swings after dealing a melee critical strike."
+      - "Increases your melee attack speed by 10% for your next 3 swings after dealing a melee critical strike."
+      - "Increases your melee attack speed by 15% for your next 3 swings after dealing a melee critical strike."
+      - "Increases your melee attack speed by 20% for your next 3 swings after dealing a melee critical strike."
+      - "Increases your melee attack speed by 25% for your next 3 swings after dealing a melee critical strike."
   - id: "cruelty"
     name: "Cruelty"
     icon: "ability_rogue_eviscerate"
@@ -73,101 +73,112 @@ talents:
     row: 2
     column: 3
     maxRanks: 5
+    castTime: "Passive "
     descriptions:
-      - "Gives you a 8% chance to generate an additional Rage point when you deal melee damage with a weapon."
-      - "Gives you a 16% chance to generate an additional Rage point when you deal melee damage with a weapon."
-      - "Gives you a 24% chance to generate an additional Rage point when you deal melee damage with a weapon."
-      - "Gives you a 32% chance to generate an additional Rage point when you deal melee damage with a weapon."
-      - "Gives you a 40% chance to generate an additional Rage point when you deal melee damage with a weapon."
+      - "Gives you a 12% chance to generate an additional Rage point when you deal melee damage with a weapon. This effect is increased to 2 Rage for two-handed weapons."
+      - "Gives you a 24% chance to generate an additional Rage point when you deal melee damage with a weapon. This effect is increased to 2 Rage for two-handed weapons."
+      - "Gives you a 36% chance to generate an additional Rage point when you deal melee damage with a weapon. This effect is increased to 2 Rage for two-handed weapons."
+      - "Gives you a 46% chance to generate an additional Rage point when you deal melee damage with a weapon. This effect is increased to 2 Rage for two-handed weapons."
+      - "Gives you a 60% chance to generate an additional Rage point when you deal melee damage with a weapon. This effect is increased to 2 Rage for two-handed weapons."
   - id: "piercing-howl"
     name: "Piercing Howl"
     icon: "spell_shadow_deathscream"
     row: 3
     column: 2
     maxRanks: 1
+    cost: "10 Rage"
     descriptions:
       - "Causes all enemies near the warrior to be dazed, reducing movement speed by 50% for 6 sec."
-  - id: "improved-demoralizing-shout"
-    name: "Improved Demoralizing Shout"
-    icon: "ability_warrior_warcry"
+  - id: "iron-will"
+    name: "Iron Will"
+    icon: "Spell_magic_magearmor"
     row: 2
     column: 2
     maxRanks: 5
+    castTime: "Passive"
     descriptions:
-      - "Increases the melee attack power reduction of your Demoralizing Shout by 8%."
-      - "Increases the melee attack power reduction of your Demoralizing Shout by 16%."
-      - "Increases the melee attack power reduction of your Demoralizing Shout by 24%."
-      - "Increases the melee attack power reduction of your Demoralizing Shout by 32%."
-      - "Increases the melee attack power reduction of your Demoralizing Shout by 40%."
+      - "Reduces the duration of Stun and Fear effects inflicted on you by 3%"
+      - "Reduces the duration of Stun and Fear effects inflicted on you by 6%"
+      - "Reduces the duration of Stun and Fear effects inflicted on you by 9%"
+      - "Reduces the duration of Stun and Fear effects inflicted on you by 12%"
+      - "Reduces the duration of Stun and Fear effects inflicted on you by 15%"
   - id: "death-wish"
     name: "Death Wish"
     icon: "spell_shadow_deathpact"
     row: 5
     column: 2
     maxRanks: 1
+    cost: "10 Rage"
+    castTime: "Instant"
+    cooldown: "3 min cooldown"
     descriptions:
-      - "When activated, increases your physical damage by 20% and makes you immune to Fear effects, but lowers your armor and all resistances by 20%.  Lasts 30 sec."
+      - "When activated, increases your physical damage by 20% and makes you immune to Fear effects, but increases all damage you take by 5%. Lasts 30 sec."
   - id: "improved-cleave"
     name: "Improved Cleave"
     icon: "ability_warrior_cleave"
     row: 3
     column: 1
     maxRanks: 3
+    castTime: "Passive"
     descriptions:
-      - "Increases the bonus damage done by your Cleave ability by 40%."
-      - "Increases the bonus damage done by your Cleave ability by 80%."
-      - "Increases the bonus damage done by your Cleave ability by 120%."
+      - "Reduces the Rage cost of your Clave ability by 1."
+      - "Reduces the Rage cost of your Clave ability by 2."
+      - "Reduces the Rage cost of your Clave ability by 3."
   - id: "bloodthirst"
     name: "Bloodthirst"
     icon: "spell_nature_bloodlust"
     row: 7
     column: 2
     maxRanks: 1
+    cost: "30 Rage"
+    range: "Melee Range"
+    castTime: "Instant"
+    cooldown: "6 sec cooldown"
     requires:
       talentId: "death-wish"
       ranks: 1
     descriptions:
-      - "Instantly attack the target causing damage equal to 45% of your attack power.  In addition, the next 5 successful melee attacks will restore 10 health.  This effect lasts 8 sec."
-  - id: "improved-slam"
-    name: "Improved Slam"
-    icon: "ability_warrior_decisivestrike"
+      - "Instantly attack the target causing damage equal to 35% of your attack damage plus 27 and increasing your movement speed by 10% for 10 sec."
+  - id: "precision"
+    name: "Precision"
+    icon: "ability_marksmanship"
     row: 5
     column: 1
-    maxRanks: 5
+    maxRanks: 3
     descriptions:
-      - "Decreases the casting time of your Slam ability by 0.1 sec."
-      - "Decreases the casting time of your Slam ability by 0.2 sec."
-      - "Decreases the casting time of your Slam ability by 0.3 sec."
-      - "Decreases the casting time of your Slam ability by 0.4 sec."
-      - "Decreases the casting time of your Slam ability by 0.5 sec."
+      - "Increases your chance to hit with all abilities and attacks by 1%"
+      - "Increases your chance to hit with all abilities and attacks by 2%"
+      - "Increases your chance to hit with all abilities and attacks by 3%"
   - id: "blood-craze"
     name: "Blood Craze"
     icon: "spell_shadow_summonimp"
     row: 3
     column: 3
     maxRanks: 3
+    castTime: "Passive"
     descriptions:
-      - "Regenerates 1% of your total Health over 6 sec after being the victim of a critical strike."
-      - "Regenerates 2% of your total Health over 6 sec after being the victim of a critical strike."
-      - "Regenerates 3% of your total Health over 6 sec after being the victim of a critical strike."
+      - "Regenerates 1% of your total Health over 6 sec after being the victim of a critical strike, dealing damage with Bloodthirst, or suffering more than 20% of your maximum Health from a single attack."
+      - "Regenerates 2% of your total Health over 6 sec after being the victim of a critical strike, dealing damage with Bloodthirst, or suffering more than 20% of your maximum Health from a single attack."
+      - "Regenerates 3% of your total Health over 6 sec after being the victim of a critical strike, dealing damage with Bloodthirst, or suffering more than 20% of your maximum Health from a single attack."
   - id: "improved-berserker-rage"
     name: "Improved Berserker Rage"
     icon: "spell_nature_ancestralguardian"
     row: 6
     column: 1
     maxRanks: 2
+    castTime: "Passive"
     descriptions:
-      - "The Berserker Rage ability will generate 5 rage when used."
-      - "The Berserker Rage ability will generate 10 rage when used."
+      - "Your Berserker Rage ability will instantly generate 5 Rage and has a 50% chance to remove all movement impairing effects when activated."
+      - "Your Berserker Rage ability will instantly generate 10 Rage and has a 100% chance to remove all movement impairing effects when activated."
   - id: "improved-execute"
     name: "Improved Execute"
     icon: "inv_sword_48"
     row: 4
-    column: 2
+    column: 4
     maxRanks: 2
     descriptions:
-      - "Reduces the Rage cost of your Execute ability by 2."
-      - "Reduces the Rage cost of your Execute ability by 5."
+      - "Reduces the Rage cost of your Execute ability by 3."
+      - "Reduces the Rage cost of your Execute ability by 6."
   - id: "improved-intercept"
     name: "Improved Intercept"
     icon: "ability_rogue_sprint"
@@ -183,9 +194,19 @@ talents:
     row: 4
     column: 1
     maxRanks: 5
+    castTime: "Passive"
     descriptions:
-      - "Increases the damage done by your offhand weapon by 5%."
-      - "Increases the damage done by your offhand weapon by 10%."
-      - "Increases the damage done by your offhand weapon by 15%."
-      - "Increases the damage done by your offhand weapon by 20%."
-      - "Increases the damage done by your offhand weapon by 25%."
+      - "Increases your offhand weapon damage by 5%, off-hand Rage generation by 20%, and chance to hit with off-hand attacks by 2%."
+      - "Increases your offhand weapon damage by 10%, off-hand Rage generation by 40%, and chance to hit with off-hand attacks by 4%."
+      - "Increases your offhand weapon damage by 15%, off-hand Rage generation by 60%, and chance to hit with off-hand attacks by 6%."
+      - "Increases your offhand weapon damage by 20%, off-hand Rage generation by 80%, and chance to hit with off-hand attacks by 8%."
+      - "Increases your offhand weapon damage by 25%, off-hand Rage generation by 100%, and chance to hit with off-hand attacks by 10%."
+  - id: "raging-blows"
+    name: "Raging Blows"
+    icon: "ability_whirlwind"
+    row: 4
+    column: 2
+    maxRanks: 1
+    castTime: "Passive"
+    descriptions:
+      - "Causes your Whirlwind to also strike with your off-hand weapon, and reduces the Rage cost of your Cleave ability by 2."
