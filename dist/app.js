@@ -78,13 +78,19 @@ function changeTalent(tree, talent, delta) {
 }
 
 function drawDependencies(tree, grid) {
+  const gridRect = grid.getBoundingClientRect();
   for (const talent of tree.talents.filter((item) => item.requires)) {
     const source = tree.talents.find((item) => item.id === talent.requires.talentId);
     if (!source) continue;
-    const startX = (source.column - .5) * (grid.clientWidth / 4);
-    const startY = 20 + (source.row - 1) * 66 + 50;
-    const endX = (talent.column - .5) * (grid.clientWidth / 4);
-    const endY = 20 + (talent.row - 1) * 66;
+    const sourceButton = $(`.talent[data-talent-id="${CSS.escape(source.id)}"]`, grid);
+    const targetButton = $(`.talent[data-talent-id="${CSS.escape(talent.id)}"]`, grid);
+    if (!sourceButton || !targetButton) continue;
+    const sourceRect = sourceButton.getBoundingClientRect();
+    const targetRect = targetButton.getBoundingClientRect();
+    const startX = sourceRect.left - gridRect.left + sourceRect.width / 2;
+    const startY = sourceRect.bottom - gridRect.top;
+    const endX = targetRect.left - gridRect.left + targetRect.width / 2;
+    const endY = targetRect.top - gridRect.top;
     const dx = endX - startX;
     const dy = endY - startY;
     const line = document.createElement("span");
@@ -114,6 +120,7 @@ function renderTrees() {
       button.className = `talent${rank ? " has-points" : ""}${rank === talent.maxRanks ? " is-maxed" : ""}${available ? " is-available" : ""}`;
       button.style.gridRow = talent.row;
       button.style.gridColumn = talent.column;
+      button.dataset.talentId = talent.id;
       button.dataset.locked = String(!available && rank === 0);
       button.setAttribute("aria-label", `${talent.name}, ${rank} de ${talent.maxRanks}`);
       button.innerHTML = `<img src="${iconUrl(talent.icon)}" alt="" loading="lazy"><span class="rank">${rank}/${talent.maxRanks}</span>`;
