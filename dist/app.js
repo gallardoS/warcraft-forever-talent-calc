@@ -150,8 +150,9 @@ function renderTrees() {
 function showTalentTooltip(tree, talent, event, anchor) {
   state.selectedTalent = { tree, talent };
   const rank = currentRank(talent);
-  const descriptionIndex = Math.min(rank, talent.descriptions.length - 1);
-  const displayRank = rank === talent.maxRanks ? rank : rank + 1;
+  const activeRank = rank === 0 ? 1 : rank;
+  const displayRank = activeRank;
+  const descriptionIndex = Math.min(Math.max(0, activeRank - 1), talent.descriptions.length - 1);
   const requirements = [];
   const tierPoints = (talent.row - 1) * 5;
   if (tierPoints) requirements.push({ met: pointsInTree(tree) >= tierPoints, text: `Requires ${tierPoints} points in ${tree.name}` });
