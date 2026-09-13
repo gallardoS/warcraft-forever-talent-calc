@@ -135,7 +135,10 @@ h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: clamp
 .tooltip-rank { flex: 0 0 auto; color: #fff; }
 .tooltip-requirement { margin: 0 0 7px; color: #ff5c57; }
 .tooltip-requirement.is-met { color: #36e56f; }
-.tooltip-description { margin: 0; color: #ffd100; }
+.tooltip-meta { display: flex; justify-content: space-between; gap: 14px; min-height: 1.42em; color: #fff; }
+.tooltip-meta span:last-child { margin-left: auto; text-align: right; }
+.tooltip-meta + .tooltip-description { margin-top: 7px; }
+.tooltip-description { margin: 0; color: #ffd100; white-space: pre-line; }
 .tooltip-hint { margin: 9px 0 0; color: #949aa2; font-size: .76rem; }
 
 .segmented { display: flex; gap: 5px; }

@@ -23,6 +23,14 @@ function currentRank(talent) { return state.points[talent.id] || 0; }
 function pointsInTree(tree) { return tree.talents.reduce((sum, talent) => sum + currentRank(talent), 0); }
 function totalPoints() { return Object.values(state.points).reduce((sum, rank) => sum + rank, 0); }
 
+function talentMetadataHtml(talent) {
+  const rows = [
+    [talent.cost, talent.range],
+    [talent.castTime, talent.cooldown]
+  ].filter((row) => row.some(Boolean));
+  return rows.map(([left, right]) => `<div class="tooltip-meta"><span>${escapeHtml(left)}</span><span>${escapeHtml(right)}</span></div>`).join("");
+}
+
 function canAdd(tree, talent) {
   const rank = currentRank(talent);
   if (rank >= talent.maxRanks || totalPoints() >= 51) return false;
@@ -136,7 +144,7 @@ function showTalentTooltip(tree, talent, event, anchor) {
     requirements.push({ met: required && currentRank(required) >= talent.requires.ranks, text: `Requires ${talent.requires.ranks} points in ${required?.name || talent.requires.talentId}` });
   }
   const tooltip = $("#talent-tooltip");
-  tooltip.innerHTML = `<div class="tooltip-head"><strong>${talent.name}</strong><span class="tooltip-rank">Rank ${displayRank}/${talent.maxRanks}</span></div>${requirements.map((item) => `<p class="tooltip-requirement${item.met ? " is-met" : ""}">${item.text}</p>`).join("")}<p class="tooltip-description">${talent.descriptions[descriptionIndex]}</p><p class="tooltip-hint">Click to learn · Right-click to unlearn</p>`;
+  tooltip.innerHTML = `<div class="tooltip-head"><strong>${escapeHtml(talent.name)}</strong><span class="tooltip-rank">Rank ${displayRank}/${talent.maxRanks}</span></div>${talentMetadataHtml(talent)}${requirements.map((item) => `<p class="tooltip-requirement${item.met ? " is-met" : ""}">${escapeHtml(item.text)}</p>`).join("")}<p class="tooltip-description">${escapeHtml(talent.descriptions[descriptionIndex])}</p><p class="tooltip-hint">Click to learn · Right-click to unlearn</p>`;
   tooltip.classList.add("is-visible");
   tooltip.setAttribute("aria-hidden", "false");
   if (event) positionTalentTooltip(event);
@@ -366,7 +374,7 @@ function renderEditorTooltip(talent, rankIndex = 0) {
   const requirement = talent.requires
     ? `<p class="tooltip-requirement">Requires ${talent.requires.ranks} points in ${escapeHtml(tree.talents.find((item) => item.id === talent.requires.talentId)?.name || talent.requires.talentId)}</p>`
     : "";
-  preview.innerHTML = `<div class="tooltip-head"><strong>${escapeHtml(talent.name)}</strong><span class="tooltip-rank">Rank ${safeRankIndex + 1}/${talent.maxRanks}</span></div>${requirement}<p class="tooltip-description">${escapeHtml(talent.descriptions[safeRankIndex] || "No description yet")}</p>`;
+  preview.innerHTML = `<div class="tooltip-head"><strong>${escapeHtml(talent.name)}</strong><span class="tooltip-rank">Rank ${safeRankIndex + 1}/${talent.maxRanks}</span></div>${talentMetadataHtml(talent)}${requirement}<p class="tooltip-description">${escapeHtml(talent.descriptions[safeRankIndex] || "No description yet")}</p>`;
 }
 
 function renderEditorForm() {
@@ -382,6 +390,10 @@ function renderEditorForm() {
   $("#editor-max-ranks").value = talent.maxRanks;
   $("#editor-row").value = talent.row;
   $("#editor-column").value = talent.column;
+  $("#editor-cost").value = talent.cost || "";
+  $("#editor-range").value = talent.range || "";
+  $("#editor-cast-time").value = talent.castTime || "";
+  $("#editor-cooldown").value = talent.cooldown || "";
   const requiredPicker = $("#editor-requires-talent");
   requiredPicker.innerHTML = `<option value="">None</option>${editorTree().talents.filter((item) => item.id !== talent.id).map((item) => `<option value="${escapeHtml(item.id)}">${escapeHtml(item.name)}</option>`).join("")}`;
   requiredPicker.value = talent.requires?.talentId || "";
@@ -516,6 +528,9 @@ function treeToYaml(tree) {
     lines.push(`    row: ${talent.row}`);
     lines.push(`    column: ${talent.column}`);
     lines.push(`    maxRanks: ${talent.maxRanks}`);
+    for (const key of ["cost", "range", "castTime", "cooldown"]) {
+      if (talent[key]) lines.push(`    ${key}: ${yamlString(talent[key])}`);
+    }
     if (talent.requires) {
       lines.push("    requires:");
       lines.push(`      talentId: ${yamlString(talent.requires.talentId)}`);
@@ -600,6 +615,15 @@ function setupEditor() {
   });
   $("#editor-row").addEventListener("change", (event) => updateEditorPosition("row", event.target.value));
   $("#editor-column").addEventListener("change", (event) => updateEditorPosition("column", event.target.value));
+  for (const [selector, key] of [["#editor-cost", "cost"], ["#editor-range", "range"], ["#editor-cast-time", "castTime"], ["#editor-cooldown", "cooldown"]]) {
+    $(selector).addEventListener("input", (event) => {
+      const value = event.target.value;
+      if (value) editorTalent()[key] = value;
+      else delete editorTalent()[key];
+      markEditorDirty();
+      renderEditorTooltip(editorTalent());
+    });
+  }
   $("#editor-requires-talent").addEventListener("change", (event) => {
     const talent = editorTalent();
     if (event.target.value) talent.requires = { talentId: event.target.value, ranks: 1 };
