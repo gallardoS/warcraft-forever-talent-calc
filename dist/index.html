@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#071017">
+  <meta name="theme-color" content="#1c1c1c">
   <meta name="description" content="Talent calculator, races and class abilities for Warcraft Forever.">
   <title>Warcraft Forever · Talents</title>
   <link rel="preconnect" href="https://wow.zamimg.com">
@@ -19,7 +19,7 @@
       <img class="brand-logo" src="./assets/warcraft-forever-logo.png" alt="Warcraft Forever">
     </a>
     <nav class="primary-nav" aria-label="Sections">
-      <button class="nav-tab is-active" data-view="talents">Talents</button>
+      <button class="nav-tab is-active" data-view="talents">Talent calculator</button>
       <button class="nav-tab" data-view="races">Races</button>
       <button class="nav-tab" data-view="abilities">Abilities</button>
       <button class="nav-tab nav-tab-editor" data-view="editor">Editor</button>
@@ -29,6 +29,10 @@
   <main>
     <section id="talents-view" class="view is-active" aria-label="Talent calculator">
       <div class="workspace-head talents-toolbar">
+        <div>
+          <p class="eyebrow">Warcraft Forever &raquo; Tools</p>
+          <h1>Talent calculator</h1>
+        </div>
         <div class="build-actions">
           <div class="required-level"><span class="label">Required level</span><strong id="required-level">10</strong>
           </div>
@@ -149,6 +153,10 @@
       </div>
     </section>
   </main>
+
+  <footer class="site-footer">
+    <span>made by sw · talents sourced from streamer footage at BlizzCon</span>
+  </footer>
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
   <script src="./config.js"></script>
