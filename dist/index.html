@@ -13,8 +13,7 @@
 <body>
   <header class="topbar">
     <a class="brand" href="#talents" aria-label="Warcraft Forever">
-      <span class="brand-mark">W</span>
-      <span>Warcraft <b>Forever</b></span>
+      <img class="brand-logo" src="./assets/warcraft-forever-logo.png" alt="Warcraft Forever">
     </a>
     <nav class="primary-nav" aria-label="Sections">
       <button class="nav-tab is-active" data-view="talents">Talents</button>
@@ -25,12 +24,8 @@
   </header>
 
   <main>
-    <section id="talents-view" class="view is-active" aria-labelledby="talents-title">
-      <div class="workspace-head">
-        <div>
-          <p class="eyebrow">Classic 1.12 · editable baseline</p>
-          <h1 id="talents-title">Talent calculator</h1>
-        </div>
+    <section id="talents-view" class="view is-active" aria-label="Talent calculator">
+      <div class="workspace-head talents-toolbar">
         <div class="build-actions">
           <div class="points-total"><strong id="total-points">0</strong><span>/ 51 points</span></div>
           <button id="copy-build" class="button">Copy link</button>
