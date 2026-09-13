@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071017">
+  <meta name="description" content="Talent calculator, races and class abilities for Warcraft Forever.">
+  <title>Warcraft Forever · Talents</title>
+  <link rel="preconnect" href="https://wow.zamimg.com">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%23071017' d='M4 4h56v56H4z'/%3E%3Cpath fill='%23cda84a' d='M12 15h9l5 25 6-19 6 19 5-25h9L42 50h-8l-2-8-2 8h-8z'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#talents" aria-label="Warcraft Forever">
+      <span class="brand-mark">W</span>
+      <span>Warcraft <b>Forever</b></span>
+    </a>
+    <nav class="primary-nav" aria-label="Sections">
+      <button class="nav-tab is-active" data-view="talents">Talents</button>
+      <button class="nav-tab" data-view="races">Races</button>
+      <button class="nav-tab" data-view="abilities">Abilities</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="talents-view" class="view is-active" aria-labelledby="talents-title">
+      <div class="workspace-head">
+        <div>
+          <p class="eyebrow">Classic 1.12 · editable baseline</p>
+          <h1 id="talents-title">Talent calculator</h1>
+        </div>
+        <div class="build-actions">
+          <div class="points-total"><strong id="total-points">0</strong><span>/ 51 points</span></div>
+          <button id="copy-build" class="button">Copy link</button>
+          <button id="reset-build" class="button button-quiet">Reset</button>
+        </div>
+      </div>
+
+      <div id="class-picker" class="class-picker" role="listbox" aria-label="Class"></div>
+      <div id="talent-trees" class="talent-trees" aria-live="polite"></div>
+      <div id="talent-tooltip" class="talent-tooltip" role="tooltip" aria-hidden="true"></div>
+    </section>
+
+    <section id="races-view" class="view" aria-labelledby="races-title">
+      <div class="workspace-head">
+        <div>
+          <p class="eyebrow">Classic · initial reference</p>
+          <h1 id="races-title">Races and classes</h1>
+        </div>
+        <div class="segmented" aria-label="Filter by faction">
+          <button class="segment is-active" data-faction="all">All</button>
+          <button class="segment" data-faction="Alliance">Alliance</button>
+          <button class="segment" data-faction="Horde">Horde</button>
+        </div>
+      </div>
+      <div id="race-grid" class="race-grid"></div>
+    </section>
+
+    <section id="abilities-view" class="view" aria-labelledby="abilities-title">
+      <div class="workspace-head">
+        <div>
+          <p class="eyebrow">Warcraft Forever · tracker</p>
+          <h1 id="abilities-title">New abilities</h1>
+        </div>
+      </div>
+      <div id="ability-grid" class="ability-grid"></div>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="./app.js" defer></script>
+</body>
+</html>

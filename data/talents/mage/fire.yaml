@@ -1,0 +1,170 @@
+id: "mage-fire"
+classId: "mage"
+name: "Fire"
+version: "classic-1.12"
+status: "baseline"
+talents:
+  - id: "burning-soul"
+    name: "Burning Soul"
+    icon: "spell_fire_fire"
+    row: 3
+    column: 4
+    maxRanks: 2
+    descriptions:
+      - "Gives your Fire spells a 35% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by 15%."
+      - "Gives your Fire spells a 70% chance to not lose casting time when you take damage and reduces the threat caused by your Fire spells by 30%."
+  - id: "improved-fire-ward"
+    name: "Improved Fire Ward"
+    icon: "spell_fire_firearmor"
+    row: 4
+    column: 2
+    maxRanks: 2
+    descriptions:
+      - "Causes your Fire Ward to have a 10% chance to reflect Fire spells while active."
+      - "Causes your Fire Ward to have a 20% chance to reflect Fire spells while active."
+  - id: "improved-scorch"
+    name: "Improved Scorch"
+    icon: "spell_fire_soulburn"
+    row: 4
+    column: 1
+    maxRanks: 3
+    descriptions:
+      - "Your Scorch spells have a 33% chance to cause your target to be vulnerable to Fire damage.  This vulnerability increases the Fire damage dealt to your target by 3% and lasts 30 sec.  Stacks up to 5 times."
+      - "Your Scorch spells have a 66% chance to cause your target to be vulnerable to Fire damage.  This vulnerability increases the Fire damage dealt to your target by 3% and lasts 30 sec.  Stacks up to 5 times."
+      - "Your Scorch spells have a 100% chance to cause your target to be vulnerable to Fire damage.  This vulnerability increases the Fire damage dealt to your target by 3% and lasts 30 sec.  Stacks up to 5 times."
+  - id: "improved-fireball"
+    name: "Improved Fireball"
+    icon: "spell_fire_flamebolt"
+    row: 1
+    column: 2
+    maxRanks: 5
+    descriptions:
+      - "Reduces the casting time of your Fireball spell by 0.1 sec."
+      - "Reduces the casting time of your Fireball spell by 0.2 sec."
+      - "Reduces the casting time of your Fireball spell by 0.3 sec."
+      - "Reduces the casting time of your Fireball spell by 0.4 sec."
+      - "Reduces the casting time of your Fireball spell by 0.5 sec."
+  - id: "improved-fire-blast"
+    name: "Improved Fire Blast"
+    icon: "spell_fire_fireball"
+    row: 2
+    column: 3
+    maxRanks: 3
+    descriptions:
+      - "Reduces the cooldown of your Fire Blast spell by 0.5 sec."
+      - "Reduces the cooldown of your Fire Blast spell by 1 sec."
+      - "Reduces the cooldown of your Fire Blast spell by 1.5 sec."
+  - id: "flame-throwing"
+    name: "Flame Throwing"
+    icon: "spell_fire_flare"
+    row: 2
+    column: 2
+    maxRanks: 2
+    descriptions:
+      - "Increases the range of your Fire spells by 3 yards."
+      - "Increases the range of your Fire spells by 6 yards."
+  - id: "pyroblast"
+    name: "Pyroblast"
+    icon: "spell_fire_fireball02"
+    row: 3
+    column: 3
+    maxRanks: 1
+    descriptions:
+      - "Hurls an immense fiery boulder that causes 148 to 195 Fire damage and an additional 56 Fire damage over 12 sec."
+  - id: "impact"
+    name: "Impact"
+    icon: "spell_fire_meteorstorm"
+    row: 1
+    column: 3
+    maxRanks: 5
+    descriptions:
+      - "Gives your Fire spells a 2% chance to stun the target for 2 sec."
+      - "Gives your Fire spells a 4% chance to stun the target for 2 sec."
+      - "Gives your Fire spells a 6% chance to stun the target for 2 sec."
+      - "Gives your Fire spells a 8% chance to stun the target for 2 sec."
+      - "Gives your Fire spells a 10% chance to stun the target for 2 sec."
+  - id: "improved-flamestrike"
+    name: "Improved Flamestrike"
+    icon: "spell_fire_selfdestruct"
+    row: 3
+    column: 2
+    maxRanks: 3
+    descriptions:
+      - "Increases the critical strike chance of your Flamestrike spell by 5%."
+      - "Increases the critical strike chance of your Flamestrike spell by 10%."
+      - "Increases the critical strike chance of your Flamestrike spell by 15%."
+  - id: "blast-wave"
+    name: "Blast Wave"
+    icon: "spell_holy_excorcism_02"
+    row: 5
+    column: 3
+    maxRanks: 1
+    requires:
+      talentId: "pyroblast"
+      ranks: 1
+    descriptions:
+      - "A wave of flame radiates outward from the caster, damaging all enemies caught within the blast for 159 to 192 Fire damage, and dazing them for 6 sec."
+  - id: "critical-mass"
+    name: "Critical Mass"
+    icon: "spell_nature_wispheal"
+    row: 5
+    column: 2
+    maxRanks: 3
+    descriptions:
+      - "Increases the critical strike chance of your Fire spells by 2%."
+      - "Increases the critical strike chance of your Fire spells by 4%."
+      - "Increases the critical strike chance of your Fire spells by 6%."
+  - id: "ignite"
+    name: "Ignite"
+    icon: "spell_fire_incinerate"
+    row: 2
+    column: 1
+    maxRanks: 5
+    descriptions:
+      - "Your critical strikes from Fire damage spells cause the target to burn for an additional 8% of your spell's damage over 4 sec."
+      - "Your critical strikes from Fire damage spells cause the target to burn for an additional 16% of your spell's damage over 4 sec."
+      - "Your critical strikes from Fire damage spells cause the target to burn for an additional 24% of your spell's damage over 4 sec."
+      - "Your critical strikes from Fire damage spells cause the target to burn for an additional 32% of your spell's damage over 4 sec."
+      - "Your critical strikes from Fire damage spells cause the target to burn for an additional 40% of your spell's damage over 4 sec."
+  - id: "fire-power"
+    name: "Fire Power"
+    icon: "spell_fire_immolation"
+    row: 6
+    column: 3
+    maxRanks: 5
+    descriptions:
+      - "Increases the damage done by your Fire spells by 2%."
+      - "Increases the damage done by your Fire spells by 4%."
+      - "Increases the damage done by your Fire spells by 6%."
+      - "Increases the damage done by your Fire spells by 8%."
+      - "Increases the damage done by your Fire spells by 10%."
+  - id: "combustion"
+    name: "Combustion"
+    icon: "spell_fire_sealoffire"
+    row: 7
+    column: 2
+    maxRanks: 1
+    requires:
+      talentId: "critical-mass"
+      ranks: 3
+    descriptions:
+      - "When activated, this spell causes each of your Fire damage spell hits to increase your critical strike chance with Fire damage spells by 10%.  This effect lasts until you have caused 3 critical strikes with Fire spells."
+  - id: "incinerate"
+    name: "Incinerate"
+    icon: "spell_fire_flameshock"
+    row: 3
+    column: 1
+    maxRanks: 2
+    descriptions:
+      - "Increases the critical strike chance of your Fire Blast and Scorch spells by 2%."
+      - "Increases the critical strike chance of your Fire Blast and Scorch spells by 4%."
+  - id: "master-of-elements"
+    name: "Master of Elements"
+    icon: "spell_fire_masterofelements"
+    row: 4
+    column: 4
+    maxRanks: 3
+    descriptions:
+      - "Your Fire and Frost spell criticals will refund 10% of their base mana cost."
+      - "Your Fire and Frost spell criticals will refund 20% of their base mana cost."
+      - "Your Fire and Frost spell criticals will refund 30% of their base mana cost."

@@ -1,0 +1,165 @@
+id: "priest-discipline"
+classId: "priest"
+name: "Discipline"
+version: "classic-1.12"
+status: "baseline"
+talents:
+  - id: "martyrdom"
+    name: "Martyrdom"
+    icon: "spell_nature_tranquility"
+    row: 2
+    column: 4
+    maxRanks: 2
+    descriptions:
+      - "Gives you a 50% chance to gain the Focused Casting effect that lasts for 6 sec after being the victim of a melee or ranged critical strike.  The Focused Casting effect prevents you from losing casting time when taking damage and increases resistance to Interrupt effects by 10%."
+      - "Gives you a 100% chance to gain the Focused Casting effect that lasts for 6 sec after being the victim of a melee or ranged critical strike.  The Focused Casting effect prevents you from losing casting time when taking damage and increases resistance to Interrupt effects by 20%."
+  - id: "power-infusion"
+    name: "Power Infusion"
+    icon: "spell_holy_powerinfusion"
+    row: 7
+    column: 2
+    maxRanks: 1
+    requires:
+      talentId: "mental-strength"
+      ranks: 5
+    descriptions:
+      - "Infuses the target with power, increasing their spell damage and healing by 20%.  Lasts 15 sec."
+  - id: "mental-agility"
+    name: "Mental Agility"
+    icon: "ability_hibernation"
+    row: 4
+    column: 2
+    maxRanks: 5
+    descriptions:
+      - "Reduces the mana cost of your instant cast spells by 2%."
+      - "Reduces the mana cost of your instant cast spells by 4%."
+      - "Reduces the mana cost of your instant cast spells by 6%."
+      - "Reduces the mana cost of your instant cast spells by 8%."
+      - "Reduces the mana cost of your instant cast spells by 10%."
+  - id: "unbreakable-will"
+    name: "Unbreakable Will"
+    icon: "spell_magic_magearmor"
+    row: 1
+    column: 2
+    maxRanks: 5
+    descriptions:
+      - "Increases your chance to resist Stun, Fear, and Silence effects by an additional 3%."
+      - "Increases your chance to resist Stun, Fear, and Silence effects by an additional 6%."
+      - "Increases your chance to resist Stun, Fear, and Silence effects by an additional 9%."
+      - "Increases your chance to resist Stun, Fear, and Silence effects by an additional 12%."
+      - "Increases your chance to resist Stun, Fear, and Silence effects by an additional 15%."
+  - id: "improved-power-word-shield"
+    name: "Improved Power Word: Shield"
+    icon: "spell_holy_powerwordshield"
+    row: 2
+    column: 3
+    maxRanks: 3
+    descriptions:
+      - "Increases the damage absorbed by your Power Word: Shield by 5%."
+      - "Increases the damage absorbed by your Power Word: Shield by 10%."
+      - "Increases the damage absorbed by your Power Word: Shield by 15%."
+  - id: "improved-power-word-fortitude"
+    name: "Improved Power Word: Fortitude"
+    icon: "spell_holy_wordfortitude"
+    row: 2
+    column: 2
+    maxRanks: 2
+    descriptions:
+      - "Increases the effect of your Power Word: Fortitude and Prayer of Fortitude spells by 15%."
+      - "Increases the effect of your Power Word: Fortitude and Prayer of Fortitude spells by 30%."
+  - id: "wand-specialization"
+    name: "Wand Specialization"
+    icon: "inv_wand_01"
+    row: 1
+    column: 3
+    maxRanks: 5
+    descriptions:
+      - "Increases your damage with Wands by 5%."
+      - "Increases your damage with Wands by 10%."
+      - "Increases your damage with Wands by 15%."
+      - "Increases your damage with Wands by 20%."
+      - "Increases your damage with Wands by 25%."
+  - id: "improved-inner-fire"
+    name: "Improved Inner Fire"
+    icon: "spell_holy_innerfire"
+    row: 4
+    column: 1
+    maxRanks: 3
+    descriptions:
+      - "Increases the Armor bonus of your Inner Fire spell by 10%."
+      - "Increases the Armor bonus of your Inner Fire spell by 20%."
+      - "Increases the Armor bonus of your Inner Fire spell by 30%."
+  - id: "meditation"
+    name: "Meditation"
+    icon: "spell_nature_sleep"
+    row: 3
+    column: 3
+    maxRanks: 3
+    descriptions:
+      - "Allows 5% of your Mana regeneration to continue while casting."
+      - "Allows 10% of your Mana regeneration to continue while casting."
+      - "Allows 15% of your Mana regeneration to continue while casting."
+  - id: "inner-focus"
+    name: "Inner Focus"
+    icon: "spell_frost_windwalkon"
+    row: 3
+    column: 2
+    maxRanks: 1
+    descriptions:
+      - "When activated, reduces the Mana cost of your next spell by 100% and increases its critical effect chance by 25% if it is capable of a critical effect."
+  - id: "improved-mana-burn"
+    name: "Improved Mana Burn"
+    icon: "spell_shadow_manaburn"
+    row: 4
+    column: 4
+    maxRanks: 2
+    descriptions:
+      - "Reduces the casting time of your Mana Burn spell by 0.25 secs."
+      - "Reduces the casting time of your Mana Burn spell by 0.5 sec."
+  - id: "divine-spirit"
+    name: "Divine Spirit"
+    icon: "spell_holy_divinespirit"
+    row: 5
+    column: 3
+    maxRanks: 1
+    requires:
+      talentId: "meditation"
+      ranks: 3
+    descriptions:
+      - "Holy power infuses the target, increasing their Spirit by 17 for 30 min."
+  - id: "silent-resolve"
+    name: "Silent Resolve"
+    icon: "spell_nature_manaregentotem"
+    row: 2
+    column: 1
+    maxRanks: 5
+    descriptions:
+      - "Reduces the threat generated by your spells by 4%."
+      - "Reduces the threat generated by your spells by 8%."
+      - "Reduces the threat generated by your spells by 12%."
+      - "Reduces the threat generated by your spells by 16%."
+      - "Reduces the threat generated by your spells by 20%."
+  - id: "mental-strength"
+    name: "Mental Strength"
+    icon: "spell_nature_enchantarmor"
+    row: 5
+    column: 2
+    maxRanks: 5
+    descriptions:
+      - "Increases your maximum Mana by 2%."
+      - "Increases your maximum Mana by 4%."
+      - "Increases your maximum Mana by 6%."
+      - "Increases your maximum Mana by 8%."
+      - "Increases your maximum Mana by 10%."
+  - id: "force-of-will"
+    name: "Force of Will"
+    icon: "spell_nature_slowingtotem"
+    row: 6
+    column: 3
+    maxRanks: 5
+    descriptions:
+      - "Increases your spell damage by 1% and the critical strike chance of your offensive spells by 1%."
+      - "Increases your spell damage by 2% and the critical strike chance of your offensive spells by 2%."
+      - "Increases your spell damage by 3% and the critical strike chance of your offensive spells by 3%."
+      - "Increases your spell damage by 4% and the critical strike chance of your offensive spells by 4%."
+      - "Increases your spell damage by 5% and the critical strike chance of your offensive spells by 5%."

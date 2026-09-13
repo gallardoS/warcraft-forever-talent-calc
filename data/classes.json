@@ -1,0 +1,11 @@
+[
+  {"id":"warrior","name":"Warrior","color":"#c69b6d","icon":"classicon_warrior","treeOrder":["warrior-arms","warrior-fury","warrior-protection"]},
+  {"id":"paladin","name":"Paladin","color":"#f48cba","icon":"classicon_paladin","treeOrder":["paladin-holy","paladin-protection","paladin-retribution"]},
+  {"id":"hunter","name":"Hunter","color":"#aad372","icon":"classicon_hunter","treeOrder":["hunter-beast-mastery","hunter-marksmanship","hunter-survival"]},
+  {"id":"rogue","name":"Rogue","color":"#fff468","icon":"classicon_rogue","treeOrder":["rogue-assassination","rogue-combat","rogue-subtlety"]},
+  {"id":"priest","name":"Priest","color":"#f4f4f4","icon":"classicon_priest","treeOrder":["priest-discipline","priest-holy","priest-shadow"]},
+  {"id":"shaman","name":"Shaman","color":"#0070dd","icon":"classicon_shaman","treeOrder":["shaman-elemental","shaman-enhancement","shaman-restoration"]},
+  {"id":"mage","name":"Mage","color":"#3fc7eb","icon":"classicon_mage","treeOrder":["mage-arcane","mage-fire","mage-frost"]},
+  {"id":"warlock","name":"Warlock","color":"#8788ee","icon":"classicon_warlock","treeOrder":["warlock-affliction","warlock-demonology","warlock-destruction"]},
+  {"id":"druid","name":"Druid","color":"#ff7c0a","icon":"classicon_druid","treeOrder":["druid-balance","druid-feral-combat","druid-restoration"]}
+]

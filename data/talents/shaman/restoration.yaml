@@ -1,0 +1,166 @@
+id: "shaman-restoration"
+classId: "shaman"
+name: "Restoration"
+version: "classic-1.12"
+status: "baseline"
+talents:
+  - id: "ancestral-healing"
+    name: "Ancestral Healing"
+    icon: "spell_nature_undyingstrength"
+    row: 2
+    column: 2
+    maxRanks: 3
+    descriptions:
+      - "Increases your target's armor value by 8% for 15 sec after getting a critical effect from one of your healing spells."
+      - "Increases your target's armor value by 16% for 15 sec after getting a critical effect from one of your healing spells."
+      - "Increases your target's armor value by 25% for 15 sec after getting a critical effect from one of your healing spells."
+  - id: "totemic-mastery"
+    name: "Totemic Mastery"
+    icon: "spell_nature_nullward"
+    row: 3
+    column: 3
+    maxRanks: 1
+    descriptions:
+      - "The radius of your totems that affect friendly targets is increased to 30 yd."
+  - id: "nature-s-guidance"
+    name: "Nature's Guidance"
+    icon: "spell_frost_stun"
+    row: 3
+    column: 1
+    maxRanks: 3
+    descriptions:
+      - "Increases your chance to hit with melee attacks and spells by 1%."
+      - "Increases your chance to hit with melee attacks and spells by 2%."
+      - "Increases your chance to hit with melee attacks and spells by 3%."
+  - id: "improved-healing-wave"
+    name: "Improved Healing Wave"
+    icon: "spell_nature_magicimmunity"
+    row: 1
+    column: 2
+    maxRanks: 5
+    descriptions:
+      - "Reduces the casting time of your Healing Wave spell by 0.1 sec."
+      - "Reduces the casting time of your Healing Wave spell by 0.2 sec."
+      - "Reduces the casting time of your Healing Wave spell by 0.3 sec."
+      - "Reduces the casting time of your Healing Wave spell by 0.4 sec."
+      - "Reduces the casting time of your Healing Wave spell by 0.5 sec."
+  - id: "healing-focus"
+    name: "Healing Focus"
+    icon: "spell_nature_healingwavelesser"
+    row: 3
+    column: 2
+    maxRanks: 5
+    descriptions:
+      - "Gives you a 14% chance to avoid interruption caused by damage while casting any healing spell."
+      - "Gives you a 28% chance to avoid interruption caused by damage while casting any healing spell."
+      - "Gives you a 42% chance to avoid interruption caused by damage while casting any healing spell."
+      - "Gives you a 56% chance to avoid interruption caused by damage while casting any healing spell."
+      - "Gives you a 70% chance to avoid interruption caused by damage while casting any healing spell."
+  - id: "restorative-totems"
+    name: "Restorative Totems"
+    icon: "spell_nature_manaregentotem"
+    row: 4
+    column: 2
+    maxRanks: 5
+    descriptions:
+      - "Increases the effect of your Mana Spring and Healing Stream Totems by 5%."
+      - "Increases the effect of your Mana Spring and Healing Stream Totems by 10%."
+      - "Increases the effect of your Mana Spring and Healing Stream Totems by 15%."
+      - "Increases the effect of your Mana Spring and Healing Stream Totems by 20%."
+      - "Increases the effect of your Mana Spring and Healing Stream Totems by 25%."
+  - id: "improved-reincarnation"
+    name: "Improved Reincarnation"
+    icon: "spell_nature_reincarnation"
+    row: 2
+    column: 1
+    maxRanks: 2
+    descriptions:
+      - "Reduces the cooldown of your Reincarnation spell by 10 min and increases the amount of health and mana you reincarnate with by an additional 10%."
+      - "Reduces the cooldown of your Reincarnation spell by 20 min and increases the amount of health and mana you reincarnate with by an additional 20%."
+  - id: "mana-tide-totem"
+    name: "Mana Tide Totem"
+    icon: "spell_frost_summonwaterelemental"
+    row: 7
+    column: 2
+    maxRanks: 1
+    requires:
+      talentId: "restorative-totems"
+      ranks: 5
+    descriptions:
+      - "Summons a Mana Tide Totem with 5 health at the feet of the caster for 12 sec that restores 170 mana every 3 seconds to group members within 20 yards."
+  - id: "nature-s-swiftness"
+    name: "Nature's Swiftness"
+    icon: "spell_nature_ravenform"
+    row: 5
+    column: 3
+    maxRanks: 1
+    descriptions:
+      - "When activated, your next Nature spell with a casting time less than 10 sec. becomes an instant cast spell."
+  - id: "purification"
+    name: "Purification"
+    icon: "spell_frost_wizardmark"
+    row: 6
+    column: 3
+    maxRanks: 5
+    descriptions:
+      - "Increases the effectiveness of your healing spells by 2%."
+      - "Increases the effectiveness of your healing spells by 4%."
+      - "Increases the effectiveness of your healing spells by 6%."
+      - "Increases the effectiveness of your healing spells by 8%."
+      - "Increases the effectiveness of your healing spells by 10%."
+  - id: "tidal-focus"
+    name: "Tidal Focus"
+    icon: "spell_frost_manarecharge"
+    row: 1
+    column: 3
+    maxRanks: 5
+    descriptions:
+      - "Reduces the Mana cost of your healing spells by 1%."
+      - "Reduces the Mana cost of your healing spells by 2%."
+      - "Reduces the Mana cost of your healing spells by 3%."
+      - "Reduces the Mana cost of your healing spells by 4%."
+      - "Reduces the Mana cost of your healing spells by 5%."
+  - id: "tidal-mastery"
+    name: "Tidal Mastery"
+    icon: "spell_nature_tranquility"
+    row: 4
+    column: 3
+    maxRanks: 5
+    descriptions:
+      - "Increases the critical effect chance of your healing and lightning spells by 1%."
+      - "Increases the critical effect chance of your healing and lightning spells by 2%."
+      - "Increases the critical effect chance of your healing and lightning spells by 3%."
+      - "Increases the critical effect chance of your healing and lightning spells by 4%."
+      - "Increases the critical effect chance of your healing and lightning spells by 5%."
+  - id: "totemic-focus"
+    name: "Totemic Focus"
+    icon: "spell_nature_moonglow"
+    row: 2
+    column: 3
+    maxRanks: 5
+    descriptions:
+      - "Reduces the Mana cost of your totems by 5%."
+      - "Reduces the Mana cost of your totems by 10%."
+      - "Reduces the Mana cost of your totems by 15%."
+      - "Reduces the Mana cost of your totems by 20%."
+      - "Reduces the Mana cost of your totems by 25%."
+  - id: "healing-grace"
+    name: "Healing Grace"
+    icon: "spell_nature_healingtouch"
+    row: 3
+    column: 4
+    maxRanks: 3
+    descriptions:
+      - "Reduces the threat generated by your healing spells by 5%."
+      - "Reduces the threat generated by your healing spells by 10%."
+      - "Reduces the threat generated by your healing spells by 15%."
+  - id: "healing-way"
+    name: "Healing Way"
+    icon: "spell_nature_healingway"
+    row: 5
+    column: 1
+    maxRanks: 3
+    descriptions:
+      - "Your Healing Wave spells have a 33% chance to increase the effect of subsequent Healing Wave spells on that target by 6% for 15 sec.  This effect will stack up to 3 times."
+      - "Your Healing Wave spells have a 66% chance to increase the effect of subsequent Healing Wave spells on that target by 6% for 15 sec.  This effect will stack up to 3 times."
+      - "Your Healing Wave spells have a 100% chance to increase the effect of subsequent Healing Wave spells on that target by 6% for 15 sec.  This effect will stack up to 3 times."

@@ -1,0 +1,163 @@
+id: "rogue-assassination"
+classId: "rogue"
+name: "Assassination"
+version: "classic-1.12"
+status: "baseline"
+talents:
+  - id: "improved-poisons"
+    name: "Improved Poisons"
+    icon: "ability_poisons"
+    row: 4
+    column: 3
+    maxRanks: 5
+    descriptions:
+      - "Increases the chance to apply poisons to your target by 2%."
+      - "Increases the chance to apply poisons to your target by 4%."
+      - "Increases the chance to apply poisons to your target by 6%."
+      - "Increases the chance to apply poisons to your target by 8%."
+      - "Increases the chance to apply poisons to your target by 10%."
+  - id: "lethality"
+    name: "Lethality"
+    icon: "ability_criticalstrike"
+    row: 3
+    column: 3
+    maxRanks: 5
+    requires:
+      talentId: "malice"
+      ranks: 5
+    descriptions:
+      - "Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Ghostly Strike, and Hemorrhage abilities by 6%."
+      - "Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Ghostly Strike, and Hemorrhage abilities by 12%."
+      - "Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Ghostly Strike, and Hemorrhage abilities by 18%."
+      - "Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Ghostly Strike, and Hemorrhage abilities by 24%."
+      - "Increases the critical strike damage bonus of your Sinister Strike, Gouge, Backstab, Ghostly Strike, and Hemorrhage abilities by 30%."
+  - id: "malice"
+    name: "Malice"
+    icon: "ability_racial_bloodrage"
+    row: 1
+    column: 3
+    maxRanks: 5
+    descriptions:
+      - "Increases your critical strike chance by 1%."
+      - "Increases your critical strike chance by 2%."
+      - "Increases your critical strike chance by 3%."
+      - "Increases your critical strike chance by 4%."
+      - "Increases your critical strike chance by 5%."
+  - id: "remorseless-attacks"
+    name: "Remorseless Attacks"
+    icon: "ability_fiegndead"
+    row: 1
+    column: 2
+    maxRanks: 2
+    descriptions:
+      - "After killing an opponent that yields experience or honor, gives you a 20% increased critical strike chance on your next Sinister Strike, Backstab, Ambush, or Ghostly Strike.  Lasts 20 sec."
+      - "After killing an opponent that yields experience or honor, gives you a 40% increased critical strike chance on your next Sinister Strike, Backstab, Ambush, or Ghostly Strike.  Lasts 20 sec."
+  - id: "ruthlessness"
+    name: "Ruthlessness"
+    icon: "ability_druid_disembowel"
+    row: 2
+    column: 1
+    maxRanks: 3
+    descriptions:
+      - "Gives your finishing moves a 20% chance to add a combo point to your target."
+      - "Gives your finishing moves a 40% chance to add a combo point to your target."
+      - "Gives your finishing moves a 60% chance to add a combo point to your target."
+  - id: "murder"
+    name: "Murder"
+    icon: "spell_shadow_deathscream"
+    row: 2
+    column: 2
+    maxRanks: 2
+    descriptions:
+      - "Increases all damage caused against Humanoid, Giant, Beast and Dragonkin targets by 1%."
+      - "Increases all damage caused against Humanoid, Giant, Beast and Dragonkin targets by 2%."
+  - id: "improved-eviscerate"
+    name: "Improved Eviscerate"
+    icon: "ability_rogue_eviscerate"
+    row: 1
+    column: 1
+    maxRanks: 3
+    descriptions:
+      - "Increases the damage done by your Eviscerate ability by 5%."
+      - "Increases the damage done by your Eviscerate ability by 10%."
+      - "Increases the damage done by your Eviscerate ability by 15%."
+  - id: "improved-slice-and-dice"
+    name: "Improved Slice and Dice"
+    icon: "ability_rogue_slicedice"
+    row: 2
+    column: 4
+    maxRanks: 3
+    descriptions:
+      - "Increases the duration of your Slice and Dice ability by 15%."
+      - "Increases the duration of your Slice and Dice ability by 30%."
+      - "Increases the duration of your Slice and Dice ability by 45%."
+  - id: "improved-expose-armor"
+    name: "Improved Expose Armor"
+    icon: "ability_warrior_riposte"
+    row: 3
+    column: 2
+    maxRanks: 2
+    descriptions:
+      - "Increases the armor reduced by your Expose Armor ability by 25%."
+      - "Increases the armor reduced by your Expose Armor ability by 50%."
+  - id: "improved-kidney-shot"
+    name: "Improved Kidney Shot"
+    icon: "ability_rogue_kidneyshot"
+    row: 5
+    column: 3
+    maxRanks: 3
+    descriptions:
+      - "While affected by your Kidney Shot ability, the target receives an additional 3% damage from all sources."
+      - "While affected by your Kidney Shot ability, the target receives an additional 6% damage from all sources."
+      - "While affected by your Kidney Shot ability, the target receives an additional 9% damage from all sources."
+  - id: "cold-blood"
+    name: "Cold Blood"
+    icon: "spell_ice_lament"
+    row: 5
+    column: 2
+    maxRanks: 1
+    descriptions:
+      - "When activated, increases the critical strike chance of your next Sinister Strike, Backstab, Ambush, or Eviscerate by 100%."
+  - id: "relentless-strikes"
+    name: "Relentless Strikes"
+    icon: "ability_warrior_decisivestrike"
+    row: 3
+    column: 1
+    maxRanks: 1
+    descriptions:
+      - "Your finishing moves have a 20% chance per combo point to restore 25 energy."
+  - id: "seal-fate"
+    name: "Seal Fate"
+    icon: "spell_shadow_chilltouch"
+    row: 6
+    column: 2
+    maxRanks: 5
+    requires:
+      talentId: "cold-blood"
+      ranks: 1
+    descriptions:
+      - "Your critical strikes from abilities that add combo points  have a 20% chance to add an additional combo point."
+      - "Your critical strikes from abilities that add combo points  have a 40% chance to add an additional combo point."
+      - "Your critical strikes from abilities that add combo points  have a 60% chance to add an additional combo point."
+      - "Your critical strikes from abilities that add combo points  have a 80% chance to add an additional combo point."
+      - "Your critical strikes from abilities that add combo points  have a 100% chance to add an additional combo point."
+  - id: "vigor"
+    name: "Vigor"
+    icon: "spell_nature_earthbindtotem"
+    row: 7
+    column: 2
+    maxRanks: 1
+    descriptions:
+      - "Increases your maximum Energy by 10."
+  - id: "vile-poisons"
+    name: "Vile Poisons"
+    icon: "ability_rogue_feigndeath"
+    row: 4
+    column: 2
+    maxRanks: 5
+    descriptions:
+      - "Increases the damage dealt by your poisons by 4% and gives your poisons an additional 8% chance to resist dispel effects."
+      - "Increases the damage dealt by your poisons by 8% and gives your poisons an additional 16% chance to resist dispel effects."
+      - "Increases the damage dealt by your poisons by 12% and gives your poisons an additional 24% chance to resist dispel effects."
+      - "Increases the damage dealt by your poisons by 16% and gives your poisons an additional 32% chance to resist dispel effects."
+      - "Increases the damage dealt by your poisons by 20% and gives your poisons an additional 40% chance to resist dispel effects."

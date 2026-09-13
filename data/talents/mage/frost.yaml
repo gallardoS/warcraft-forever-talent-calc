@@ -1,0 +1,181 @@
+id: "mage-frost"
+classId: "mage"
+name: "Frost"
+version: "classic-1.12"
+status: "baseline"
+talents:
+  - id: "improved-frostbolt"
+    name: "Improved Frostbolt"
+    icon: "spell_frost_frostbolt02"
+    row: 1
+    column: 2
+    maxRanks: 5
+    descriptions:
+      - "Reduces the casting time of your Frostbolt spell by 0.1 sec."
+      - "Reduces the casting time of your Frostbolt spell by 0.2 sec."
+      - "Reduces the casting time of your Frostbolt spell by 0.3 sec."
+      - "Reduces the casting time of your Frostbolt spell by 0.4 sec."
+      - "Reduces the casting time of your Frostbolt spell by 0.5 sec."
+  - id: "frostbite"
+    name: "Frostbite"
+    icon: "spell_frost_frostarmor"
+    row: 2
+    column: 2
+    maxRanks: 3
+    descriptions:
+      - "Gives your Chill effects a 5% chance to freeze the target for 5 sec."
+      - "Gives your Chill effects a 10% chance to freeze the target for 5 sec."
+      - "Gives your Chill effects a 15% chance to freeze the target for 5 sec."
+  - id: "piercing-ice"
+    name: "Piercing Ice"
+    icon: "spell_frost_frostbolt"
+    row: 3
+    column: 1
+    maxRanks: 3
+    descriptions:
+      - "Increases the damage done by your Frost spells by 2%."
+      - "Increases the damage done by your Frost spells by 4%."
+      - "Increases the damage done by your Frost spells by 6%."
+  - id: "improved-frost-nova"
+    name: "Improved Frost Nova"
+    icon: "spell_frost_freezingbreath"
+    row: 2
+    column: 3
+    maxRanks: 2
+    descriptions:
+      - "Reduces the cooldown of your Frost Nova spell by 2 sec."
+      - "Reduces the cooldown of your Frost Nova spell by 4 sec."
+  - id: "improved-blizzard"
+    name: "Improved Blizzard"
+    icon: "spell_frost_icestorm"
+    row: 3
+    column: 4
+    maxRanks: 3
+    descriptions:
+      - "Adds a chill effect to your Blizzard spell.  This effect lowers the target's movement speed by 30%.  Lasts 1.50 sec."
+      - "Adds a chill effect to your Blizzard spell.  This effect lowers the target's movement speed by 50%.  Lasts 1.50 sec."
+      - "Adds a chill effect to your Blizzard spell.  This effect lowers the target's movement speed by 65%.  Lasts 1.50 sec."
+  - id: "improved-cone-of-cold"
+    name: "Improved Cone of Cold"
+    icon: "spell_frost_glacier"
+    row: 5
+    column: 3
+    maxRanks: 3
+    descriptions:
+      - "Increases the damage dealt by your Cone of Cold spell by 15%."
+      - "Increases the damage dealt by your Cone of Cold spell by 25%."
+      - "Increases the damage dealt by your Cone of Cold spell by 35%."
+  - id: "permafrost"
+    name: "Permafrost"
+    icon: "spell_frost_wisp"
+    row: 2
+    column: 4
+    maxRanks: 3
+    descriptions:
+      - "Increases the duration of your Chill effects by 1 sec and reduces the target's speed by an additional 4%."
+      - "Increases the duration of your Chill effects by 2 sec and reduces the target's speed by an additional 7%."
+      - "Increases the duration of your Chill effects by 3 sec and reduces the target's speed by an additional 10%."
+  - id: "frost-channeling"
+    name: "Frost Channeling"
+    icon: "spell_frost_stun"
+    row: 4
+    column: 2
+    maxRanks: 3
+    descriptions:
+      - "Reduces the mana cost of your Frost spells by 5% and reduces the threat caused by your Frost spells by 10%."
+      - "Reduces the mana cost of your Frost spells by 10% and reduces the threat caused by your Frost spells by 20%."
+      - "Reduces the mana cost of your Frost spells by 15% and reduces the threat caused by your Frost spells by 30%."
+  - id: "shatter"
+    name: "Shatter"
+    icon: "spell_frost_frostshock"
+    row: 4
+    column: 3
+    maxRanks: 5
+    requires:
+      talentId: "improved-frost-nova"
+      ranks: 2
+    descriptions:
+      - "Increases the critical strike chance of all your spells against frozen targets by 10%."
+      - "Increases the critical strike chance of all your spells against frozen targets by 20%."
+      - "Increases the critical strike chance of all your spells against frozen targets by 30%."
+      - "Increases the critical strike chance of all your spells against frozen targets by 40%."
+      - "Increases the critical strike chance of all your spells against frozen targets by 50%."
+  - id: "winter-s-chill"
+    name: "Winter's Chill"
+    icon: "spell_frost_chillingblast"
+    row: 6
+    column: 3
+    maxRanks: 5
+    descriptions:
+      - "Gives your Frost damage spells a 20% chance to apply the Winter's Chill effect, which increases the chance a Frost spell will critically hit the target by 2% for 15 sec.  Stacks up to 5 times."
+      - "Gives your Frost damage spells a 40% chance to apply the Winter's Chill effect, which increases the chance a Frost spell will critically hit the target by 2% for 15 sec.  Stacks up to 5 times."
+      - "Gives your Frost damage spells a 60% chance to apply the Winter's Chill effect, which increases the chance a Frost spell will critically hit the target by 2% for 15 sec.  Stacks up to 5 times."
+      - "Gives your Frost damage spells a 80% chance to apply the Winter's Chill effect, which increases the chance a Frost spell will critically hit the target by 2% for 15 sec.  Stacks up to 5 times."
+      - "Gives your Frost damage spells a 100% chance to apply the Winter's Chill effect, which increases the chance a Frost spell will critically hit the target by 2% for 15 sec.  Stacks up to 5 times."
+  - id: "cold-snap"
+    name: "Cold Snap"
+    icon: "spell_frost_wizardmark"
+    row: 3
+    column: 2
+    maxRanks: 1
+    descriptions:
+      - "When activated, this spell finishes the cooldown on all of your Frost spells."
+  - id: "frost-warding"
+    name: "Frost Warding"
+    icon: "spell_frost_frostward"
+    row: 1
+    column: 1
+    maxRanks: 2
+    descriptions:
+      - "Increases the armor and resistances given by your Frost Armor and Ice Armor spells by 15%.  In addition, gives your Frost Ward a 10% chance to reflect Frost spells and effects while active."
+      - "Increases the armor and resistances given by your Frost Armor and Ice Armor spells by 30%.  In addition, gives your Frost Ward a 20% chance to reflect Frost spells and effects while active."
+  - id: "ice-barrier"
+    name: "Ice Barrier"
+    icon: "spell_ice_lament"
+    row: 7
+    column: 2
+    maxRanks: 1
+    requires:
+      talentId: "ice-block"
+      ranks: 1
+    descriptions:
+      - "Instantly shields you, absorbing 455 damage.  Lasts 1 min.  While the shield holds, spells will not be interrupted."
+  - id: "ice-block"
+    name: "Ice Block"
+    icon: "spell_frost_frost"
+    row: 5
+    column: 2
+    maxRanks: 1
+    descriptions:
+      - "You become encased in a block of ice, protecting you from all physical attacks and spells for 10 sec, but during that time you cannot attack, move or cast spells."
+  - id: "ice-shards"
+    name: "Ice Shards"
+    icon: "spell_frost_iceshard"
+    row: 2
+    column: 1
+    maxRanks: 5
+    descriptions:
+      - "Increases the critical strike damage bonus of your Frost spells by 20%."
+      - "Increases the critical strike damage bonus of your Frost spells by 40%."
+      - "Increases the critical strike damage bonus of your Frost spells by 60%."
+      - "Increases the critical strike damage bonus of your Frost spells by 80%."
+      - "Increases the critical strike damage bonus of your Frost spells by 100%."
+  - id: "arctic-reach"
+    name: "Arctic Reach"
+    icon: "spell_shadow_darkritual"
+    row: 4
+    column: 1
+    maxRanks: 2
+    descriptions:
+      - "Increases the range of your Frostbolt and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 10%."
+      - "Increases the range of your Frostbolt and Blizzard spells and the radius of your Frost Nova and Cone of Cold spells by 20%."
+  - id: "elemental-precision"
+    name: "Elemental Precision"
+    icon: "spell_ice_magicdamage"
+    row: 1
+    column: 3
+    maxRanks: 3
+    descriptions:
+      - "Reduces the chance that the opponent can resist your Frost and Fire spells by 2%."
+      - "Reduces the chance that the opponent can resist your Frost and Fire spells by 4%."
+      - "Reduces the chance that the opponent can resist your Frost and Fire spells by 6%."

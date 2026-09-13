@@ -1,0 +1,11 @@
+[
+  {"classId":"warrior","abilities":[]},
+  {"classId":"paladin","abilities":[]},
+  {"classId":"hunter","abilities":[]},
+  {"classId":"rogue","abilities":[]},
+  {"classId":"priest","abilities":[]},
+  {"classId":"shaman","abilities":[]},
+  {"classId":"mage","abilities":[]},
+  {"classId":"warlock","abilities":[]},
+  {"classId":"druid","abilities":[]}
+]

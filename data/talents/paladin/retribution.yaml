@@ -1,0 +1,159 @@
+id: "paladin-retribution"
+classId: "paladin"
+name: "Retribution"
+version: "classic-1.12"
+status: "baseline"
+talents:
+  - id: "improved-blessing-of-might"
+    name: "Improved Blessing of Might"
+    icon: "spell_holy_fistofjustice"
+    row: 1
+    column: 2
+    maxRanks: 5
+    descriptions:
+      - "Increases the melee attack power bonus of your Blessing of Might by 4%."
+      - "Increases the melee attack power bonus of your Blessing of Might by 8%."
+      - "Increases the melee attack power bonus of your Blessing of Might by 12%."
+      - "Increases the melee attack power bonus of your Blessing of Might by 16%."
+      - "Increases the melee attack power bonus of your Blessing of Might by 20%."
+  - id: "vengeance"
+    name: "Vengeance"
+    icon: "ability_racial_avatar"
+    row: 6
+    column: 2
+    maxRanks: 5
+    requires:
+      talentId: "conviction"
+      ranks: 5
+    descriptions:
+      - "Gives you a 3% bonus to Physical and Holy damage you deal for 8 sec after dealing a critical strike from a weapon swing, spell, or ability."
+      - "Gives you a 6% bonus to Physical and Holy damage you deal for 8 sec after dealing a critical strike from a weapon swing, spell, or ability."
+      - "Gives you a 9% bonus to Physical and Holy damage you deal for 8 sec after dealing a critical strike from a weapon swing, spell, or ability."
+      - "Gives you a 12% bonus to Physical and Holy damage you deal for 8 sec after dealing a critical strike from a weapon swing, spell, or ability."
+      - "Gives you a 15% bonus to Physical and Holy damage you deal for 8 sec after dealing a critical strike from a weapon swing, spell, or ability."
+  - id: "deflection"
+    name: "Deflection"
+    icon: "ability_parry"
+    row: 2
+    column: 3
+    maxRanks: 5
+    descriptions:
+      - "Increases your Parry chance by 1%."
+      - "Increases your Parry chance by 2%."
+      - "Increases your Parry chance by 3%."
+      - "Increases your Parry chance by 4%."
+      - "Increases your Parry chance by 5%."
+  - id: "improved-retribution-aura"
+    name: "Improved Retribution Aura"
+    icon: "spell_holy_auraoflight"
+    row: 4
+    column: 3
+    maxRanks: 2
+    descriptions:
+      - "Increases the damage done by your Retribution Aura by 25%."
+      - "Increases the damage done by your Retribution Aura by 50%."
+  - id: "benediction"
+    name: "Benediction"
+    icon: "spell_frost_windwalkon"
+    row: 1
+    column: 3
+    maxRanks: 5
+    descriptions:
+      - "Reduces the Mana cost of your Judgement and Seal spells by 3%."
+      - "Reduces the Mana cost of your Judgement and Seal spells by 6%."
+      - "Reduces the Mana cost of your Judgement and Seal spells by 9%."
+      - "Reduces the Mana cost of your Judgement and Seal spells by 12%."
+      - "Reduces the Mana cost of your Judgement and Seal spells by 15%."
+  - id: "sanctity-aura"
+    name: "Sanctity Aura"
+    icon: "spell_holy_mindvision"
+    row: 5
+    column: 3
+    maxRanks: 1
+    descriptions:
+      - "Increases Holy damage done by party members within 30 yards by 10%.  Players may only have one Aura on them per Paladin at any one time."
+  - id: "two-handed-weapon-specialization"
+    name: "Two-Handed Weapon Specialization"
+    icon: "inv_hammer_04"
+    row: 5
+    column: 1
+    maxRanks: 3
+    descriptions:
+      - "Increases the damage you deal with two-handed melee weapons by 2%."
+      - "Increases the damage you deal with two-handed melee weapons by 4%."
+      - "Increases the damage you deal with two-handed melee weapons by 6%."
+  - id: "conviction"
+    name: "Conviction"
+    icon: "spell_holy_retributionaura"
+    row: 3
+    column: 2
+    maxRanks: 5
+    descriptions:
+      - "Increases your chance to get a critical strike with melee weapons by 1%."
+      - "Increases your chance to get a critical strike with melee weapons by 2%."
+      - "Increases your chance to get a critical strike with melee weapons by 3%."
+      - "Increases your chance to get a critical strike with melee weapons by 4%."
+      - "Increases your chance to get a critical strike with melee weapons by 5%."
+  - id: "repentance"
+    name: "Repentance"
+    icon: "spell_holy_prayerofhealing"
+    row: 7
+    column: 2
+    maxRanks: 1
+    descriptions:
+      - "Puts the enemy target in a state of meditation, incapacitating them for up to 6 sec.  Any damage caused will awaken the target.  Only works against Humanoids."
+  - id: "improved-seal-of-the-crusader"
+    name: "Improved Seal of the Crusader"
+    icon: "spell_holy_holysmite"
+    row: 2
+    column: 2
+    maxRanks: 3
+    descriptions:
+      - "Increases the melee attack power bonus of your Seal of the Crusader and the Holy damage increase of your Judgement of the Crusader by 5%."
+      - "Increases the melee attack power bonus of your Seal of the Crusader and the Holy damage increase of your Judgement of the Crusader by 10%."
+      - "Increases the melee attack power bonus of your Seal of the Crusader and the Holy damage increase of your Judgement of the Crusader by 15%."
+  - id: "seal-of-command"
+    name: "Seal of Command"
+    icon: "ability_warrior_innerrage"
+    row: 3
+    column: 3
+    maxRanks: 1
+    descriptions:
+      - "Gives the Paladin a chance to deal additional Holy damage equal to 70% of normal weapon damage.  Only one Seal can be active on the Paladin at any one time.  Lasts 30 sec.Unleashing this Seal's energy will judge an enemy, instantly causing 90 to 95 Holy damage, 137 to 146 if the target is stunned or incapacitated."
+  - id: "improved-judgement"
+    name: "Improved Judgement"
+    icon: "spell_holy_righteousfury"
+    row: 2
+    column: 1
+    maxRanks: 2
+    descriptions:
+      - "Decreases the cooldown of your Judgement spell by 1 sec."
+      - "Decreases the cooldown of your Judgement spell by 2 sec."
+  - id: "eye-for-an-eye"
+    name: "Eye for an Eye"
+    icon: "spell_holy_eyeforaneye"
+    row: 4
+    column: 1
+    maxRanks: 2
+    descriptions:
+      - "All spell criticals against you cause 15% of the damage taken to the caster as well.  The damage caused by Eye for an Eye will not exceed 50% of the Paladin's total health."
+      - "All spell criticals against you cause 30% of the damage taken to the caster as well.  The damage caused by Eye for an Eye will not exceed 50% of the Paladin's total health."
+  - id: "vindication"
+    name: "Vindication"
+    icon: "spell_holy_vindication"
+    row: 3
+    column: 1
+    maxRanks: 3
+    descriptions:
+      - "Gives the Paladin's damaging melee attacks a chance to reduce the target's Strength and Agility by 5% for 10 sec."
+      - "Gives the Paladin's damaging melee attacks a chance to reduce the target's Strength and Agility by 10% for 10 sec."
+      - "Gives the Paladin's damaging melee attacks a chance to reduce the target's Strength and Agility by 15% for 10 sec."
+  - id: "pursuit-of-justice"
+    name: "Pursuit of Justice"
+    icon: "spell_holy_persuitofjustice"
+    row: 3
+    column: 4
+    maxRanks: 2
+    descriptions:
+      - "Increases movement and mounted movement speed by 4%.  This does not stack with other movement speed increasing effects."
+      - "Increases movement and mounted movement speed by 8%.  This does not stack with other movement speed increasing effects."

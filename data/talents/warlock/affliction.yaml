@@ -1,0 +1,183 @@
+id: "warlock-affliction"
+classId: "warlock"
+name: "Affliction"
+version: "classic-1.12"
+status: "baseline"
+talents:
+  - id: "fel-concentration"
+    name: "Fel Concentration"
+    icon: "spell_shadow_fingerofdeath"
+    row: 3
+    column: 2
+    maxRanks: 5
+    descriptions:
+      - "Gives you a 14% chance to avoid interruption caused by damage while channeling the Drain Life, Drain Mana, or Drain Soul spell."
+      - "Gives you a 28% chance to avoid interruption caused by damage while channeling the Drain Life, Drain Mana, or Drain Soul spell."
+      - "Gives you a 42% chance to avoid interruption caused by damage while channeling the Drain Life, Drain Mana, or Drain Soul spell."
+      - "Gives you a 56% chance to avoid interruption caused by damage while channeling the Drain Life, Drain Mana, or Drain Soul spell."
+      - "Gives you a 70% chance to avoid interruption caused by damage while channeling the Drain Life, Drain Mana, or Drain Soul spell."
+  - id: "nightfall"
+    name: "Nightfall"
+    icon: "spell_shadow_twilight"
+    row: 4
+    column: 2
+    maxRanks: 2
+    descriptions:
+      - "Gives your Corruption and Drain Life spells a 2% chance to cause you to enter a Shadow Trance state after damaging the opponent.  The Shadow Trance state reduces the casting time of your next Shadow Bolt spell by 100%."
+      - "Gives your Corruption and Drain Life spells a 4% chance to cause you to enter a Shadow Trance state after damaging the opponent.  The Shadow Trance state reduces the casting time of your next Shadow Bolt spell by 100%."
+  - id: "improved-corruption"
+    name: "Improved Corruption"
+    icon: "spell_shadow_abominationexplosion"
+    row: 1
+    column: 3
+    maxRanks: 5
+    descriptions:
+      - "Reduces the casting time of your Corruption spell by 0.4 sec."
+      - "Reduces the casting time of your Corruption spell by 0.8 sec."
+      - "Reduces the casting time of your Corruption spell by 1.2 sec."
+      - "Reduces the casting time of your Corruption spell by 1.6 sec."
+      - "Reduces the casting time of your Corruption spell by 2 sec."
+  - id: "improved-drain-life"
+    name: "Improved Drain Life"
+    icon: "spell_shadow_lifedrain02"
+    row: 2
+    column: 4
+    maxRanks: 5
+    descriptions:
+      - "Increases the Health drained by your Drain Life spell by 2%."
+      - "Increases the Health drained by your Drain Life spell by 4%."
+      - "Increases the Health drained by your Drain Life spell by 6%."
+      - "Increases the Health drained by your Drain Life spell by 8%."
+      - "Increases the Health drained by your Drain Life spell by 10%."
+  - id: "suppression"
+    name: "Suppression"
+    icon: "spell_shadow_unsummonbuilding"
+    row: 1
+    column: 2
+    maxRanks: 5
+    descriptions:
+      - "Reduces the chance for enemies to resist your Affliction spells by 2%."
+      - "Reduces the chance for enemies to resist your Affliction spells by 4%."
+      - "Reduces the chance for enemies to resist your Affliction spells by 6%."
+      - "Reduces the chance for enemies to resist your Affliction spells by 8%."
+      - "Reduces the chance for enemies to resist your Affliction spells by 10%."
+  - id: "improved-curse-of-weakness"
+    name: "Improved Curse of Weakness"
+    icon: "spell_shadow_curseofmannoroth"
+    row: 2
+    column: 1
+    maxRanks: 3
+    descriptions:
+      - "Increases the effect of your Curse of Weakness by 6%."
+      - "Increases the effect of your Curse of Weakness by 13%."
+      - "Increases the effect of your Curse of Weakness by 20%."
+  - id: "improved-life-tap"
+    name: "Improved Life Tap"
+    icon: "spell_shadow_burningspirit"
+    row: 2
+    column: 3
+    maxRanks: 2
+    descriptions:
+      - "Increases the amount of Mana awarded by your Life Tap spell by 10%."
+      - "Increases the amount of Mana awarded by your Life Tap spell by 20%."
+  - id: "grim-reach"
+    name: "Grim Reach"
+    icon: "spell_shadow_callofbone"
+    row: 4
+    column: 1
+    maxRanks: 2
+    descriptions:
+      - "Increases the range of your Affliction spells by 10%."
+      - "Increases the range of your Affliction spells by 20%."
+  - id: "dark-pact"
+    name: "Dark Pact"
+    icon: "spell_shadow_darkritual"
+    row: 7
+    column: 2
+    maxRanks: 1
+    descriptions:
+      - "Drains 150 of your pet's Mana, returning 100% to you."
+  - id: "siphon-life"
+    name: "Siphon Life"
+    icon: "spell_shadow_requiem"
+    row: 5
+    column: 2
+    maxRanks: 1
+    descriptions:
+      - "Transfers 15 health from the target to the caster every 3 sec.  Lasts 30 sec."
+  - id: "shadow-mastery"
+    name: "Shadow Mastery"
+    icon: "spell_shadow_shadetruesight"
+    row: 6
+    column: 2
+    maxRanks: 5
+    requires:
+      talentId: "siphon-life"
+      ranks: 1
+    descriptions:
+      - "Increases the damage dealt or life drained by your Shadow spells by 2%."
+      - "Increases the damage dealt or life drained by your Shadow spells by 4%."
+      - "Increases the damage dealt or life drained by your Shadow spells by 6%."
+      - "Increases the damage dealt or life drained by your Shadow spells by 8%."
+      - "Increases the damage dealt or life drained by your Shadow spells by 10%."
+  - id: "amplify-curse"
+    name: "Amplify Curse"
+    icon: "spell_shadow_contagion"
+    row: 3
+    column: 3
+    maxRanks: 1
+    descriptions:
+      - "Increases the effect of your next Curse of Weakness or Curse of Agony by 50%, or your next Curse of Exhaustion by 20%.  Lasts 30 sec."
+  - id: "curse-of-exhaustion"
+    name: "Curse of Exhaustion"
+    icon: "spell_shadow_grimward"
+    row: 5
+    column: 3
+    maxRanks: 1
+    requires:
+      talentId: "amplify-curse"
+      ranks: 1
+    descriptions:
+      - "Reduces the target's movement speed by 10% for 12 sec.  Only one Curse per Warlock can be active on any one target."
+  - id: "improved-curse-of-exhaustion"
+    name: "Improved Curse of Exhaustion"
+    icon: "spell_shadow_grimward"
+    row: 5
+    column: 4
+    maxRanks: 4
+    requires:
+      talentId: "curse-of-exhaustion"
+      ranks: 1
+    descriptions:
+      - "Increases the speed reduction of your Curse of Exhaustion by 5%."
+      - "Increases the speed reduction of your Curse of Exhaustion by 10%."
+      - "Increases the speed reduction of your Curse of Exhaustion by 15%."
+      - "Increases the speed reduction of your Curse of Exhaustion by 20%."
+  - id: "improved-drain-soul"
+    name: "Improved Drain Soul"
+    icon: "spell_shadow_haunting"
+    row: 2
+    column: 2
+    maxRanks: 2
+    descriptions:
+      - "Gives you a 50% chance to get a 100% increase to your Mana regeneration for 10 sec if the target is killed by you while you drain its soul.  In addition your Mana may continue to regenerate while casting at 50% of normal."
+      - "Gives you a 100% chance to get a 100% increase to your Mana regeneration for 10 sec if the target is killed by you while you drain its soul.  In addition your Mana may continue to regenerate while casting at 50% of normal."
+  - id: "improved-drain-mana"
+    name: "Improved Drain Mana"
+    icon: "spell_shadow_siphonmana"
+    row: 4
+    column: 4
+    maxRanks: 2
+    descriptions:
+      - "Causes 15% of the Mana drained by your Drain Mana spell to damage the opponent."
+      - "Causes 30% of the Mana drained by your Drain Mana spell to damage the opponent."
+  - id: "improved-curse-of-agony"
+    name: "Improved Curse of Agony"
+    icon: "spell_shadow_curseofsargeras"
+    row: 3
+    column: 1
+    maxRanks: 3
+    descriptions:
+      - "Increases the damage done by your Curse of Agony by 2%."
+      - "Increases the damage done by your Curse of Agony by 4%."
+      - "Increases the damage done by your Curse of Agony by 6%."

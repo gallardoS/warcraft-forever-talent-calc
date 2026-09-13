@@ -1,0 +1,182 @@
+id: "druid-balance"
+classId: "druid"
+name: "Balance"
+version: "classic-1.12"
+status: "baseline"
+talents:
+  - id: "nature-s-grasp"
+    name: "Nature's Grasp"
+    icon: "spell_nature_natureswrath"
+    row: 1
+    column: 2
+    maxRanks: 1
+    descriptions:
+      - "While active, any time an enemy strikes the caster they have a 35% chance to become afflicted by Entangling Roots (Rank 1).  Only useable outdoors.  1 charge.  Lasts 45 sec."
+  - id: "improved-wrath"
+    name: "Improved Wrath"
+    icon: "spell_nature_abolishmagic"
+    row: 1
+    column: 1
+    maxRanks: 5
+    descriptions:
+      - "Reduces the cast time of your Wrath spell by 0.1 sec."
+      - "Reduces the cast time of your Wrath spell by 0.2 sec."
+      - "Reduces the cast time of your Wrath spell by 0.3 sec."
+      - "Reduces the cast time of your Wrath spell by 0.4 sec."
+      - "Reduces the cast time of your Wrath spell by 0.5 sec."
+  - id: "improved-moonfire"
+    name: "Improved Moonfire"
+    icon: "spell_nature_starfall"
+    row: 2
+    column: 2
+    maxRanks: 5
+    descriptions:
+      - "Increases the damage and critical strike chance of your Moonfire spell by 2%."
+      - "Increases the damage and critical strike chance of your Moonfire spell by 4%."
+      - "Increases the damage and critical strike chance of your Moonfire spell by 6%."
+      - "Increases the damage and critical strike chance of your Moonfire spell by 8%."
+      - "Increases the damage and critical strike chance of your Moonfire spell by 10%."
+  - id: "nature-s-reach"
+    name: "Nature's Reach"
+    icon: "spell_nature_naturetouchgrow"
+    row: 3
+    column: 4
+    maxRanks: 2
+    descriptions:
+      - "Increases the range of your Wrath, Entangling Roots, Faerie Fire, Moonfire, Starfire, and Hurricane spells by 10%."
+      - "Increases the range of your Wrath, Entangling Roots, Faerie Fire, Moonfire, Starfire, and Hurricane spells by 20%."
+  - id: "natural-shapeshifter"
+    name: "Natural Shapeshifter"
+    icon: "spell_nature_wispsplode"
+    row: 2
+    column: 4
+    maxRanks: 3
+    descriptions:
+      - "Reduces the mana cost of all shapeshifting by 10%."
+      - "Reduces the mana cost of all shapeshifting by 20%."
+      - "Reduces the mana cost of all shapeshifting by 30%."
+  - id: "improved-thorns"
+    name: "Improved Thorns"
+    icon: "spell_nature_thorns"
+    row: 3
+    column: 1
+    maxRanks: 3
+    descriptions:
+      - "Increases damage caused by your Thorns spell by 25%."
+      - "Increases damage caused by your Thorns spell by 50%."
+      - "Increases damage caused by your Thorns spell by 75%."
+  - id: "moonglow"
+    name: "Moonglow"
+    icon: "spell_nature_sentinal"
+    row: 5
+    column: 3
+    maxRanks: 3
+    descriptions:
+      - "Reduces the Mana cost of your Moonfire, Starfire, Wrath, Healing Touch, Regrowth and Rejuvenation spells by 3%."
+      - "Reduces the Mana cost of your Moonfire, Starfire, Wrath, Healing Touch, Regrowth and Rejuvenation spells by 6%."
+      - "Reduces the Mana cost of your Moonfire, Starfire, Wrath, Healing Touch, Regrowth and Rejuvenation spells by 9%."
+  - id: "improved-starfire"
+    name: "Improved Starfire"
+    icon: "spell_arcane_starfire"
+    row: 4
+    column: 3
+    maxRanks: 5
+    descriptions:
+      - "Reduces the cast time of Starfire by 0.1 sec and has a 3% chance to stun the target for 3 sec."
+      - "Reduces the cast time of Starfire by 0.2 sec and has a 6% chance to stun the target for 3 sec."
+      - "Reduces the cast time of Starfire by 0.3 sec and has a 9% chance to stun the target for 3 sec."
+      - "Reduces the cast time of Starfire by 0.4 sec and has a 12% chance to stun the target for 3 sec."
+      - "Reduces the cast time of Starfire by 0.5 sec and has a 15% chance to stun the target for 3 sec."
+  - id: "improved-entangling-roots"
+    name: "Improved Entangling Roots"
+    icon: "spell_nature_stranglevines"
+    row: 2
+    column: 1
+    maxRanks: 3
+    descriptions:
+      - "Gives you a 40% chance to avoid interruption caused by damage while casting Entangling Roots."
+      - "Gives you a 70% chance to avoid interruption caused by damage while casting Entangling Roots."
+      - "Gives you a 100% chance to avoid interruption caused by damage while casting Entangling Roots."
+  - id: "omen-of-clarity"
+    name: "Omen of Clarity"
+    icon: "spell_nature_crystalball"
+    row: 3
+    column: 3
+    maxRanks: 1
+    requires:
+      talentId: "natural-weapons"
+      ranks: 5
+    descriptions:
+      - "Imbues the Druid with natural energy.  Each of the Druid's melee attacks has a chance of causing the caster to enter a Clearcasting state.  The Clearcasting state reduces the Mana, Rage or Energy cost of your next damage or healing spell or offensive ability by 100%.  Lasts 10 min."
+  - id: "nature-s-grace"
+    name: "Nature's Grace"
+    icon: "spell_nature_naturesblessing"
+    row: 5
+    column: 2
+    maxRanks: 1
+    descriptions:
+      - "All spell criticals grace you with a blessing of nature, reducing the casting time of your next spell by 0.5 sec."
+  - id: "moonfury"
+    name: "Moonfury"
+    icon: "spell_nature_moonglow"
+    row: 6
+    column: 2
+    maxRanks: 5
+    requires:
+      talentId: "nature-s-grace"
+      ranks: 1
+    descriptions:
+      - "Increases the damage done by your Starfire, Moonfire and Wrath spells by 2%."
+      - "Increases the damage done by your Starfire, Moonfire and Wrath spells by 4%."
+      - "Increases the damage done by your Starfire, Moonfire and Wrath spells by 6%."
+      - "Increases the damage done by your Starfire, Moonfire and Wrath spells by 8%."
+      - "Increases the damage done by your Starfire, Moonfire and Wrath spells by 10%."
+  - id: "natural-weapons"
+    name: "Natural Weapons"
+    icon: "inv_staff_01"
+    row: 2
+    column: 3
+    maxRanks: 5
+    descriptions:
+      - "Increases the damage you deal with physical attacks in all forms by 2%."
+      - "Increases the damage you deal with physical attacks in all forms by 4%."
+      - "Increases the damage you deal with physical attacks in all forms by 6%."
+      - "Increases the damage you deal with physical attacks in all forms by 8%."
+      - "Increases the damage you deal with physical attacks in all forms by 10%."
+  - id: "vengeance"
+    name: "Vengeance"
+    icon: "spell_nature_purge"
+    row: 4
+    column: 2
+    maxRanks: 5
+    requires:
+      talentId: "improved-moonfire"
+      ranks: 5
+    descriptions:
+      - "Increases the critical strike damage bonus of your Starfire, Moonfire, and Wrath spells by 20%."
+      - "Increases the critical strike damage bonus of your Starfire, Moonfire, and Wrath spells by 40%."
+      - "Increases the critical strike damage bonus of your Starfire, Moonfire, and Wrath spells by 60%."
+      - "Increases the critical strike damage bonus of your Starfire, Moonfire, and Wrath spells by 80%."
+      - "Increases the critical strike damage bonus of your Starfire, Moonfire, and Wrath spells by 100%."
+  - id: "moonkin-form"
+    name: "Moonkin Form"
+    icon: "spell_nature_forceofnature"
+    row: 7
+    column: 2
+    maxRanks: 1
+    descriptions:
+      - "Transforms the Druid into Moonkin Form.  While in this form the armor contribution from items is increased by 360% and all party members within 30 yards have their spell critical chance increased by 3%.  The Moonkin can only cast Balance spells while shapeshifted.The act of shapeshifting frees the caster of Polymorph and Movement Impairing effects."
+  - id: "improved-nature-s-grasp"
+    name: "Improved Nature's Grasp"
+    icon: "spell_nature_natureswrath"
+    row: 1
+    column: 3
+    maxRanks: 4
+    requires:
+      talentId: "nature-s-grasp"
+      ranks: 1
+    descriptions:
+      - "Increases the chance for your Nature's Grasp to entangle an enemy by 15%."
+      - "Increases the chance for your Nature's Grasp to entangle an enemy by 30%."
+      - "Increases the chance for your Nature's Grasp to entangle an enemy by 45%."
+      - "Increases the chance for your Nature's Grasp to entangle an enemy by 65%."

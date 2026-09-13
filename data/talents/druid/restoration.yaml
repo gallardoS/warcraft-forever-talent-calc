@@ -1,0 +1,173 @@
+id: "druid-restoration"
+classId: "druid"
+name: "Restoration"
+version: "classic-1.12"
+status: "baseline"
+talents:
+  - id: "improved-mark-of-the-wild"
+    name: "Improved Mark of the Wild"
+    icon: "spell_nature_regeneration"
+    row: 1
+    column: 2
+    maxRanks: 5
+    descriptions:
+      - "Increases the effects of your Mark of the Wild and Gift of the Wild spells by 7%."
+      - "Increases the effects of your Mark of the Wild and Gift of the Wild spells by 14%."
+      - "Increases the effects of your Mark of the Wild and Gift of the Wild spells by 21%."
+      - "Increases the effects of your Mark of the Wild and Gift of the Wild spells by 28%."
+      - "Increases the effects of your Mark of the Wild and Gift of the Wild spells by 35%."
+  - id: "furor"
+    name: "Furor"
+    icon: "spell_holy_blessingofstamina"
+    row: 1
+    column: 3
+    maxRanks: 5
+    descriptions:
+      - "Gives you 20% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form."
+      - "Gives you 40% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form."
+      - "Gives you 60% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form."
+      - "Gives you 80% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form."
+      - "Gives you 100% chance to gain 10 Rage when you shapeshift into Bear and Dire Bear Form or 40 Energy when you shapeshift into Cat Form."
+  - id: "nature-s-focus"
+    name: "Nature's Focus"
+    icon: "spell_nature_healingwavegreater"
+    row: 2
+    column: 2
+    maxRanks: 5
+    descriptions:
+      - "Gives you a 14% chance to avoid interruption caused by damage while casting the Healing Touch, Regrowth and Tranquility spells."
+      - "Gives you a 28% chance to avoid interruption caused by damage while casting the Healing Touch, Regrowth and Tranquility spells."
+      - "Gives you a 42% chance to avoid interruption caused by damage while casting the Healing Touch, Regrowth and Tranquility spells."
+      - "Gives you a 56% chance to avoid interruption caused by damage while casting the Healing Touch, Regrowth and Tranquility spells."
+      - "Gives you a 70% chance to avoid interruption caused by damage while casting the Healing Touch, Regrowth and Tranquility spells."
+  - id: "improved-healing-touch"
+    name: "Improved Healing Touch"
+    icon: "spell_nature_healingtouch"
+    row: 2
+    column: 1
+    maxRanks: 5
+    descriptions:
+      - "Reduces the cast time of your Healing Touch spell by 0.1 sec."
+      - "Reduces the cast time of your Healing Touch spell by 0.2 sec."
+      - "Reduces the cast time of your Healing Touch spell by 0.3 sec."
+      - "Reduces the cast time of your Healing Touch spell by 0.4 sec."
+      - "Reduces the cast time of your Healing Touch spell by 0.5 sec."
+  - id: "improved-regrowth"
+    name: "Improved Regrowth"
+    icon: "spell_nature_resistnature"
+    row: 6
+    column: 3
+    maxRanks: 5
+    descriptions:
+      - "Increases the critical effect chance of your Regrowth spell by 10%."
+      - "Increases the critical effect chance of your Regrowth spell by 20%."
+      - "Increases the critical effect chance of your Regrowth spell by 30%."
+      - "Increases the critical effect chance of your Regrowth spell by 40%."
+      - "Increases the critical effect chance of your Regrowth spell by 50%."
+  - id: "improved-enrage"
+    name: "Improved Enrage"
+    icon: "ability_druid_enrage"
+    row: 2
+    column: 3
+    maxRanks: 2
+    descriptions:
+      - "The Enrage ability now instantly generates 5 Rage."
+      - "The Enrage ability now instantly generates 10 Rage."
+  - id: "insect-swarm"
+    name: "Insect Swarm"
+    icon: "spell_nature_insectswarm"
+    row: 3
+    column: 3
+    maxRanks: 1
+    descriptions:
+      - "The enemy target is swarmed by insects, decreasing their chance to hit by 2% and causing 66 Nature damage over 12 sec."
+  - id: "gift-of-nature"
+    name: "Gift of Nature"
+    icon: "spell_nature_protectionformnature"
+    row: 5
+    column: 3
+    maxRanks: 5
+    requires:
+      talentId: "insect-swarm"
+      ranks: 1
+    descriptions:
+      - "Increases the effect of all healing spells by 2%."
+      - "Increases the effect of all healing spells by 4%."
+      - "Increases the effect of all healing spells by 6%."
+      - "Increases the effect of all healing spells by 8%."
+      - "Increases the effect of all healing spells by 10%."
+  - id: "reflection"
+    name: "Reflection"
+    icon: "spell_frost_windwalkon"
+    row: 3
+    column: 2
+    maxRanks: 3
+    descriptions:
+      - "Allows 5% of your Mana regeneration to continue while casting."
+      - "Allows 10% of your Mana regeneration to continue while casting."
+      - "Allows 15% of your Mana regeneration to continue while casting."
+  - id: "improved-rejuvenation"
+    name: "Improved Rejuvenation"
+    icon: "spell_nature_rejuvenation"
+    row: 4
+    column: 4
+    maxRanks: 3
+    descriptions:
+      - "Increases the effect of your Rejuvenation spell by 5%."
+      - "Increases the effect of your Rejuvenation spell by 10%."
+      - "Increases the effect of your Rejuvenation spell by 15%."
+  - id: "nature-s-swiftness"
+    name: "Nature's Swiftness"
+    icon: "spell_nature_ravenform"
+    row: 5
+    column: 1
+    maxRanks: 1
+    requires:
+      talentId: "improved-healing-touch"
+      ranks: 5
+    descriptions:
+      - "When activated, your next Nature spell becomes an instant cast spell."
+  - id: "subtlety"
+    name: "Subtlety"
+    icon: "ability_eyeoftheowl"
+    row: 3
+    column: 4
+    maxRanks: 5
+    descriptions:
+      - "Reduces the threat generated by your Healing spells by 4%."
+      - "Reduces the threat generated by your Healing spells by 8%."
+      - "Reduces the threat generated by your Healing spells by 12%."
+      - "Reduces the threat generated by your Healing spells by 16%."
+      - "Reduces the threat generated by your Healing spells by 20%."
+  - id: "improved-tranquility"
+    name: "Improved Tranquility"
+    icon: "spell_nature_tranquility"
+    row: 5
+    column: 4
+    maxRanks: 2
+    descriptions:
+      - "Reduces threat caused by Tranquility by 50%."
+      - "Reduces threat caused by Tranquility by 100%."
+  - id: "tranquil-spirit"
+    name: "Tranquil Spirit"
+    icon: "spell_holy_elunesgrace"
+    row: 4
+    column: 2
+    maxRanks: 5
+    descriptions:
+      - "Reduces the mana cost of your Healing Touch and Tranquility spells by 2%."
+      - "Reduces the mana cost of your Healing Touch and Tranquility spells by 4%."
+      - "Reduces the mana cost of your Healing Touch and Tranquility spells by 6%."
+      - "Reduces the mana cost of your Healing Touch and Tranquility spells by 8%."
+      - "Reduces the mana cost of your Healing Touch and Tranquility spells by 10%."
+  - id: "swiftmend"
+    name: "Swiftmend"
+    icon: "inv_relics_idolofrejuvenation"
+    row: 7
+    column: 2
+    maxRanks: 1
+    requires:
+      talentId: "tranquil-spirit"
+      ranks: 5
+    descriptions:
+      - "Consumes a Rejuvenation or Regrowth effect on a friendly target to instantly heal them an amount equal to 12 sec. of Rejuvenation or 18 sec. of Regrowth."

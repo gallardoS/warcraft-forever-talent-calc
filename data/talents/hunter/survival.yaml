@@ -1,0 +1,172 @@
+id: "hunter-survival"
+classId: "hunter"
+name: "Survival"
+version: "classic-1.12"
+status: "baseline"
+talents:
+  - id: "humanoid-slaying"
+    name: "Humanoid Slaying"
+    icon: "spell_holy_prayerofhealing"
+    row: 1
+    column: 2
+    maxRanks: 3
+    descriptions:
+      - "Increases all damage caused against Humanoid targets by 1% and increases critical damage caused against Humanoid targets by an additional 1%."
+      - "Increases all damage caused against Humanoid targets by 2% and increases critical damage caused against Humanoid targets by an additional 2%."
+      - "Increases all damage caused against Humanoid targets by 3% and increases critical damage caused against Humanoid targets by an additional 3%."
+  - id: "lightning-reflexes"
+    name: "Lightning Reflexes"
+    icon: "spell_nature_invisibilty"
+    row: 6
+    column: 3
+    maxRanks: 5
+    descriptions:
+      - "Increases your Agility by 3%."
+      - "Increases your Agility by 6%."
+      - "Increases your Agility by 9%."
+      - "Increases your Agility by 12%."
+      - "Increases your Agility by 15%."
+  - id: "entrapment"
+    name: "Entrapment"
+    icon: "spell_nature_stranglevines"
+    row: 2
+    column: 1
+    maxRanks: 5
+    descriptions:
+      - "Gives your Immolation Trap, Frost Trap, and Explosive Trap a 5% chance to entrap the target, preventing them from moving for 5 sec."
+      - "Gives your Immolation Trap, Frost Trap, and Explosive Trap a 10% chance to entrap the target, preventing them from moving for 5 sec."
+      - "Gives your Immolation Trap, Frost Trap, and Explosive Trap a 15% chance to entrap the target, preventing them from moving for 5 sec."
+      - "Gives your Immolation Trap, Frost Trap, and Explosive Trap a 20% chance to entrap the target, preventing them from moving for 5 sec."
+      - "Gives your Immolation Trap, Frost Trap, and Explosive Trap a 25% chance to entrap the target, preventing them from moving for 5 sec."
+  - id: "improved-wing-clip"
+    name: "Improved Wing Clip"
+    icon: "ability_rogue_trip"
+    row: 2
+    column: 3
+    maxRanks: 5
+    descriptions:
+      - "Gives your Wing Clip ability a 4% chance to immobilize the target for 5 sec."
+      - "Gives your Wing Clip ability a 8% chance to immobilize the target for 5 sec."
+      - "Gives your Wing Clip ability a 12% chance to immobilize the target for 5 sec."
+      - "Gives your Wing Clip ability a 16% chance to immobilize the target for 5 sec."
+      - "Gives your Wing Clip ability a 20% chance to immobilize the target for 5 sec."
+  - id: "clever-traps"
+    name: "Clever Traps"
+    icon: "spell_nature_timestop"
+    row: 3
+    column: 1
+    maxRanks: 2
+    descriptions:
+      - "Increases the duration of Freezing and Frost trap effects by 15% and the damage of Immolation and Explosive trap effects by 15%."
+      - "Increases the duration of Freezing and Frost trap effects by 30% and the damage of Immolation and Explosive trap effects by 30%."
+  - id: "deterrence"
+    name: "Deterrence"
+    icon: "ability_whirlwind"
+    row: 3
+    column: 3
+    maxRanks: 1
+    descriptions:
+      - "When activated, increases your Dodge and Parry chance by 25% for 10 sec."
+  - id: "improved-feign-death"
+    name: "Improved Feign Death"
+    icon: "ability_rogue_feigndeath"
+    row: 4
+    column: 4
+    maxRanks: 2
+    descriptions:
+      - "Reduces the chance your Feign Death ability will be resisted by 2%."
+      - "Reduces the chance your Feign Death ability will be resisted by 4%."
+  - id: "surefooted"
+    name: "Surefooted"
+    icon: "ability_kick"
+    row: 4
+    column: 2
+    maxRanks: 3
+    descriptions:
+      - "Increases hit chance by 1% and increases the chance movement impairing effects will be resisted by an additional 5%."
+      - "Increases hit chance by 2% and increases the chance movement impairing effects will be resisted by an additional 10%."
+      - "Increases hit chance by 3% and increases the chance movement impairing effects will be resisted by an additional 15%."
+  - id: "deflection"
+    name: "Deflection"
+    icon: "ability_parry"
+    row: 1
+    column: 3
+    maxRanks: 5
+    descriptions:
+      - "Increases your Parry chance by 1%."
+      - "Increases your Parry chance by 2%."
+      - "Increases your Parry chance by 3%."
+      - "Increases your Parry chance by 4%."
+      - "Increases your Parry chance by 5%."
+  - id: "counterattack"
+    name: "Counterattack"
+    icon: "ability_warrior_challange"
+    row: 5
+    column: 3
+    maxRanks: 1
+    requires:
+      talentId: "deterrence"
+      ranks: 1
+    descriptions:
+      - "A strike that becomes active after parrying an opponent's attack.  This attack deals 40 damage and immobilizes the target for 5 sec.  Counterattack cannot be blocked, dodged, or parried."
+  - id: "killer-instinct"
+    name: "Killer Instinct"
+    icon: "spell_holy_blessingofstamina"
+    row: 5
+    column: 2
+    maxRanks: 3
+    descriptions:
+      - "Increases your critical strike chance with all attacks by 1%."
+      - "Increases your critical strike chance with all attacks by 2%."
+      - "Increases your critical strike chance with all attacks by 3%."
+  - id: "trap-mastery"
+    name: "Trap Mastery"
+    icon: "ability_ensnare"
+    row: 4
+    column: 1
+    maxRanks: 2
+    descriptions:
+      - "Decreases the chance enemies will resist trap effects by 5%."
+      - "Decreases the chance enemies will resist trap effects by 10%."
+  - id: "wyvern-sting"
+    name: "Wyvern Sting"
+    icon: "inv_spear_02"
+    row: 7
+    column: 2
+    maxRanks: 1
+    requires:
+      talentId: "killer-instinct"
+      ranks: 3
+    descriptions:
+      - "A stinging shot that puts the target to sleep for 12 sec.  Any damage will cancel the effect.  When the target wakes up, the Sting causes 300 Nature damage over 12 sec.  Only usable out of combat.  Only one Sting per Hunter can be active on the target at a time."
+  - id: "savage-strikes"
+    name: "Savage Strikes"
+    icon: "ability_racial_bloodrage"
+    row: 2
+    column: 2
+    maxRanks: 2
+    descriptions:
+      - "Increases the critical strike chance of Raptor Strike and Mongoose Bite by 10%."
+      - "Increases the critical strike chance of Raptor Strike and Mongoose Bite by 20%."
+  - id: "survivalist"
+    name: "Survivalist"
+    icon: "spell_shadow_twilight"
+    row: 3
+    column: 2
+    maxRanks: 5
+    descriptions:
+      - "Increases total health by 2%."
+      - "Increases total health by 4%."
+      - "Increases total health by 6%."
+      - "Increases total health by 8%."
+      - "Increases total health by 10%."
+  - id: "monster-slaying"
+    name: "Monster Slaying"
+    icon: "inv_misc_head_dragon_black"
+    row: 1
+    column: 1
+    maxRanks: 3
+    descriptions:
+      - "Increases all damage caused against Beasts, Giants and Dragonkin targets by 1% and increases critical damage caused against Beasts, Giants and Dragonkin targets by an additional 1%."
+      - "Increases all damage caused against Beasts, Giants and Dragonkin targets by 2% and increases critical damage caused against Beasts, Giants and Dragonkin targets by an additional 2%."
+      - "Increases all damage caused against Beasts, Giants and Dragonkin targets by 3% and increases critical damage caused against Beasts, Giants and Dragonkin targets by an additional 3%."
