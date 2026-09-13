@@ -19,7 +19,7 @@ talents:
       - "Your critical strikes cause the opponent to bleed, dealing 60% of your melee weapon's average damage over 12 sec."
   - id: "weaponmaster"
     name: "Weaponmaster"
-    icon: "inv_sword_27"
+    icon: "Garrison_weaponupgrade"
     row: 5
     column: 3
     maxRanks: 5
@@ -91,7 +91,7 @@ talents:
       - "Increases the critical strike chance of your Overpower ability by 50%."
   - id: "bloodthrill"
     name: "Bloodthrill"
-    icon: "inv_axe_06"
+    icon: "ability_warrior_weaponmastery"
     row: 5
     column: 1
     maxRanks: 5
@@ -111,10 +111,14 @@ talents:
       - "Your next 5 melee attacks strike an additional nearby opponent."
   - id: "spearing-strike"
     name: "Spearing Strike"
-    icon: "inv_weapon_halbard_01"
+    icon: "Inv_spear_01"
     row: 4
     column: 1
     maxRanks: 1
+    cost: "15 Rage"
+    range: "Melee Range"
+    castTime: "Instant"
+    cooldown: "20 sec cooldown"
     descriptions:
       - "A brutal attack that deals 40% weapon damage. Deals an additional 80% weapon damage against Giants, Dragonkin and mounted targets. Mounted targets are dismounted."
   - id: "mortal-strike"
