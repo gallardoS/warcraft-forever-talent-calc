@@ -20,6 +20,7 @@
       <button class="nav-tab is-active" data-view="talents">Talents</button>
       <button class="nav-tab" data-view="races">Races</button>
       <button class="nav-tab" data-view="abilities">Abilities</button>
+      <button class="nav-tab nav-tab-editor" data-view="editor">Editor</button>
     </nav>
   </header>
 
@@ -66,9 +67,79 @@
       </div>
       <div id="ability-grid" class="ability-grid"></div>
     </section>
+
+    <section id="editor-view" class="view" aria-labelledby="editor-title">
+      <div class="workspace-head editor-heading">
+        <div>
+          <p class="eyebrow">Temporary workspace · changes stay in your browser</p>
+          <h1 id="editor-title">Talent editor</h1>
+        </div>
+        <div class="build-actions">
+          <button id="editor-copy-yaml" class="button">Copy YAML</button>
+          <button id="editor-download-yaml" class="button">Download YAML</button>
+          <button id="editor-reset" class="button button-quiet">Discard changes</button>
+        </div>
+      </div>
+
+      <div class="editor-toolbar">
+        <label>Class<select id="editor-class"></select></label>
+        <label>Tree<select id="editor-tree"></select></label>
+        <button id="editor-add-talent" class="button button-quiet">Add talent</button>
+        <p id="editor-status" class="editor-status" role="status"></p>
+      </div>
+
+      <div class="editor-layout">
+        <section class="editor-canvas" aria-label="Editable talent tree">
+          <header class="tree-head">
+            <div>
+              <h2 id="editor-tree-name"></h2>
+              <p>Drag a talent to move it. Dropping onto another talent swaps their positions.</p>
+            </div>
+            <span id="editor-talent-count" class="tree-points"></span>
+          </header>
+          <div id="editor-grid" class="editor-grid"></div>
+        </section>
+
+        <aside id="editor-panel" class="editor-panel">
+          <div id="editor-empty" class="editor-empty">
+            <span class="editor-empty-mark">↖</span>
+            <h2>Select a talent</h2>
+            <p>Choose an icon in the tree to edit its tooltip and properties.</p>
+          </div>
+          <form id="editor-form" hidden>
+            <div class="editor-panel-head">
+              <div>
+                <span class="editor-kicker">Selected talent</span>
+                <code id="editor-talent-id"></code>
+              </div>
+              <button id="editor-delete-talent" class="button button-danger" type="button">Delete</button>
+            </div>
+            <div class="editor-fields">
+              <label class="field-wide">Talent ID<input id="editor-id" name="id" type="text" pattern="[a-z0-9-]+" required></label>
+              <label class="field-wide">Name<input id="editor-name" name="name" type="text" required></label>
+              <label>Icon<input id="editor-icon" name="icon" type="text" required></label>
+              <label>Max ranks<input id="editor-max-ranks" name="maxRanks" type="number" min="1" max="5" required></label>
+              <label>Row<input id="editor-row" name="row" type="number" min="1" max="7" required></label>
+              <label>Column<input id="editor-column" name="column" type="number" min="1" max="4" required></label>
+              <label>Requires talent<select id="editor-requires-talent" name="requiresTalent"></select></label>
+              <label>Required ranks<input id="editor-requires-ranks" name="requiresRanks" type="number" min="1" max="5"></label>
+            </div>
+            <fieldset class="description-editor">
+              <legend>Tooltip by rank</legend>
+              <div id="editor-descriptions"></div>
+            </fieldset>
+            <div class="tooltip-preview-wrap">
+              <span class="editor-kicker">Live tooltip preview</span>
+              <div id="editor-tooltip-preview" class="talent-tooltip editor-tooltip-preview"></div>
+            </div>
+          </form>
+        </aside>
+      </div>
+    </section>
   </main>
 
   <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="./config.js"></script>
   <script src="./app.js" defer></script>
 </body>
 </html>

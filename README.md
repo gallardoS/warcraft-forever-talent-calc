@@ -19,3 +19,13 @@ Race and ability source data live in `data/races.json` and `data/abilities.json`
 ## Local preview
 
 Serve the `dist` directory with any static HTTP server. Opening `dist/index.html` directly will not load the data because browsers block local fetch requests.
+
+## Feature flags and Vercel
+
+The optional navigation sections are controlled at build time with environment variables. A section is visible only when its value is exactly `true` (case-insensitive):
+
+- `EDITOR_ENABLED`
+- `RACES_ENABLED`
+- `ABILITIES_ENABLED`
+
+After changing flags locally, run `npm run build`. On Vercel, add the variables to the desired environments and redeploy. Vercel runs the configured build and serves the `dist` directory automatically.
