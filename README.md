@@ -14,7 +14,7 @@ node scripts/build-data.mjs
 
 The build validates duplicate IDs and positions, rank descriptions, coordinates, prerequisites, and the expected three-tree class structure. It then writes the browser-ready files to `dist/data/`.
 
-Talents can optionally define white tooltip metadata with `cost`, `range`, `castTime`, and `cooldown`. The `castTime` value can also be `Passive` or `Instant`.
+Talents can optionally define white tooltip metadata with `cost`, `range`, `castTime`, `cooldown`, and `required`. The `castTime` value defaults to `Passive`.
 
 Race and ability source data live in `data/races.json` and `data/abilities.json`. Everything displayed by the product is written in English.
 

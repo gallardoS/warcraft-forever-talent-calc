@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,9 +8,11 @@
   <meta name="description" content="Talent calculator, races and class abilities for Warcraft Forever.">
   <title>Warcraft Forever · Talents</title>
   <link rel="preconnect" href="https://wow.zamimg.com">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%23071017' d='M4 4h56v56H4z'/%3E%3Cpath fill='%23cda84a' d='M12 15h9l5 25 6-19 6 19 5-25h9L42 50h-8l-2-8-2 8h-8z'/%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cpath fill='%23071017' d='M4 4h56v56H4z'/%3E%3Cpath fill='%23cda84a' d='M12 15h9l5 25 6-19 6 19 5-25h9L42 50h-8l-2-8-2 8h-8z'/%3E%3C/svg%3E">
   <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
   <header class="topbar">
     <a class="brand" href="#talents" aria-label="Warcraft Forever">
@@ -27,6 +30,8 @@
     <section id="talents-view" class="view is-active" aria-label="Talent calculator">
       <div class="workspace-head talents-toolbar">
         <div class="build-actions">
+          <div class="required-level"><span class="label">Required level</span><strong id="required-level">10</strong>
+          </div>
           <div class="points-total"><strong id="total-points">0</strong><span>/ 51 points</span></div>
           <button id="copy-build" class="button">Copy link</button>
           <button id="reset-build" class="button button-quiet">Reset</button>
@@ -110,18 +115,26 @@
               <button id="editor-delete-talent" class="button button-danger" type="button">Delete</button>
             </div>
             <div class="editor-fields">
-              <label class="field-wide">Talent ID<input id="editor-id" name="id" type="text" pattern="[a-z0-9-]+" required></label>
+              <label class="field-wide">Talent ID<input id="editor-id" name="id" type="text" pattern="[a-z0-9-]+"
+                  required></label>
               <label class="field-wide">Name<input id="editor-name" name="name" type="text" required></label>
               <label>Icon<input id="editor-icon" name="icon" type="text" required></label>
-              <label>Max ranks<input id="editor-max-ranks" name="maxRanks" type="number" min="1" max="5" required></label>
+              <label>Max ranks<input id="editor-max-ranks" name="maxRanks" type="number" min="1" max="5"
+                  required></label>
               <label>Row<input id="editor-row" name="row" type="number" min="1" max="7" required></label>
               <label>Column<input id="editor-column" name="column" type="number" min="1" max="4" required></label>
               <label>Cost<input id="editor-cost" name="cost" type="text" placeholder="30 Rage"></label>
-              <label>Range<input id="editor-range" name="range" type="text" placeholder="Melee Range / 30 yd range"></label>
-              <label>Cast / type<input id="editor-cast-time" name="castTime" type="text" placeholder="Passive / Instant / 1.5 sec cast"></label>
-              <label>Cooldown<input id="editor-cooldown" name="cooldown" type="text" placeholder="6 sec cooldown"></label>
+              <label>Range<input id="editor-range" name="range" type="text"
+                  placeholder="Melee Range / 30 yd range"></label>
+              <label>Cast / type<input id="editor-cast-time" name="castTime" type="text"
+                  placeholder="Passive / Instant / 1.5 sec cast"></label>
+              <label>Cooldown<input id="editor-cooldown" name="cooldown" type="text"
+                  placeholder="6 sec cooldown"></label>
+              <label>Required<input id="editor-required" name="required" type="text"
+                  placeholder="Requires Defensive Stance / Requires Shield"></label>
               <label>Requires talent<select id="editor-requires-talent" name="requiresTalent"></select></label>
-              <label>Required ranks<input id="editor-requires-ranks" name="requiresRanks" type="number" min="1" max="5"></label>
+              <label>Required ranks<input id="editor-requires-ranks" name="requiresRanks" type="number" min="1"
+                  max="5"></label>
             </div>
             <fieldset class="description-editor">
               <legend>Tooltip by rank</legend>
@@ -141,4 +154,5 @@
   <script src="./config.js"></script>
   <script src="./app.js" defer></script>
 </body>
+
 </html>

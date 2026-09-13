@@ -26,11 +26,13 @@ function currentClass() { return state.data.classes.find((entry) => entry.id ===
 function currentRank(talent) { return state.points[talent.id] || 0; }
 function pointsInTree(tree) { return tree.talents.reduce((sum, talent) => sum + currentRank(talent), 0); }
 function totalPoints() { return Object.values(state.points).reduce((sum, rank) => sum + rank, 0); }
+function requiredLevel() { const pts = totalPoints(); return pts === 0 ? 10 : Math.min(60, 9 + pts); }
 
 function talentMetadataHtml(talent) {
   const rows = [
     [talent.cost, talent.range],
-    [talent.castTime, talent.cooldown]
+    [talent.castTime, talent.cooldown],
+    [talent.required, ""]
   ].filter((row) => row.some(Boolean));
   return rows.map(([left, right]) => `<div class="tooltip-meta"><span>${escapeHtml(left)}</span><span>${escapeHtml(right)}</span></div>`).join("");
 }
@@ -110,6 +112,8 @@ function drawDependencies(tree, grid) {
 function renderTrees() {
   const classEntry = currentClass();
   $("#total-points").textContent = totalPoints();
+  const reqLevelEl = $("#required-level");
+  if (reqLevelEl) reqLevelEl.textContent = requiredLevel();
   const container = $("#talent-trees");
   container.innerHTML = "";
   for (const tree of classEntry.trees) {
@@ -405,8 +409,9 @@ function renderEditorForm() {
   $("#editor-column").value = talent.column;
   $("#editor-cost").value = talent.cost || "";
   $("#editor-range").value = talent.range || "";
-  $("#editor-cast-time").value = talent.castTime || "";
+  $("#editor-cast-time").value = talent.castTime ?? "Passive";
   $("#editor-cooldown").value = talent.cooldown || "";
+  $("#editor-required").value = talent.required || "";
   const requiredPicker = $("#editor-requires-talent");
   requiredPicker.innerHTML = `<option value="">None</option>${editorTree().talents.filter((item) => item.id !== talent.id).map((item) => `<option value="${escapeHtml(item.id)}">${escapeHtml(item.name)}</option>`).join("")}`;
   requiredPicker.value = talent.requires?.talentId || "";
@@ -466,6 +471,7 @@ function addEditorTalent() {
     row: position.row,
     column: position.column,
     maxRanks: 1,
+    castTime: "Passive",
     descriptions: ["Describe this talent."]
   };
   tree.talents.push(talent);
@@ -541,7 +547,7 @@ function treeToYaml(tree) {
     lines.push(`    row: ${talent.row}`);
     lines.push(`    column: ${talent.column}`);
     lines.push(`    maxRanks: ${talent.maxRanks}`);
-    for (const key of ["cost", "range", "castTime", "cooldown"]) {
+    for (const key of ["cost", "range", "castTime", "cooldown", "required"]) {
       if (talent[key]) lines.push(`    ${key}: ${yamlString(talent[key])}`);
     }
     if (talent.requires) {
@@ -628,7 +634,7 @@ function setupEditor() {
   });
   $("#editor-row").addEventListener("change", (event) => updateEditorPosition("row", event.target.value));
   $("#editor-column").addEventListener("change", (event) => updateEditorPosition("column", event.target.value));
-  for (const [selector, key] of [["#editor-cost", "cost"], ["#editor-range", "range"], ["#editor-cast-time", "castTime"], ["#editor-cooldown", "cooldown"]]) {
+  for (const [selector, key] of [["#editor-cost", "cost"], ["#editor-range", "range"], ["#editor-cast-time", "castTime"], ["#editor-cooldown", "cooldown"], ["#editor-required", "required"]]) {
     $(selector).addEventListener("input", (event) => {
       const value = event.target.value;
       if (value) editorTalent()[key] = value;
