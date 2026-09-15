@@ -13,7 +13,7 @@ talents:
     castTime: "Passive"
     descriptions:
       - "Reduces the cooldown of your Holy Strike ability by 1 sec."
-      - "Reduces the cooldown of your Holy Strike ability by 2 sec.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Reduces the cooldown of your Holy Strike ability by 2 sec."
   - id: "divine-strength"
     name: "Divine Strength"
     icon: "ability_golemthunderclap"
@@ -48,8 +48,8 @@ talents:
     maxRanks: 3
     castTime: "Passive"
     descriptions:
-      - "Increases the amount healed by your Holy Light, Flash of Light, and Holy Shock spells by 4%.\n\nRank 1 value estimated from the rank shown in the video."
-      - "Increases the amount healed by your Holy Light, Flash of Light, and Holy Shock spells by 8%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases the amount healed by your Holy Light, Flash of Light, and Holy Shock spells by 4%."
+      - "Increases the amount healed by your Holy Light, Flash of Light, and Holy Shock spells by 8%."
       - "Increases the amount healed by your Holy Light, Flash of Light, and Holy Shock spells by 12%."
   - id: "spiritual-focus"
     name: "Spiritual Focus"
@@ -59,7 +59,7 @@ talents:
     maxRanks: 2
     castTime: "Passive"
     descriptions:
-      - "Gives your Flash of Light, Holy Light, and Light's Vigil spells a 35% chance to not lose casting time when you take damage.\n\nRank 1 value estimated from the rank shown in the video."
+      - "Gives your Flash of Light, Holy Light, and Light's Vigil spells a 35% chance to not lose casting time when you take damage."
       - "Gives your Flash of Light, Holy Light, and Light's Vigil spells a 70% chance to not lose casting time when you take damage."
   - id: "improved-seal-of-righteousness"
     name: "Improved Seals"
@@ -70,8 +70,8 @@ talents:
     castTime: "Passive"
     descriptions:
       - "Increases the damage done by your Seals and Judgements by 5%."
-      - "Increases the damage done by your Seals and Judgements by 10%.\n\nRank 2 value estimated from the rank shown in the video."
-      - "Increases the damage done by your Seals and Judgements by 15%.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Increases the damage done by your Seals and Judgements by 10%."
+      - "Increases the damage done by your Seals and Judgements by 15%."
   - id: "unyielding-faith"
     name: "Unyielding Faith"
     icon: "spell_holy_unyieldingfaith"
@@ -81,7 +81,7 @@ talents:
     castTime: "Passive"
     descriptions:
       - "Reduces the duration of Fear and Disorient effects on you by 15%.\n\nRight edge of this tooltip was cut off in the video; \"and\" and \"%\" are inferred."
-      - "Reduces the duration of Fear and Disorient effects on you by 30%.\n\nRank 2 value estimated from the rank shown in the video.\n\nRight edge of this tooltip was cut off in the video; \"and\" and \"%\" are inferred."
+      - "Reduces the duration of Fear and Disorient effects on you by 30%.\n\nRight edge of this tooltip was cut off in the video; \"and\" and \"%\" are inferred."
   - id: "voice-of-truth"
     name: "Voice of Truth"
     icon: "spell_holy_silence"
@@ -100,8 +100,8 @@ talents:
     maxRanks: 3
     castTime: "Passive"
     descriptions:
-      - "Allows 10% of your Mana regeneration to continue while casting.\n\nRank 1 value estimated from the rank shown in the video."
-      - "Allows 20% of your Mana regeneration to continue while casting.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Allows 10% of your Mana regeneration to continue while casting."
+      - "Allows 20% of your Mana regeneration to continue while casting."
       - "Allows 30% of your Mana regeneration to continue while casting."
   - id: "purifying-power"
     name: "Purifying Power"
@@ -111,7 +111,7 @@ talents:
     maxRanks: 2
     castTime: "Passive"
     descriptions:
-      - "Reduces the mana cost of your Cleanse and Purify spells by 10% and reduces the cooldown of your Exorcism and Holy Wrath spells by 16.5%.\n\nRank 1 value estimated from the rank shown in the video."
+      - "Reduces the mana cost of your Cleanse and Purify spells by 10% and reduces the cooldown of your Exorcism and Holy Wrath spells by 16.5%."
       - "Reduces the mana cost of your Cleanse and Purify spells by 20% and reduces the cooldown of your Exorcism and Holy Wrath spells by 33%."
   - id: "infusion-of-light"
     name: "Infusion of Light"
@@ -121,7 +121,7 @@ talents:
     maxRanks: 2
     castTime: "Passive"
     descriptions:
-      - "Your Holy Shock and Flash of Light critical hits reduce the cast time of your next Holy Light cast within 15 sec by 0.5 sec.\n\nRank 1 value estimated from the rank shown in the video."
+      - "Your Holy Shock and Flash of Light critical hits reduce the cast time of your next Holy Light cast within 15 sec by 0.5 sec."
       - "Your Holy Shock and Flash of Light critical hits reduce the cast time of your next Holy Light cast within 15 sec by 1.0 sec."
   - id: "illumination"
     name: "Illumination"
@@ -136,9 +136,9 @@ talents:
     descriptions:
       - "After getting a critical effect from your Flash of Light, Holy Light, Light's Vigil, or Holy Shock heal spell you have a 20% chance to gain Mana equal to 50% of the base cost of the spell."
       - "After getting a critical effect from your Flash of Light, Holy Light, Light's Vigil, or Holy Shock heal spell you have a 40% chance to gain Mana equal to 50% of the base cost of the spell."
-      - "After getting a critical effect from your Flash of Light, Holy Light, Light's Vigil, or Holy Shock heal spell you have a 60% chance to gain Mana equal to 50% of the base cost of the spell.\n\nRank 3 value estimated from the rank shown in the video."
-      - "After getting a critical effect from your Flash of Light, Holy Light, Light's Vigil, or Holy Shock heal spell you have a 80% chance to gain Mana equal to 50% of the base cost of the spell.\n\nRank 4 value estimated from the rank shown in the video."
-      - "After getting a critical effect from your Flash of Light, Holy Light, Light's Vigil, or Holy Shock heal spell you have a 100% chance to gain Mana equal to 50% of the base cost of the spell.\n\nRank 5 value estimated from the rank shown in the video."
+      - "After getting a critical effect from your Flash of Light, Holy Light, Light's Vigil, or Holy Shock heal spell you have a 60% chance to gain Mana equal to 50% of the base cost of the spell."
+      - "After getting a critical effect from your Flash of Light, Holy Light, Light's Vigil, or Holy Shock heal spell you have a 80% chance to gain Mana equal to 50% of the base cost of the spell."
+      - "After getting a critical effect from your Flash of Light, Holy Light, Light's Vigil, or Holy Shock heal spell you have a 100% chance to gain Mana equal to 50% of the base cost of the spell."
   - id: "divine-favor"
     name: "Divine Favor"
     icon: "spell_holy_heal"
@@ -162,8 +162,8 @@ talents:
       ranks: 1
     descriptions:
       - "Increases your chance to hit with Holy spells by 6%."
-      - "Increases your chance to hit with Holy spells by 12%.\n\nRank 2 value estimated from the rank shown in the video."
-      - "Increases your chance to hit with Holy spells by 18%.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Increases your chance to hit with Holy spells by 12%."
+      - "Increases your chance to hit with Holy spells by 18%."
   - id: "holy-shock"
     name: "Holy Shock"
     icon: "spell_holy_searinglight"
@@ -185,7 +185,7 @@ talents:
     castTime: "Passive"
     descriptions:
       - "Gives your Holy spells 5% increased damage against the first 4 enemies that enter your Consecration."
-      - "Gives your Holy spells 10% increased damage against the first 4 enemies that enter your Consecration.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Gives your Holy spells 10% increased damage against the first 4 enemies that enter your Consecration."
   - id: "holy-power"
     name: "Holy Power"
     icon: "spell_holy_power"
@@ -195,10 +195,10 @@ talents:
     castTime: "Passive"
     descriptions:
       - "Increases the critical strike chance of your Holy Shock spell by 3%, and all other spells by 1%."
-      - "Increases the critical strike chance of your Holy Shock spell by 6%, and all other spells by 2%.\n\nRank 2 value estimated from the rank shown in the video."
-      - "Increases the critical strike chance of your Holy Shock spell by 9%, and all other spells by 3%.\n\nRank 3 value estimated from the rank shown in the video."
-      - "Increases the critical strike chance of your Holy Shock spell by 12%, and all other spells by 4%.\n\nRank 4 value estimated from the rank shown in the video."
-      - "Increases the critical strike chance of your Holy Shock spell by 15%, and all other spells by 5%.\n\nRank 5 value estimated from the rank shown in the video."
+      - "Increases the critical strike chance of your Holy Shock spell by 6%, and all other spells by 2%."
+      - "Increases the critical strike chance of your Holy Shock spell by 9%, and all other spells by 3%."
+      - "Increases the critical strike chance of your Holy Shock spell by 12%, and all other spells by 4%."
+      - "Increases the critical strike chance of your Holy Shock spell by 15%, and all other spells by 5%."
   - id: "light-s-vigil"
     name: "Light's Vigil"
     icon: "spell_holy_holyguidance"

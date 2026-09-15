@@ -13,8 +13,8 @@ talents:
     castTime: "Passive"
     descriptions:
       - "Gives you a 23% chance to avoid interruption caused by damage while casting any spell."
-      - "Gives you a 46% chance to avoid interruption caused by damage while casting any spell.\n\nRank 2 value estimated from the rank shown in the video."
-      - "Gives you a 69% chance to avoid interruption caused by damage while casting any spell.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Gives you a 46% chance to avoid interruption caused by damage while casting any spell."
+      - "Gives you a 69% chance to avoid interruption caused by damage while casting any spell."
   - id: "improved-renew"
     name: "Improved Renew"
     icon: "spell_holy_renew"
@@ -84,8 +84,8 @@ talents:
     castTime: "Passive"
     descriptions:
       - "After being struck by a melee or ranged critical hit, or suffering more than 30% of your maximum Health from a single attack, heal 8% of the damage taken over 6 sec. Refreshing this effect carries over any remaining healing."
-      - "After being struck by a melee or ranged critical hit, or suffering more than 30% of your maximum Health from a single attack, heal 16% of the damage taken over 6 sec. Refreshing this effect carries over any remaining healing.\n\nRank 2 value estimated from the rank shown in the video."
-      - "After being struck by a melee or ranged critical hit, or suffering more than 30% of your maximum Health from a single attack, heal 24% of the damage taken over 6 sec. Refreshing this effect carries over any remaining healing.\n\nRank 3 value estimated from the rank shown in the video."
+      - "After being struck by a melee or ranged critical hit, or suffering more than 30% of your maximum Health from a single attack, heal 16% of the damage taken over 6 sec. Refreshing this effect carries over any remaining healing."
+      - "After being struck by a melee or ranged critical hit, or suffering more than 30% of your maximum Health from a single attack, heal 24% of the damage taken over 6 sec. Refreshing this effect carries over any remaining healing."
   - id: "inspiration"
     name: "Inspiration"
     icon: "spell_holy_layonhands"
@@ -95,8 +95,8 @@ talents:
     castTime: "Passive"
     descriptions:
       - "Your non-periodic critical heals increase your target's Armor by 8% for 15 sec."
-      - "Your non-periodic critical heals increase your target's Armor by 16% for 15 sec.\n\nRank 2 value estimated from the rank shown in the video."
-      - "Your non-periodic critical heals increase your target's Armor by 24% for 15 sec.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Your non-periodic critical heals increase your target's Armor by 16% for 15 sec."
+      - "Your non-periodic critical heals increase your target's Armor by 24% for 15 sec."
   - id: "holy-reach"
     name: "Holy Reach"
     icon: "spell_holy_purify"
@@ -116,8 +116,8 @@ talents:
     castTime: "Passive"
     descriptions:
       - "Reduces the Mana cost of your Lesser Heal, Heal, Greater Heal, Penance, and Prayer of Mending spells by 5%."
-      - "Reduces the Mana cost of your Lesser Heal, Heal, Greater Heal, Penance, and Prayer of Mending spells by 10%.\n\nRank 2 value estimated from the rank shown in the video."
-      - "Reduces the Mana cost of your Lesser Heal, Heal, Greater Heal, Penance, and Prayer of Mending spells by 15%.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Reduces the Mana cost of your Lesser Heal, Heal, Greater Heal, Penance, and Prayer of Mending spells by 10%."
+      - "Reduces the Mana cost of your Lesser Heal, Heal, Greater Heal, Penance, and Prayer of Mending spells by 15%."
   - id: "searing-light"
     name: "Searing Light"
     icon: "spell_holy_searinglightpriest"
@@ -130,7 +130,7 @@ talents:
       ranks: 5
     descriptions:
       - "Increases your Holy damage done by 2%, and gives a 5% chance each time your Holy Fire spell deals periodic damage for your next Holy Nova to cost no Mana."
-      - "Increases your Holy damage done by 2%, and gives a 10% chance each time your Holy Fire spell deals periodic damage for your next Holy Nova to cost no Mana.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases your Holy damage done by 2%, and gives a 10% chance each time your Holy Fire spell deals periodic damage for your next Holy Nova to cost no Mana."
   - id: "binding-heal"
     name: "Binding Heal"
     icon: "spell_holy_blindingheal"
@@ -151,7 +151,7 @@ talents:
     castTime: "Passive"
     descriptions:
       - "When you cast a healing spell, gain Mana equal to 5% of the base cost of the spell if your previous heal was a different spell."
-      - "When you cast a healing spell, gain Mana equal to 10% of the base cost of the spell if your previous heal was a different spell.\n\nRank 2 value estimated from the rank shown in the video."
+      - "When you cast a healing spell, gain Mana equal to 10% of the base cost of the spell if your previous heal was a different spell."
   - id: "spirit-of-redemption"
     name: "Spirit of Redemption"
     icon: "inv_enchant_essenceeternallarge"
@@ -170,10 +170,10 @@ talents:
     castTime: "Passive"
     descriptions:
       - "Increases your spell healing by up to 5% of your total Spirit and your spell damage by up to 1% of your total Spirit."
-      - "Increases your spell healing by up to 10% of your total Spirit and your spell damage by up to 2% of your total Spirit.\n\nRank 2 value estimated from the rank shown in the video."
-      - "Increases your spell healing by up to 15% of your total Spirit and your spell damage by up to 3% of your total Spirit.\n\nRank 3 value estimated from the rank shown in the video."
-      - "Increases your spell healing by up to 20% of your total Spirit and your spell damage by up to 4% of your total Spirit.\n\nRank 4 value estimated from the rank shown in the video."
-      - "Increases your spell healing by up to 25% of your total Spirit and your spell damage by up to 5% of your total Spirit.\n\nRank 5 value estimated from the rank shown in the video."
+      - "Increases your spell healing by up to 10% of your total Spirit and your spell damage by up to 2% of your total Spirit."
+      - "Increases your spell healing by up to 15% of your total Spirit and your spell damage by up to 3% of your total Spirit."
+      - "Increases your spell healing by up to 20% of your total Spirit and your spell damage by up to 4% of your total Spirit."
+      - "Increases your spell healing by up to 25% of your total Spirit and your spell damage by up to 5% of your total Spirit."
   - id: "spiritual-healing"
     name: "Spiritual Healing"
     icon: "spell_nature_moonglow"
@@ -183,8 +183,8 @@ talents:
     castTime: "Passive"
     descriptions:
       - "Increases the amount healed by your spells by 3%."
-      - "Increases the amount healed by your spells by 6%.\n\nRank 2 value estimated from the rank shown in the video."
-      - "Increases the amount healed by your spells by 9%.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Increases the amount healed by your spells by 6%."
+      - "Increases the amount healed by your spells by 9%."
   - id: "prayer-of-mending"
     name: "Prayer of Mending"
     icon: "spell_holy_prayerofmendingtga"

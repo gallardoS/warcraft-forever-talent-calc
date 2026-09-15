@@ -30,28 +30,28 @@ talents:
       - "Gives your Concussive Shot a 20% chance to stun the target for 3 sec."
   - id: "lethal-shots"
     name: "Lethal Attacks"
-    icon: "ability_hunter_criticalshot"
+    icon: "ability_searingarrow"
     row: 1
     column: 3
     maxRanks: 5
     castTime: "Passive"
     descriptions:
       - "Increases your critical strike chance with all attacks by 1%."
-      - "Increases your critical strike chance with all attacks by 2%.\n\nRank 2 value estimated from the rank shown in the video."
-      - "Increases your critical strike chance with all attacks by 3%.\n\nRank 3 value estimated from the rank shown in the video."
-      - "Increases your critical strike chance with all attacks by 4%.\n\nRank 4 value estimated from the rank shown in the video."
-      - "Increases your critical strike chance with all attacks by 5%.\n\nRank 5 value estimated from the rank shown in the video."
+      - "Increases your critical strike chance with all attacks by 2%."
+      - "Increases your critical strike chance with all attacks by 3%."
+      - "Increases your critical strike chance with all attacks by 4%."
+      - "Increases your critical strike chance with all attacks by 5%."
   - id: "improved-serpent-sting"
     name: "Improved Stings"
-    icon: "ability_hunter_quickshot"
+    icon: "Hunter_pvp_spidersting"
     row: 2
     column: 1
     maxRanks: 3
     castTime: "Passive"
     descriptions:
       - "Increases the damage of your Serpent Sting ability by 6%, reduces the cooldown of your Viper Sting ability by 2 sec, and increases the duration of your Scorpid Sting ability by 15 sec."
-      - "Increases the damage of your Serpent Sting ability by 12%, reduces the cooldown of your Viper Sting ability by 4 sec, and increases the duration of your Scorpid Sting ability by 30 sec.\n\nRank 2 value estimated from the rank shown in the video."
-      - "Increases the damage of your Serpent Sting ability by 18%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Increases the damage of your Serpent Sting ability by 12%, reduces the cooldown of your Viper Sting ability by 4 sec, and increases the duration of your Scorpid Sting ability by 30 sec."
+      - "Increases the damage of your Serpent Sting ability by 18%, reduces the cooldown of your Viper Sting ability by 6 sec, and increases the duration of your Scorpid Sting ability by 45 sec."
   - id: "efficiency"
     name: "Efficiency"
     icon: "spell_frost_wizardmark"
@@ -61,10 +61,10 @@ talents:
     castTime: "Passive"
     descriptions:
       - "Reduces the Mana cost of your Shots, Stings, and melee abilities by 3%."
-      - "Reduces the Mana cost of your Shots, Stings, and melee abilities by 6%.\n\nRank 2 value estimated from the rank shown in the video."
-      - "Reduces the Mana cost of your Shots, Stings, and melee abilities by 9%.\n\nRank 3 value estimated from the rank shown in the video."
-      - "Reduces the Mana cost of your Shots, Stings, and melee abilities by 12%.\n\nRank 4 value estimated from the rank shown in the video."
-      - "Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%.\n\nRank 5 value estimated from the rank shown in the video."
+      - "Reduces the Mana cost of your Shots, Stings, and melee abilities by 6%."
+      - "Reduces the Mana cost of your Shots, Stings, and melee abilities by 9%."
+      - "Reduces the Mana cost of your Shots, Stings, and melee abilities by 12%."
+      - "Reduces the Mana cost of your Shots, Stings, and melee abilities by 15%."
   - id: "careful-aim"
     name: "Careful Aim"
     icon: "ability_hunter_zenarchery"
@@ -74,10 +74,10 @@ talents:
     castTime: "Passive"
     descriptions:
       - "Increases your Attack Power by 20% of your Intellect."
-      - "Increases your Attack Power by 40% of your Intellect.\n\nRank 2 value estimated from the rank shown in the video."
-      - "Increases your Attack Power by 60% of your Intellect.\n\nRank 3 value estimated from the rank shown in the video."
-      - "Increases your Attack Power by 80% of your Intellect.\n\nRank 4 value estimated from the rank shown in the video."
-      - "Increases your Attack Power by 100% of your Intellect.\n\nRank 5 value estimated from the rank shown in the video."
+      - "Increases your Attack Power by 40% of your Intellect."
+      - "Increases your Attack Power by 60% of your Intellect."
+      - "Increases your Attack Power by 80% of your Intellect."
+      - "Increases your Attack Power by 100% of your Intellect."
   - id: "rapid-killing"
     name: "Rapid Killing"
     icon: "ability_hunter_rapidkilling"
@@ -87,7 +87,7 @@ talents:
     castTime: "Passive"
     descriptions:
       - "Reduces the cooldown on your Rapid Fire ability by 1 min. In addition, when you kill a non-trivial enemy or it dies while afflicted by your Serpent Sting, you gain Rapid Killing, increasing the damage of your next Shot ability within 20 sec by 10%."
-      - "Reduces the cooldown on your Rapid Fire ability by 2 min. In addition, when you kill a non-trivial enemy or it dies while afflicted by your Serpent Sting, you gain Rapid Killing, increasing the damage of your next Shot ability within 20 sec by 20%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Reduces the cooldown on your Rapid Fire ability by 2 min. In addition, when you kill a non-trivial enemy or it dies while afflicted by your Serpent Sting, you gain Rapid Killing, increasing the damage of your next Shot ability within 20 sec by 20%."
   - id: "improved-arcane-shot"
     name: "Improved Arcane Shot"
     icon: "ability_impalingbolt"
@@ -97,13 +97,13 @@ talents:
     castTime: "Passive"
     descriptions:
       - "Reduces the cooldown of your Arcane Shot by 0.3 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot."
-      - "Reduces the cooldown of your Arcane Shot by 0.6 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot.\n\nRank 2 value estimated from the rank shown in the video."
-      - "Reduces the cooldown of your Arcane Shot by 0.9 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot.\n\nRank 3 value estimated from the rank shown in the video."
-      - "Reduces the cooldown of your Arcane Shot by 1.2 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot.\n\nRank 4 value estimated from the rank shown in the video."
-      - "Reduces the cooldown of your Arcane Shot by 1.5 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot.\n\nRank 5 value estimated from the rank shown in the video."
+      - "Reduces the cooldown of your Arcane Shot by 0.6 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot."
+      - "Reduces the cooldown of your Arcane Shot by 0.9 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot."
+      - "Reduces the cooldown of your Arcane Shot by 1.2 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot."
+      - "Reduces the cooldown of your Arcane Shot by 1.5 sec. Does not affect the cooldown of abilities which share a cooldown with Arcane Shot."
   - id: "lone-wolf"
     name: "Lone Wolf"
-    icon: "spell_nature_spiritwolf"
+    icon: "ability_mount_whitedirewolf"
     row: 3
     column: 4
     maxRanks: 1
@@ -132,10 +132,10 @@ talents:
       ranks: 5
     descriptions:
       - "Increases the critical strike damage bonus on all ranged abilities by 6%."
-      - "Increases the critical strike damage bonus on all ranged abilities by 12%.\n\nRank 2 value estimated from the rank shown in the video."
-      - "Increases the critical strike damage bonus on all ranged abilities by 18%.\n\nRank 3 value estimated from the rank shown in the video."
-      - "Increases the critical strike damage bonus on all ranged abilities by 24%.\n\nRank 4 value estimated from the rank shown in the video."
-      - "Increases the critical strike damage bonus on all ranged abilities by 30%.\n\nRank 5 value estimated from the rank shown in the video."
+      - "Increases the critical strike damage bonus on all ranged abilities by 12%."
+      - "Increases the critical strike damage bonus on all ranged abilities by 18%."
+      - "Increases the critical strike damage bonus on all ranged abilities by 24%."
+      - "Increases the critical strike damage bonus on all ranged abilities by 30%."
   - id: "rapid-recuperation"
     name: "Rapid Recuperation"
     icon: "ability_hunter_rapidregeneration"
@@ -148,7 +148,7 @@ talents:
       ranks: 2
     descriptions:
       - "Hitting a target with your Serpent Sting ability grants you 25% and consuming Rapid Killing grants you 50% of your Mana regeneration while casting for the next 15 sec."
-      - "Hitting a target with your Serpent Sting ability grants you 50% and consuming Rapid Killing grants you 100% of your Mana regeneration while casting for the next 15 sec.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Hitting a target with your Serpent Sting ability grants you 50% and consuming Rapid Killing grants you 100% of your Mana regeneration while casting for the next 15 sec."
   - id: "barrage"
     name: "Barrage"
     icon: "ability_upgrademoonglaive"
@@ -158,8 +158,8 @@ talents:
     castTime: "Passive"
     descriptions:
       - "Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 3%."
-      - "Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 6%.\n\nRank 2 value estimated from the rank shown in the video."
-      - "Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 9%.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 6%."
+      - "Increases the damage done by your Multi-Shot, Aimed Shot, and Volley abilities by 9%."
   - id: "scatter-shot"
     name: "Scatter Shot"
     icon: "ability_golemstormbolt"
@@ -187,7 +187,7 @@ talents:
       - "Increases the damage you deal with ranged weapons by 5%."
   - id: "aimed-shot"
     name: "Sniper Shot"
-    icon: "ability_hunter_snipershot"
+    icon: "hunter_pvp_snipershot"
     row: 7
     column: 2
     maxRanks: 1

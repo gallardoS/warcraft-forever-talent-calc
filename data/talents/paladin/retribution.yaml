@@ -26,10 +26,10 @@ talents:
     castTime: "Passive"
     descriptions:
       - "Reduces the Mana cost of all instant cast spells and abilities by 2%."
-      - "Reduces the Mana cost of all instant cast spells and abilities by 4%.\n\nRank 2 value estimated from the rank shown in the video."
-      - "Reduces the Mana cost of all instant cast spells and abilities by 6%.\n\nRank 3 value estimated from the rank shown in the video."
-      - "Reduces the Mana cost of all instant cast spells and abilities by 8%.\n\nRank 4 value estimated from the rank shown in the video."
-      - "Reduces the Mana cost of all instant cast spells and abilities by 10%.\n\nRank 5 value estimated from the rank shown in the video."
+      - "Reduces the Mana cost of all instant cast spells and abilities by 4%."
+      - "Reduces the Mana cost of all instant cast spells and abilities by 6%."
+      - "Reduces the Mana cost of all instant cast spells and abilities by 8%."
+      - "Reduces the Mana cost of all instant cast spells and abilities by 10%."
   - id: "improved-judgement"
     name: "Improved Judgement"
     icon: "spell_holy_righteousfury"
@@ -39,7 +39,7 @@ talents:
     castTime: "Passive"
     descriptions:
       - "Decreases the cooldown of your Judgement ability by 1 sec."
-      - "Decreases the cooldown of your Judgement ability by 2 sec.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Decreases the cooldown of your Judgement ability by 2 sec."
   - id: "holy-conduit"
     name: "Holy Conduit"
     icon: "spell_holy_divineillumination"
@@ -49,7 +49,7 @@ talents:
     castTime: "Passive"
     descriptions:
       - "Reduces the mana cost of your Consecration, Holy Wrath, Exorcism, and Hammer of Wrath spells by 20%."
-      - "Reduces the mana cost of your Consecration, Holy Wrath, Exorcism, and Hammer of Wrath spells by 40%.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Reduces the mana cost of your Consecration, Holy Wrath, Exorcism, and Hammer of Wrath spells by 40%."
   - id: "conviction"
     name: "Conviction"
     icon: "spell_holy_retributionaura"
@@ -59,10 +59,10 @@ talents:
     castTime: "Passive"
     descriptions:
       - "Increases your chance to get a critical strike with melee attacks by 1%."
-      - "Increases your chance to get a critical strike with melee attacks by 2%.\n\nRank 2 value estimated from the rank shown in the video."
-      - "Increases your chance to get a critical strike with melee attacks by 3%.\n\nRank 3 value estimated from the rank shown in the video."
-      - "Increases your chance to get a critical strike with melee attacks by 4%.\n\nRank 4 value estimated from the rank shown in the video."
-      - "Increases your chance to get a critical strike with melee attacks by 5%.\n\nRank 5 value estimated from the rank shown in the video."
+      - "Increases your chance to get a critical strike with melee attacks by 2%."
+      - "Increases your chance to get a critical strike with melee attacks by 3%."
+      - "Increases your chance to get a critical strike with melee attacks by 4%."
+      - "Increases your chance to get a critical strike with melee attacks by 5%."
   - id: "vindication"
     name: "Vindication"
     icon: "spell_holy_vindication"
@@ -72,8 +72,8 @@ talents:
     castTime: "Passive"
     descriptions:
       - "Gives your damaging melee attacks a chance to reduce the target's Attack Power by 42, and increase your Attack Power by 1% for 30 sec."
-      - "Gives your damaging melee attacks a chance to reduce the target's Attack Power by 84, and increase your Attack Power by 2% for 30 sec.\n\nRank 2 value estimated from the rank shown in the video."
-      - "Gives your damaging melee attacks a chance to reduce the target's Attack Power by 126, and increase your Attack Power by 3% for 30 sec.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Gives your damaging melee attacks a chance to reduce the target's Attack Power by 84, and increase your Attack Power by 2% for 30 sec."
+      - "Gives your damaging melee attacks a chance to reduce the target's Attack Power by 126, and increase your Attack Power by 3% for 30 sec."
   - id: "sanctified-judgement"
     name: "Sanctified Judgement"
     icon: "spell_holy_righteousfury"
@@ -83,8 +83,8 @@ talents:
     castTime: "Passive"
     descriptions:
       - "Gives your Judgement ability a 33% chance to return 20% of the Mana cost of the judged seal."
-      - "Gives your Judgement ability a 66% chance to return 20% of the Mana cost of the judged seal.\n\nRank 2 value estimated from the rank shown in the video."
-      - "Gives your Judgement ability a 100% chance to return 20% of the Mana cost of the judged seal.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Gives your Judgement ability a 66% chance to return 20% of the Mana cost of the judged seal."
+      - "Gives your Judgement ability a 100% chance to return 20% of the Mana cost of the judged seal."
   - id: "seal-of-command"
     name: "Seal of Command"
     icon: "ability_warrior_innerrage"
@@ -104,7 +104,7 @@ talents:
     castTime: "Passive"
     descriptions:
       - "Increases movement speed and mounted movement speed by 8%. This does not stack with other movement speed increasing effects."
-      - "Increases movement speed and mounted movement speed by 16%. This does not stack with other movement speed increasing effects.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases movement speed and mounted movement speed by 16%. This does not stack with other movement speed increasing effects."
   - id: "eye-for-an-eye"
     name: "Eye for an Eye"
     icon: "spell_holy_eyeforaneye"
@@ -114,7 +114,7 @@ talents:
     castTime: "Passive"
     descriptions:
       - "All critical strikes against you cause 5% of the damage taken to the attacker as well. The damage caused by Eye for an Eye will not exceed 50% of the Paladin's total health."
-      - "All critical strikes against you cause 10% of the damage taken to the attacker as well. The damage caused by Eye for an Eye will not exceed 50% of the Paladin's total health.\n\nRank 2 value estimated from the rank shown in the video."
+      - "All critical strikes against you cause 10% of the damage taken to the attacker as well. The damage caused by Eye for an Eye will not exceed 50% of the Paladin's total health."
   - id: "sacred-arbiter"
     name: "Sacred Arbiter"
     icon: "spell_holy_righteousfury"
@@ -133,7 +133,7 @@ talents:
     castTime: "Passive"
     descriptions:
       - "Increases all damage dealt by 1%. Increased by an additional 1% against Demon and Undead targets."
-      - "Increases all damage dealt by 2%. Increased by an additional 2% against Demon and Undead targets.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Increases all damage dealt by 2%. Increased by an additional 2% against Demon and Undead targets."
   - id: "two-handed-weapon-specialization"
     name: "Two-Handed Weapon Specialization"
     icon: "inv_hammer_04"
@@ -143,8 +143,8 @@ talents:
     castTime: "Passive"
     descriptions:
       - "Increases the damage you deal with two-handed melee weapons by 3%."
-      - "Increases the damage you deal with two-handed melee weapons by 6%.\n\nRank 2 value estimated from the rank shown in the video."
-      - "Increases the damage you deal with two-handed melee weapons by 9%.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Increases the damage you deal with two-handed melee weapons by 6%."
+      - "Increases the damage you deal with two-handed melee weapons by 9%."
   - id: "vengeance"
     name: "Vengeance"
     icon: "ability_racial_avatar"
@@ -157,8 +157,8 @@ talents:
       ranks: 3
     descriptions:
       - "Increases your Physical and Holy damage dealt by 1% for 30 sec after landing a critical strike. Stacks up to 5 times."
-      - "Increases your Physical and Holy damage dealt by 2% for 30 sec after landing a critical strike. Stacks up to 5 times.\n\nRank 2 value estimated from the rank shown in the video."
-      - "Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a critical strike. Stacks up to 5 times.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Increases your Physical and Holy damage dealt by 2% for 30 sec after landing a critical strike. Stacks up to 5 times."
+      - "Increases your Physical and Holy damage dealt by 3% for 30 sec after landing a critical strike. Stacks up to 5 times."
   - id: "repentance"
     name: "Repentance"
     icon: "spell_holy_prayerofhealing"
@@ -180,8 +180,8 @@ talents:
     castTime: "Passive"
     descriptions:
       - "Increases your spell damage and healing by up to 33% of your Intellect."
-      - "Increases your spell damage and healing by up to 66% of your Intellect.\n\nRank 2 value estimated from the rank shown in the video."
-      - "Increases your spell damage and healing by up to 100% of your Intellect.\n\nRank 3 value estimated from the rank shown in the video."
+      - "Increases your spell damage and healing by up to 66% of your Intellect."
+      - "Increases your spell damage and healing by up to 100% of your Intellect."
   - id: "instrument-of-law"
     name: "Instrument of Law"
     icon: "ability_paladin_hammeroftherighteous"
@@ -191,7 +191,7 @@ talents:
     castTime: "Passive"
     descriptions:
       - "Reduces the cast time of your Hammer of Wrath by 0.5 sec, and reduces all threat you generate by 10% while Righteous Fury is not active."
-      - "Reduces the cast time of your Hammer of Wrath by 1 sec, and reduces all threat you generate by 20% while Righteous Fury is not active.\n\nRank 2 value estimated from the rank shown in the video."
+      - "Reduces the cast time of your Hammer of Wrath by 1 sec, and reduces all threat you generate by 20% while Righteous Fury is not active."
   - id: "twist-of-light"
     name: "Twist of Light"
     icon: "spell_holy_divineintervention"
